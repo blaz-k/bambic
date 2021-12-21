@@ -1,10 +1,10 @@
 <template>
   <!-- DELETE THIS ID="NAV" ROUTER LINKS BEFORE END OF PROJECT -->
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link :to="{ name: 'Home' }">Home</router-link> |
     <router-link :to="{ name: 'About' }">About</router-link> |
     <router-link :to="{ name: 'ContactUs' }">ContactUs</router-link>
-  </div>
+  </div> -->
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
