@@ -1,9 +1,59 @@
 <template>
+  <!-- DELETE THIS ID="NAV" ROUTER LINKS BEFORE END OF PROJECT -->
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link :to="{ name: 'Home' }">Home</router-link> |
+    <router-link :to="{ name: 'About' }">About</router-link> |
+    <router-link :to="{ name: 'ContactUs' }">ContactUs</router-link>
   </div>
-  <router-view/>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <router-link class="navbar-brand" :to="{ name: 'Home' }"
+          >Bambič</router-link
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kovinski Robniki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kovinske Ograje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Pokrovi Toplotnih Črpalk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Smetarniki</a>
+            </li>
+          </ul>
+          <ul class="d-flex mb-2 mb-md-0">
+            <li class="nav-item">
+              <router-link class="nav-link" :to="{ name: 'About' }"
+                >O nas</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" :to="{ name: 'ContactUs' }"
+                >Kontakt</router-link
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <router-view />
 </template>
 
 <style>
