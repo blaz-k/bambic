@@ -54,6 +54,14 @@
     </nav>
   </header>
   <router-view />
+  <footer class="container mt-4">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>
+      &copy; 2021 Bambic &middot; <a href="#">Privacy</a> &middot;
+      <a href="#">Terms</a>&middot; Website created by
+      <a href="https://para-kmeto.herokuapp.com/" target="_blank">ParaKmeto</a>
+    </p>
+  </footer>
 </template>
 
 <style>
