@@ -223,6 +223,12 @@
       <!-------------------- SEVICES --------------------->
 
       <h1 class="mb-4">Storitve</h1>
+      <!-- <div class="row g-4 row-cols-1 row-cols-md-4 container-fluid">
+        <div v-for="service in services" :key="service">
+          <Test :serviceInServices="service" />
+        </div>
+      </div> -->
+
       <div class="row g-4 row-cols-1 row-cols-md-4 container-fluid">
         <div v-for="service in services" :key="service">
           <Services :serviceInServices="service" />
@@ -242,12 +248,13 @@ import { mapState } from "vuex";
 import Products from "../components/Products.vue";
 import Services from "../components/Services.vue";
 import Carousel from "../components/Carousel.vue";
+import Test from "./Test.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
 export default {
   name: "Home",
-  components: { Products, Services, Carousel },
+  components: { Products, Services, Carousel, Test },
   computed: {
     ...mapState(["services"]),
     ...mapState(["products"]),

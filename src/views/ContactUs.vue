@@ -73,8 +73,8 @@ body {
   transition: 1.5s ease-in-out;
   transform-style: preserve-3d;
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
   margin-top: 15rem;
   margin-bottom: 15rem;
 }

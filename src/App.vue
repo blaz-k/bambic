@@ -48,23 +48,35 @@
                 >Kontakt</router-link
               >
             </li>
+            <li class="nav-item">
+              <router-link class="nav-link" :to="{ name: 'Test' }">
+                Test
+              </router-link>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
   <router-view />
-  <footer class="container mt-4">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>
-      &copy; 2021 Bambic &middot; <a href="#">Privacy</a> &middot;
-      <a href="#">Terms</a>&middot; Website created by
-      <a href="https://para-kmeto.herokuapp.com/" target="_blank">ParaKmeto</a>
-    </p>
-  </footer>
+  <div class="footer-informations">
+    <footer>
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>
+        &copy; 2021 Bambic &middot; <a href="#">Privacy</a> &middot;
+        <a href="#">Terms</a>&middot; Website created by
+        <a href="https://para-kmeto.herokuapp.com/" target="_blank"
+          >ParaKmeto</a
+        >
+      </p>
+    </footer>
+  </div>
 </template>
 
 <style>
+.footer-informations {
+  margin-top: 53rem;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
