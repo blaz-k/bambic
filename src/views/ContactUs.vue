@@ -115,14 +115,14 @@ body {
   z-index: 2;
   background-size: 100vh;
   background-size: cover;
-  background-image: url(https://livewallpaperhd.com/wp-content/uploads/2017/07/Dark-Elegant-Wallpaper.jpg);
+  background-image: url("../assets/img/dark-background.jpeg");
 }
 .back {
   background-color: #333;
   transform: rotateY(180deg);
   z-index: 0;
   padding-top: 10px;
-  background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
+  background-image: url("../assets/img/front-background.jpeg");
 }
 .container:hover {
   -webkit-transform: rotateY(180deg);
