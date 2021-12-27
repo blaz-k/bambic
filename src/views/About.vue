@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
     <symbol id="calendar3" viewBox="0 0 16 16">
       <path
         d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
@@ -42,10 +42,10 @@
             <div
               class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
             >
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Short title, long jacket
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold pb-4">
+                Smetarniki
               </h2>
-              <ul class="d-flex list-unstyled mt-auto">
+              <ul class="d-flex list-unstyled mt-4">
                 <li class="me-auto">
                   <img
                     src="https://github.com/twbs.png"
@@ -80,7 +80,7 @@
               class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
             >
               <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Much longer title that wraps to multiple lines
+                Kovinski robniki
               </h2>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
@@ -115,7 +115,7 @@
           >
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Another longer title belongs here
+                Kovinske ograje
               </h2>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
@@ -145,10 +145,48 @@
         </div>
       </div>
     </div>
+  </div> -->
+  <div>
+    <!-- ------------ Font awesome CDN link ------------------ -->
+    <div class="image-area">
+      <div class="img-wrapper">
+        <img src="../assets/img/aboutme.jpeg" alt="Atul Prajapati" />
+        <h2>Bambič Jani</h2>
+        <ul>
+          <li>
+            <a href="# https://www.facebook.com/jani.bambic"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/jani.bambic" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/atulkprajapati2000/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/atuljustano"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCf-KfxuY8PZBSD_8RW2nYsw"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
-<style>
-.back-img {
+<style scoped>
+/* .back-img {
   background: url("../assets/img/unsplash-photo-3.jpg");
 }
 
@@ -236,5 +274,129 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+} */
+
+* {
+  background: #f1f2f6;
+  margin: 0;
+  padding: 0;
+}
+
+.image-area {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.img-wrapper {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 180%;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  transform: skew(45deg);
+  transition: 0.5s;
+}
+
+.img-wrapper:hover:before {
+  left: -180%;
+}
+
+.img-wrapper img {
+  height: 400px;
+  width: 300px;
+  filter: grayscale(100%);
+  transition: 2s;
+}
+.img-wrapper:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.img-wrapper h2 {
+  background: tomato;
+  font-family: Poppins;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: right;
+  transition: 1s;
+}
+
+.img-wrapper:hover h2 {
+  transform: perspective(400px) rotateY(0deg);
+}
+
+.img-wrapper ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li {
+  background: #333;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  transform: perspective(800px) rotateY(90deg);
+  transition: 0.5s;
+  transform-origin: left;
+}
+
+.img-wrapper:hover ul li {
+  transform: perspective(800px) rotateY(0deg);
+}
+
+.img-wrapper:hover ul li:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.img-wrapper:hover ul li:nth-child(2) {
+  transition-delay: 0.6s;
+}
+
+.img-wrapper:hover ul li:nth-child(3) {
+  transition-delay: 0.8s;
+}
+
+.img-wrapper:hover ul li:nth-child(4) {
+  transition-delay: 1s;
+}
+
+.img-wrapper ul li a {
+  color: tomato;
+  background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li i {
+  color: tomato;
+  background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li i:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0);
 }
 </style>

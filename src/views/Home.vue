@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <main>
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -183,7 +183,45 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div> -->
+
+      <!-------------------- CAROUSEL --------------------->
+      <!-- Not working correctly -->
+
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div v-for="product in products" :key="product">
+            <div class="carousel-item active">
+              <Carousel :carouselProduct="product" />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
+      <!-------------------- SEVICES --------------------->
+
       <h1 class="mb-4">Storitve</h1>
       <div class="row g-4 row-cols-1 row-cols-md-4 container-fluid">
         <div v-for="service in services" :key="service">
@@ -203,14 +241,16 @@
 import { mapState } from "vuex";
 import Products from "../components/Products.vue";
 import Services from "../components/Services.vue";
+import Carousel from "../components/Carousel.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
 export default {
   name: "Home",
-  components: { Products, Services },
+  components: { Products, Services, Carousel },
   computed: {
     ...mapState(["services"]),
+    ...mapState(["products"]),
   },
 };
 </script>
