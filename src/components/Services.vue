@@ -3,7 +3,7 @@
     <!-- <h1 class="mb-4">Storitve</h1> -->
     <!-- Three columns of text below the carousel -->
     <div class="">
-      <svg
+      <!-- <svg
         class="bd-placeholder-img rounded-circle"
         width="140"
         height="140"
@@ -13,15 +13,18 @@
         preserveAspectRatio="xMidYMid slice"
         focusable="false"
       >
-      <img :src="serviceInServices.img" alt="">
         <title>Placeholder</title>
         <rect width="100%" height="100%" fill="#777" />
         <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-      </svg>
+      </svg> -->
+      <img :src="serviceInServices.img" alt="" />
 
       <h2>{{ serviceInServices.name }}</h2>
       <p>
         {{ serviceInServices.text }}
+      </p>
+      <p>
+        {{ serviceInServices.img }}
       </p>
       <p>
         <a class="btn btn-secondary" href="#">View details &raquo;</a>
