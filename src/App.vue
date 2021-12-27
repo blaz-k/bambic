@@ -5,59 +5,61 @@
     <router-link :to="{ name: 'About' }">About</router-link> |
     <router-link :to="{ name: 'ContactUs' }">ContactUs</router-link>
   </div> -->
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-        <router-link class="navbar-brand" :to="{ name: 'Home' }"
-          >Bambič</router-link
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Kovinski Robniki</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Kovinske Ograje</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Pokrovi Toplotnih Črpalk</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Smetarniki</a>
-            </li>
-          </ul>
-          <ul class="d-flex mb-2 mb-md-0">
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'About' }"
-                >O nas</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'ContactUs' }"
-                >Kontakt</router-link
-              >
-            </li>
-            <li class="nav-item">
+  <div id="nav">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg">
+        <div class="container-fluid">
+          <router-link class="navbar-brand" :to="{ name: 'Home' }"
+            >Bambič</router-link
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kovinski Robniki</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kovinske Ograje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Pokrovi Toplotnih Črpalk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Smetarniki</a>
+              </li>
+            </ul>
+            <ul class="d-flex mb-2 mb-md-0 list-unstyled">
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'About' }"
+                  >O nas</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'ContactUs' }"
+                  >Kontakt</router-link
+                >
+              </li>
+              <!-- <li class="nav-item">
               <router-link class="nav-link" :to="{ name: 'Test' }">
                 Test
               </router-link>
-            </li>
-          </ul>
+            </li> -->
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
+  </div>
   <router-view />
   <div class="footer-informations">
     <footer>
@@ -82,19 +84,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+
+  /* color: #2c3e50; */
 }
 
 #nav {
-  padding: 30px;
+  padding: 32px;
+  /* background-color: rgb(218, 15, 15); */
+  background: linear-gradient(90deg, #693c3c, #b10606);
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #000000;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  /* color: #42b983; */
+  color: rgb(223, 202, 10);
 }
 </style>

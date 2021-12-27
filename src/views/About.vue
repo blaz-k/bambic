@@ -325,7 +325,7 @@
 }
 
 .img-wrapper h2 {
-  background: tomato;
+  background-color: rgb(223, 202, 10);
   font-family: Poppins;
   color: #fff;
   text-align: center;
@@ -386,12 +386,12 @@
 }
 
 .img-wrapper ul li a {
-  color: tomato;
+  color: rgb(223, 202, 10);
   background: rgba(255, 255, 255, 0);
 }
 
 .img-wrapper ul li i {
-  color: tomato;
+  color: rgb(223, 202, 10);
   background: rgba(255, 255, 255, 0);
 }
 

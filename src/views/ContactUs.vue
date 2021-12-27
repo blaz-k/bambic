@@ -7,12 +7,12 @@
           Ali vas kakšen izdelek zanima bolj podrobno, ali bi radi izvedeli kaj
           več?
         </p>
-        <p>Kontaktni obrazec se nahaja tu</p>
+        <span class="kontakt">Kontakt</span>
       </div>
     </div>
     <div class="back side">
       <div class="content">
-        <h1>Contact Me</h1>
+        <h1>Kontaktirajte nas!</h1>
         <form>
           <label>Ime :</label>
           <input type="text" placeholder="Janez Novak" />
@@ -20,7 +20,7 @@
           <input type="text" placeholder="janez-novak@mail.com" />
           <label>Vaše sporočilo :</label>
           <textarea placeholder="Kaj vas zanima?"></textarea>
-          <input type="submit" value="Done" />
+          <input type="submit" value="Pošlji" />
         </form>
       </div>
     </div>
@@ -100,14 +100,20 @@ body {
 .content p {
   margin-top: 50px;
   line-height: 2em;
+  font-size: 32px;
+}
+
+.content .kontakt {
+  line-height: 8em;
+  font-size: 28px;
 }
 .content h1:before {
   content: "";
   position: absolute;
   bottom: -20px;
   height: 3px;
-  background-color: #3e3;
-  width: 70px;
+  background-color: rgb(223, 202, 10);
+  width: 40%;
   left: 50%;
   transform: translateX(-50%);
 }
