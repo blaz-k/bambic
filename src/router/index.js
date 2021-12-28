@@ -2,6 +2,13 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import ContactUs from "../views/ContactUs.vue";
 import Test from "../views/Test.vue";
+import DimniskeKape from "../views/DimniskeKape.vue";
+import KovinskeOgraje from "../views/KovinskeOgraje.vue";
+import KovinskiRobniki from "../views/KovinskiRobniki.vue";
+import OgrajaPolzi from "../views/OgrajaPolzi.vue";
+import OkenskePolice from "../views/OkenskePolice.vue";
+import PokroviToplotnih from "../views/PokroviToplotnih.vue";
+import Smetarniki from "../views/Smetarniki.vue";
 
 const routes = [
   {
@@ -24,6 +31,25 @@ const routes = [
     component: ContactUs,
   },
   { path: "/test", name: "Test", component: Test },
+  { path: "/dimniske-kape", name: "DimniskeKape", component: DimniskeKape },
+  {
+    path: "/kovinske-ograje",
+    name: "KovinskeOgraje",
+    component: KovinskeOgraje,
+  },
+  {
+    path: "/kovinski-robniki",
+    name: "KovinskiRobniki",
+    component: KovinskiRobniki,
+  },
+  { path: "/ograja-za-polze", name: "OgrajaPolzi", component: OgrajaPolzi },
+  { path: "/okenske-police", name: "OkenskePolice", component: OkenskePolice },
+  {
+    path: "/pokrovi-toplotnih-crpalk",
+    name: "PokroviToplotnih",
+    component: PokroviToplotnih,
+  },
+  { path: "/smetarniki", name: "Smetarniki", component: Smetarniki },
 ];
 
 const router = createRouter({

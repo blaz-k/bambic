@@ -26,16 +26,34 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Kovinski Robniki</a>
+                <router-link class="nav-link" :to="{ name: 'KovinskeOgraje' }"
+                  >Kovinske Ograje</router-link
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Kovinske Ograje</a>
+                <router-link class="nav-link" :to="{ name: 'KovinskiRobniki' }"
+                  >Kovniski Robniki</router-link
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link">Pokrovi Toplotnih Črpalk</a>
+                <router-link class="nav-link" :to="{ name: 'OgrajaPolzi' }"
+                  >Ograja za polže</router-link
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link">Smetarniki</a>
+                <router-link class="nav-link" :to="{ name: 'OkenskePolice' }"
+                  >Okenske Police</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'PokroviToplotnih' }"
+                  >Pokrovi Toplotnih Črpalk</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'Smetarniki' }"
+                  >Smetarniki</router-link
+                >
               </li>
             </ul>
             <ul class="d-flex mb-2 mb-md-0 list-unstyled">
