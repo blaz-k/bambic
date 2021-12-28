@@ -112,7 +112,8 @@ body {
   position: absolute;
   bottom: -20px;
   height: 3px;
-  background-color: rgb(223, 202, 10);
+  background-color: rgb(156, 156, 150);
+
   width: 40%;
   left: 50%;
   transform: translateX(-50%);

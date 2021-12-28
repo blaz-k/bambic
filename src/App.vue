@@ -7,7 +7,7 @@
   </div> -->
   <div id="nav">
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
         <div class="container-fluid">
           <router-link class="navbar-brand" :to="{ name: 'Home' }"
             >Bambič</router-link
@@ -91,7 +91,9 @@
 #nav {
   padding: 32px;
   /* background-color: rgb(218, 15, 15); */
-  background: linear-gradient(90deg, #693c3c, #b10606);
+  /* background: linear-gradient(90deg, #9c9c9c, #8d8989); */
+  text-transform: uppercase;
+  /* font-size: 17px; */
 }
 
 #nav a {
@@ -101,6 +103,6 @@
 
 #nav a.router-link-exact-active {
   /* color: #42b983; */
-  color: rgb(223, 202, 10);
+  color: rgb(156, 156, 150);
 }
 </style>
