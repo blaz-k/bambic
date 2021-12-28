@@ -6,9 +6,10 @@
       </div>
       <div class="details">
         <h2>
-          {{ serviceInServices.name }}<br /><span>{{
+          {{ serviceInServices.name }}<br />
+          <!-- <span>{{
             serviceInServices.text
-          }}</span>
+          }}</span> -->
         </h2>
       </div>
     </div>

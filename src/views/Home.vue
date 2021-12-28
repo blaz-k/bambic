@@ -235,6 +235,25 @@
         </div>
       </div>
       <!-- /.container -->
+      <header>
+        <h1>Galerija Slik</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, porro
+          tempore ut est dignissimos, ea placeat dicta in et neque quisquam
+          ducimus fugit. Omnis, veniam.
+        </p>
+      </header>
+      <div class="-fx-image-gal">
+        <!-- <div class="-fx-gal-item"> -->
+        <div class="row g-4 row-cols-1 row-cols-md-4 container-fluid">
+          <div v-for="photo in photos" :key="photo">
+            <Gallery :galleryPhoto="photo" />
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <!-- GALLERY -->
 
       <!-- PRODUCTS -->
 
@@ -249,20 +268,31 @@ import Products from "../components/Products.vue";
 import Services from "../components/Services.vue";
 import Carousel from "../components/Carousel.vue";
 import Test from "./Test.vue";
+import Gallery from "../components/Gallery.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
 export default {
   name: "Home",
-  components: { Products, Services, Carousel, Test },
+  components: { Products, Services, Carousel, Test, Gallery },
   computed: {
     ...mapState(["services"]),
     ...mapState(["products"]),
+    ...mapState(["photos"]),
   },
 };
 </script>
 
 <style>
+.gallery {
+  /* background: linear-gradient(180deg, var(--yellow) 40%, var(--lightblue) 80%); */
+  /* width: calc(100% - 100px); */
+  /* padding-bottom: 20px; */
+  /* text-align: center; */
+  /* padding: 0 50px; */
+  margin-top: 13rem;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */

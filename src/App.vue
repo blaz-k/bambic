@@ -121,6 +121,17 @@
 
 #nav a.router-link-exact-active {
   /* color: #42b983; */
-  color: rgb(156, 156, 150);
+  color: rgb(151, 150, 156);
+}
+
+a:link {
+  text-decoration: none;
+  transition: all 1.2s ease-out;
+}
+
+a:hover {
+  background-color: rgb(107, 107, 89);
+  border-radius: 22px 0px 22px 0px;
+  /* color: #cf2187; */
 }
 </style>
