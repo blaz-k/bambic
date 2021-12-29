@@ -6,9 +6,19 @@
     <!---------- list of lastnosti from products ---------->
     <ul class="list-unstyled">
       <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
-        <li>{{ lastnost.lastnost }}</li>
+        <li>{{ lastnost }}</li>
       </div>
     </ul>
+    <!-- 
+    <div class="container">
+      <ul>
+        <li>hitra in enostavna montaža</li>
+        <li>obstojen in nerjaveč material</li>
+        <li>možnost oblikovanja po želji (ravne linije, krivulje)</li>
+        <li>cenovno ugodno</li>
+        <li>pestra izbira oblik robnikov</li>
+      </ul>
+    </div> -->
 
     <!------ cards from Robniki ------>
     <div class="row g-4 row-cols-1 row-cols-md-3 container-fluid">
@@ -41,17 +51,27 @@ export default {
 }
 ul {
   margin-bottom: 3rem;
+  /* display: flex;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: flex-start; */
 }
 li {
   margin-top: 0.5em;
   font-size: 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
 }
-/* * {
+
+/* this * is good fontfamily */
+* {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  /* line-height: 80px; */
 }
-
+/*
 body {
   display: flex;
   justify-content: center;

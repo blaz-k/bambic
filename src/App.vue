@@ -80,7 +80,7 @@
   </div>
   <router-view />
   <div class="footer-informations">
-    <footer>
+    <!-- <footer>
       <p class="float-end"><a href="#">Back to top</a></p>
       <p>
         &copy; 2021 Bambic &middot; <a href="#">Privacy</a> &middot;
@@ -89,13 +89,88 @@
           >ParaKmeto</a
         >
       </p>
-    </footer>
+    </footer> -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <div class="my-nav border-bottom">
+          <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'Home' }"
+                >Domov</router-link
+              >
+            </li>
+
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'KovinskeOgraje' }"
+                >Kovinske Ograje</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'KovinskiRobniki' }"
+                >Kovniski Robniki</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'OgrajaPolzi' }"
+                >Ograja za polže</router-link
+              >
+            </li>
+          </ul>
+          <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'OkenskePolice' }"
+                >Okenske Police</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'PokroviToplotnih' }"
+                >Pokrovi Toplotnih Črpalk</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'Smetarniki' }"
+                >Smetarniki</router-link
+              >
+            </li>
+
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'ContactUs' }"
+                >Kontakt</router-link
+              >
+            </li>
+          </ul>
+        </div>
+
+        <p class="text-center text-muted mt-2">&copy; 2021 Bambic.si</p>
+      </footer>
+    </div>
   </div>
 </template>
 
 <style>
+.my-nav {
+  color: red;
+  display: flex;
+  justify-content: space-between;
+}
 .footer-informations {
-  margin-top: 53rem;
+  margin-top: 43rem;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

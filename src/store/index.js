@@ -7,15 +7,14 @@ export default createStore({
         id: 1,
         name: "Kovinski robniki",
         imgUrl: require("@/assets/img/robniki/robnik1.jpg"),
-        text: "Kovinski robniki so ena najbolj elegantnih rešitev za oblikovanje vašega vrta ali okolice. Največkrat jih uporabljamo za razmejitev okrasnega lubja in trate. Uporabljajo pa se lahko tudi za številne druge namene. Odlikujejo jih lastnosti kot so: ",
+        text: `Kovinski robniki so ena najbolj elegantnih rešitev za oblikovanje vašega vrta ali okolice. Največkrat jih uporabljamo za razmejitev okrasnega 
+        lubja in trate. Uporabljajo pa se lahko tudi za številne druge namene. Odlikujejo jih lastnosti kot so: `,
         lastnosti: [
-          { lastnost: "- hitra in enostavna montaža" },
-          { lastnost: "- bstojen in nerjaveč material" },
-          {
-            lastnost: "- možnost oblikovanja po želji (ravne linije, krivulje)",
-          },
-          { lastnost: "- cenovno ugodno" },
-          { lastnost: "- pestra izbira oblik robnikov" },
+          "- hitra in enostavna montaža",
+          "- obstojen in nerjaveč material",
+          "- možnost oblikovanja po želji (ravne linije, krivulje)",
+          "- cenovno ugodno",
+          "- pestra izbira oblik robnikov",
         ],
         cena: "že od 3€/meter",
         details: [
@@ -56,7 +55,9 @@ export default createStore({
         imgUrl: require("@/assets/img/ograje/ograja.jpg"),
         details: [""],
         cena: "že od 6€ na tekoči meter letvice/lamele širine 10cm",
-        text: "Bi radi zamenjali staro dotrajano leseno ograjo z novo iz pločevine? Brez vzdrževanja, odporna proti vsem vremenskim razmeram, zelo dolga življenska doba, estetsko dovršeno, enostavna montaža. Horizontalna ali vertikalna postavitev letvic. Na voljo več različnih barv, materialov, dimenzij ter profilov. Tudi v imitaciji lesa (dolžine po naročilu)",
+        text: `Bi radi zamenjali staro dotrajano leseno ograjo z novo iz pločevine? Brez vzdrževanja, odporna proti vsem vremenskim razmeram,
+         zelo dolga življenska doba, estetsko dovršeno, enostavna montaža. Horizontalna ali vertikalna postavitev letvic. Na voljo več različnih barv, 
+         materialov, dimenzij ter profilov. Tudi v imitaciji lesa (dolžine po naročilu)`,
       },
       {
         id: 3,
@@ -72,7 +73,9 @@ export default createStore({
         imgUrl: require("@/assets/img/smetarniki/smetarnik1.jpg"),
         details: [""],
         cena: "že od 350€/kos",
-        text: "Odprt smetarnik na kolesih (ograja okoli vašega smetnjaka) ali pa klasičen z vratci. Če bi radi zakrili smetnjake na lep in eleganten način in nanj obesili morda korita za rože. vIzdelan iz ALU profilov in ALU pločevine(možno v večih barvah). Spodaj ima tudi kolesca za premikanje. Odporen na vse vremenske razmere. ",
+        text: `Odprt smetarnik na kolesih (ograja okoli vašega smetnjaka) ali pa klasičen z vratci. Če bi radi zakrili smetnjake na lep in eleganten 
+        način in nanj obesili morda korita za rože. vIzdelan iz ALU profilov in ALU pločevine(možno v večih barvah). Spodaj ima tudi kolesca za premikanje. 
+        Odporen na vse vremenske razmere. `,
       },
       {
         id: 5,
@@ -190,3 +193,11 @@ export default createStore({
   actions: {},
   modules: {},
 });
+
+// .env file daš v giignore
+// npm install dotenv
+// require('dotenv').config();
+// process.env.moj-api
+
+//mogoče tudi:
+// const path = require('path');
