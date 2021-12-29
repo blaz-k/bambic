@@ -7,32 +7,46 @@ export default createStore({
         id: 1,
         name: "Kovinski robniki",
         imgUrl: require("@/assets/img/robniki/robnik1.jpg"),
-        text: "Kovinski robniki so ena najbolj elegantnih rešitev za oblikovanje vašega vrta ali okolice. Največkrat jih uporabljamo za razmejitev okrasnega lubja in trate. Uporabljajo pa se lahko tudi za številne druge namene. Odlikujejo jih lastnosti kot so: -hitra in enostavna montaža -obstojen in nerjaveč material - možnost oblikovanja po želji (ravne linije, krivulje) - cenovno ugodno - pestra izbira oblik robnikov",
+        text: "Kovinski robniki so ena najbolj elegantnih rešitev za oblikovanje vašega vrta ali okolice. Največkrat jih uporabljamo za razmejitev okrasnega lubja in trate. Uporabljajo pa se lahko tudi za številne druge namene. Odlikujejo jih lastnosti kot so: ",
+        lastnosti: [
+          { lastnost: "- hitra in enostavna montaža" },
+          { lastnost: "- bstojen in nerjaveč material" },
+          {
+            lastnost: "- možnost oblikovanja po želji (ravne linije, krivulje)",
+          },
+          { lastnost: "- cenovno ugodno" },
+          { lastnost: "- pestra izbira oblik robnikov" },
+        ],
         cena: "že od 3€/meter",
         details: [
           {
             detailName: "Osnovni robniki",
             detailText:
               "Osnovni I-robniki so tako rekoč univerzalni robniki. Uporabljajo se lahko tako za ravne linije kot tudi za krivulje-izdelavo krogov.",
+            imgRobnik: require("@/assets/img/robniki/robnik3.jpg"),
           },
           {
             detailName: "L-robniki",
             detailText:
               "L-robniki so primerni za izdelavo ravnih linij in vogalov.",
+            imgRobnik: require("@/assets/img/robniki/robnik3.jpg"),
           },
           {
             detailName: "L-robniki z zarezami",
             detailText:
               "L-robniki z zarezami so primerni za izdelavo ravnih linij, kot tudi krivulj ali krogov.",
+            imgRobnik: require("@/assets/img/robniki/robnik3.jpg"),
           },
           {
             detailName: "T-robniki",
             detailText:
               "T-robniki so eni najbolj močnih izvedb robnikov. Primerni za ravne linije.",
+            imgRobnik: require("@/assets/img/robniki/robnik3.jpg"),
           },
           {
             detailName: "Z-robniki",
             detailText: "Z-robniki so primerni za ravne linije.",
+            imgRobnik: require("@/assets/img/robniki/robnik3.jpg"),
           },
         ],
       },
@@ -47,7 +61,7 @@ export default createStore({
       {
         id: 3,
         name: "Pokrovi za toplotne črpalke",
-        imgUrl: require("@/assets/img/ograje/ograja.jpg"),
+        imgUrl: require("@/assets/img/dark-background.jpeg"),
         details: [""],
         cena: "že od 300 €",
         text: "Zaščita za zunanjo enoto toplotne črpalke ali klime. Ohišje narejeno iz aluminija. Na voljo več različnih barv in materialov.",
@@ -63,7 +77,7 @@ export default createStore({
       {
         id: 5,
         name: "Zaščitna ograja proti polžem",
-        imgUrl: require("@/assets/img/ograje/ograja.jpg"),
+        imgUrl: require("@/assets/img/crpalke/crpalka1.jpg"),
         details: [
           { material: "Aluminij/Pocinkana pločevina/Inox " },
           { profileHeight: "20cm" },
@@ -104,14 +118,14 @@ export default createStore({
       {
         id: 1,
         name: "Krivljenje pločevine",
-        img: require("@/assets/img/logo.png"),
+        img: require("@/assets/img/crpalkabis.jpg"),
         text: "Lahko vam postavimo ograjo",
       },
 
       {
         id: 2,
         name: "Izdelava in prodaja kovinskih izdelkov",
-        img: require("@/assets/img/logo.png"),
+        img: require("@/assets/img/ograjabis.jpg"),
         text: "Robniki, Ograje, Pokrovi, Okenske police, Dimniške kape, Smetarniki",
       },
     ],

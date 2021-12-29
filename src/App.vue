@@ -10,7 +10,7 @@
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
         <div class="container-fluid">
           <router-link class="navbar-brand" :to="{ name: 'Home' }"
-            >Bambič</router-link
+            >Bambic.si</router-link
           >
           <button
             class="navbar-toggler"

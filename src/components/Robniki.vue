@@ -1,51 +1,32 @@
 <template>
-  <div id="kovinskiRobniki">
-    <h1>{{ products[0].name }}</h1>
-    <div class="text-content">{{ products[0].text }}</div>
-
-    <!---------- list of lastnosti from products ---------->
-    <ul class="list-unstyled">
-      <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
-        <li>{{ lastnost.lastnost }}</li>
-      </div>
-    </ul>
-
-    <!------ cards from Robniki ------>
-    <div class="row g-4 row-cols-1 row-cols-md-3 container-fluid">
-      <div v-for="detail in products[0].details" :key="detail">
-        <Robniki :robniki="detail" />
-        <!-- <div>{{ detail.detailName }}</div> -->
+  <div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <div class="cards">
+      <div class="card">
+        <h2 class="card-title">{{ robniki.detailName }}</h2>
+        <img :src="robniki.imgRobnik" alt="" />
+        <p class="card-desc">
+          {{ robniki.detailText }}
+        </p>
       </div>
     </div>
-    <!-- <h2>{{ products[0].details[0] }}</h2> -->
   </div>
+  <!-- <h2>{{ products[0].details[0] }}</h2> -->
 </template>
 
 <script>
 import { mapState } from "vuex";
-import Robniki from "../components/Robniki.vue";
 
 export default {
-  name: "KovinskiRobniki",
-  computed: {
-    ...mapState(["products"]),
-  },
-  components: { Robniki },
+  name: "Robniki",
+  props: ["robniki"],
 };
 </script>
 
 <style scoped>
-#kovinskiRobniki .text-content {
-  font-size: 2rem;
-  margin-bottom: 3rem;
-}
-ul {
-  margin-bottom: 3rem;
-}
-li {
-  margin-top: 0.5em;
-  font-size: 1.5rem;
-}
 /* * {
   margin: 0;
   padding: 0;
@@ -78,6 +59,7 @@ body {
 .card-title {
   display: block;
   text-align: center;
+  font-size: 24px;
   color: #fff;
   background-color: #6184a8;
   padding: 2%;
@@ -95,15 +77,16 @@ body {
 
 .card-desc {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+
   position: absolute;
   height: 0;
   top: 0;
   opacity: 0;
-  padding: 18px 8%;
-  background-color: white;
+  padding: 8px 8%;
+  background-color: rgb(194, 187, 187);
   overflow-y: scroll;
-  transition: 0.8s ease;
+  transition: 1.3s ease;
 }
 
 .card:hover .card-desc {
@@ -113,7 +96,7 @@ body {
 
 h1 {
   font-size: 2.8rem;
-  color: rgb(209, 14, 14);
+  color: #fff;
   margin: 40px 0 20px 0;
   text-align: center;
 }

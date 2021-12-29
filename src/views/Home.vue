@@ -222,34 +222,38 @@
 
       <!-------------------- SEVICES --------------------->
 
-      <h1 class="mb-4">Storitve</h1>
       <!-- <div class="row g-4 row-cols-1 row-cols-md-4 container-fluid">
         <div v-for="service in services" :key="service">
           <Test :serviceInServices="service" />
         </div>
       </div> -->
+      <div id="services">
+        <h1>Storitve</h1>
 
-      <div class="row g-4 row-cols-1 row-cols-md-4 container-fluid">
-        <div v-for="service in services" :key="service">
-          <Services :serviceInServices="service" />
+        <div class="row g-4 row-cols-1 row-cols-md-2 container-fluid">
+          <div v-for="service in services" :key="service">
+            <Services :serviceInServices="service" />
+          </div>
         </div>
       </div>
-      <!-- /.container -->
-      <header>
-        <h1>Galerija Slik</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, porro
-          tempore ut est dignissimos, ea placeat dicta in et neque quisquam
-          ducimus fugit. Omnis, veniam.
-        </p>
-      </header>
-      <div class="-fx-image-gal">
-        <!-- <div class="-fx-gal-item"> -->
-        <div class="row g-4 row-cols-1 row-cols-md-4 container-fluid">
-          <div v-for="photo in photos" :key="photo">
-            <Gallery :galleryPhoto="photo" />
+
+      <div id="gallery">
+        <header>
+          <h1>Galerija Slik</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, porro
+            tempore ut est dignissimos, ea placeat dicta in et neque quisquam
+            ducimus fugit. Omnis, veniam.
+          </p>
+        </header>
+        <div class="-fx-image-gal">
+          <!-- <div class="-fx-gal-item"> -->
+          <div class="row g-4 row-cols-1 row-cols-md-4 container-fluid">
+            <div v-for="photo in photos" :key="photo">
+              <Gallery :galleryPhoto="photo" />
+            </div>
+            <!-- </div> -->
           </div>
-          <!-- </div> -->
         </div>
       </div>
 
@@ -284,15 +288,12 @@ export default {
 </script>
 
 <style>
-.gallery {
-  /* background: linear-gradient(180deg, var(--yellow) 40%, var(--lightblue) 80%); */
-  /* width: calc(100% - 100px); */
-  /* padding-bottom: 20px; */
-  /* text-align: center; */
-  /* padding: 0 50px; */
-  margin-top: 13rem;
+#services {
+  margin-top: 8rem;
 }
-
+#gallery {
+  margin-top: 8rem;
+}
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
