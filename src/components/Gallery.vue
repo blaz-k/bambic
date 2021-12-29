@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
 
 /* body {
@@ -34,7 +34,7 @@ header {
   text-align: center;
 } */
 
-h1 {
+/* h1 {
   font-family: Mansalva, Arial;
   font-size: 8rem;
   line-height: 2rem;
@@ -42,7 +42,7 @@ h1 {
   text-shadow: 0px 0px 10px white, 0px 0px 30px navajowhite;
   margin-top: 13rem;
   margin-bottom: 5rem;
-}
+} */
 p {
   font-size: 1rem;
   padding: 0 20%;

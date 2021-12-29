@@ -4,14 +4,9 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-
 export default {
   name: "Carousel",
   props: ["carouselProduct"],
-  //   computed: {
-  //     ...mapState(["products"]),
-  //   },
 };
 </script>
 
