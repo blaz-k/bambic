@@ -32,7 +32,7 @@
               </li>
               <li class="nav-item">
                 <router-link class="nav-link" :to="{ name: 'KovinskiRobniki' }"
-                  >Kovniski Robniki</router-link
+                  >Kovinski Robniki</router-link
                 >
               </li>
               <li class="nav-item">
@@ -79,7 +79,7 @@
     </header>
   </div>
   <router-view />
-  <div class="footer-informations">
+  <div id="footer" class="footer-informations">
     <!-- <footer>
       <p class="float-end"><a href="#">Back to top</a></p>
       <p>
@@ -188,6 +188,15 @@
   text-transform: uppercase;
   /* font-size: 17px; */
 }
+#footer a {
+  font-weight: bold;
+  color: #000000;
+}
+#footer a:hover {
+  background-color: rgb(180, 180, 56);
+  border-radius: 22px 0px 22px 0px;
+  /* color: #cf2187; */
+}
 
 #nav a {
   font-weight: bold;
@@ -204,7 +213,7 @@ a:link {
   transition: all 1.2s ease-out;
 }
 
-a:hover {
+#nav a:hover {
   background-color: rgb(107, 107, 89);
   border-radius: 22px 0px 22px 0px;
   /* color: #cf2187; */
