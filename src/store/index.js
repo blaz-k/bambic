@@ -61,24 +61,6 @@ export default createStore({
       },
       {
         id: 3,
-        name: "Pokrovi za toplotne črpalke",
-        imgUrl: require("@/assets/img/dark-background.jpeg"),
-        details: [""],
-        cena: "že od 300 €",
-        text: "Zaščita za zunanjo enoto toplotne črpalke ali klime. Ohišje narejeno iz aluminija. Na voljo več različnih barv in materialov.",
-      },
-      {
-        id: 4,
-        name: "Smetarniki",
-        imgUrl: require("@/assets/img/smetarniki/smetarnik1.jpg"),
-        details: [""],
-        cena: "že od 350€/kos",
-        text: `Odprt smetarnik na kolesih (ograja okoli vašega smetnjaka) ali pa klasičen z vratci. Če bi radi zakrili smetnjake na lep in eleganten 
-        način in nanj obesili morda korita za rože. vIzdelan iz ALU profilov in ALU pločevine(možno v večih barvah). Spodaj ima tudi kolesca za premikanje. 
-        Odporen na vse vremenske razmere. `,
-      },
-      {
-        id: 5,
         name: "Zaščitna ograja proti polžem",
         imgUrl: require("@/assets/img/crpalke/crpalka1.jpg"),
         details: [
@@ -89,9 +71,8 @@ export default createStore({
         cena: "že od 7€/meter ",
         text: "Enostavna montaža, vogalniki priloženi. Možna postavitev tudi na visoke grede.",
       },
-
       {
-        id: 6,
+        id: 4,
         name: "Okenske police iz pločevine",
         imgUrl: require("@/assets/img/ograje/ograja.jpg"),
         details: [
@@ -103,7 +84,26 @@ export default createStore({
         text: "Po naročilu izdelane okenske police",
       },
       {
+        id: 5,
+        name: "Pokrovi za toplotne črpalke",
+        imgUrl: require("@/assets/img/dark-background.jpeg"),
+        details: [""],
+        cena: "že od 300 €",
+        text: "Zaščita za zunanjo enoto toplotne črpalke ali klime. Ohišje narejeno iz aluminija. Na voljo več različnih barv in materialov.",
+      },
+      {
         id: 6,
+        name: "Smetarniki",
+        imgUrl: require("@/assets/img/smetarniki/smetarnik1.jpg"),
+        details: [""],
+        cena: "že od 350€/kos",
+        text: `Odprt smetarnik na kolesih (ograja okoli vašega smetnjaka) ali pa klasičen z vratci. Če bi radi zakrili smetnjake na lep in eleganten 
+        način in nanj obesili morda korita za rože. vIzdelan iz ALU profilov in ALU pločevine(možno v večih barvah). Spodaj ima tudi kolesca za premikanje. 
+        Odporen na vse vremenske razmere. `,
+      },
+
+      {
+        id: 7,
         name: "Dimniške kape",
         imgUrl: require("@/assets/img/ograje/ograja.jpg"),
         details: [

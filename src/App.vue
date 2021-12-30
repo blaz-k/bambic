@@ -26,13 +26,13 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <router-link class="nav-link" :to="{ name: 'KovinskeOgraje' }"
-                  >Kovinske Ograje</router-link
+                <router-link class="nav-link" :to="{ name: 'KovinskiRobniki' }"
+                  >Kovinski Robniki</router-link
                 >
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" :to="{ name: 'KovinskiRobniki' }"
-                  >Kovinski Robniki</router-link
+                <router-link class="nav-link" :to="{ name: 'KovinskeOgraje' }"
+                  >Kovinske Ograje</router-link
                 >
               </li>
               <li class="nav-item">
@@ -53,6 +53,11 @@
               <li class="nav-item">
                 <router-link class="nav-link" :to="{ name: 'Smetarniki' }"
                   >Smetarniki</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'DimniskeKape' }"
+                  >Dimniške Kape</router-link
                 >
               </li>
             </ul>
