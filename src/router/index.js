@@ -50,6 +50,11 @@ const routes = [
     component: PokroviToplotnih,
   },
   { path: "/smetarniki", name: "Smetarniki", component: Smetarniki },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "Error404",
+    component: () => import("../views/Error404.vue"),
+  },
 ];
 
 const router = createRouter({
