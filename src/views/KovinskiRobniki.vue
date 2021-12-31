@@ -46,7 +46,11 @@ export default {
 
 <style scoped>
 #kovinskiRobniki .text-content {
-  font-size: 2rem;
+  display: flex;
+  /* align-items: flex-start; */
+  /* text-align: center; */
+  /* justify-content: flex-start; */
+  font-size: 1.5rem;
   margin-bottom: 3rem;
 }
 ul {
@@ -58,7 +62,7 @@ ul {
 }
 li {
   margin-top: 0.5em;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-bottom: 3rem;
   display: flex;
   justify-content: center;
