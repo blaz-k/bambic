@@ -27,21 +27,37 @@
       </div>
     </div>
   </div>
-  <div class="cot">
-    <div class="front side">
-      <div class="content">
-        <h1>Pokličite nas</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div>
+        <iframe
+          class="cot"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.504540882342!2d14.558149515783624!3d46.14069839606831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765348c4b0f00e9%3A0xeb678a12f303563a!2sJem%C4%8Deva%20cesta%2026%2C%201236%20Trzin!5e0!3m2!1ssl!2ssi!4v1615888889122!5m2!1ssl!2ssi"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="cot">
+        <div class="front side">
+          <div class="content">
+            <h1>Ali pa nas pokličete</h1>
 
-        <div v-for="lastnik in kontakt" :key="lastnik">
-          <p>
-            <span>{{ lastnik.name }}</span> <span>{{ lastnik.surname }}</span>
-            <br />
-            Tel: <span>{{ lastnik.tel }}</span> <br />
-            Naslov:
-            <span>{{ lastnik.address }}</span>
-          </p>
+            <div v-for="lastnik in kontakt" :key="lastnik">
+              <p>
+                <span>{{ lastnik.name }}</span>
+                <span>{{ lastnik.surname }}</span>
+                <br />
+                Tel: <span>{{ lastnik.tel }}</span> <br />
+                Naslov:
+                <span>{{ lastnik.address }}</span>
+              </p>
+            </div>
+            <span class="kontakt"></span>
+          </div>
         </div>
-        <span class="kontakt"></span>
       </div>
     </div>
   </div>
