@@ -162,7 +162,14 @@
           </ul>
         </div>
 
-        <p class="text-center text-muted mt-2">&copy; 2021 Bambic.si</p>
+        <p class="text-center text-muted mt-2">
+          &copy; 2021 Bambic.si, Jani Bambič s.p.,
+          <span id="kmeto">
+            <a href="https://github.com/blaz-k" target="_blank"
+              >Izdelava: paraKmeto</a
+            >
+          </span>
+        </p>
       </footer>
     </div>
   </div>
@@ -222,5 +229,16 @@ a:link {
   background-color: rgb(107, 107, 89);
   border-radius: 22px 0px 22px 0px;
   /* color: #cf2187; */
+}
+
+#footer a {
+  color: rgb(202, 199, 11);
+}
+
+.kmet {
+  color: red;
+}
+#footer #kmeto a:hover {
+  background-color: rgb(255, 255, 255);
 }
 </style>
