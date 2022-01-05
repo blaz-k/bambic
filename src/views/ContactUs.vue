@@ -1,13 +1,15 @@
 <template>
+  <h2>Kontaktne informacije</h2>
+
   <div class="container">
     <div class="front side">
       <div class="content">
-        <h1>Kontaktirajte nas!</h1>
+        <h1>Lahko nam pošljete sporočilo</h1>
         <p>
           Ali vas kakšen izdelek zanima bolj podrobno, ali bi radi izvedeli kaj
-          več?
+          več? Pošljite nam sporočilo!
         </p>
-        <span class="kontakt">Kontakt</span>
+        <span class="kontakt"></span>
       </div>
     </div>
     <div class="back side">
@@ -25,6 +27,24 @@
       </div>
     </div>
   </div>
+  <div class="cot">
+    <div class="front side">
+      <div class="content">
+        <h1>Pokličite nas</h1>
+
+        <div v-for="lastnik in kontakt" :key="lastnik">
+          <p>
+            <span>{{ lastnik.name }}</span> <span>{{ lastnik.surname }}</span>
+            <br />
+            Tel: <span>{{ lastnik.tel }}</span> <br />
+            Naslov:
+            <span>{{ lastnik.address }}</span>
+          </p>
+        </div>
+        <span class="kontakt"></span>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -34,6 +54,7 @@ export default {
   name: "ContactUs",
   computed: {
     ...mapState["products"],
+    ...mapState(["kontakt"]),
   },
 };
 </script>
@@ -75,10 +96,27 @@ body {
   display: flex;
   /* margin-right: auto;
   margin-left: auto; */
-  margin-top: 15rem;
+  margin-top: 3rem;
   margin-bottom: 15rem;
 }
 
+.cot {
+  min-width: 700px;
+  min-height: 525px;
+  border-radius: 20px;
+  /* position: absolute; */
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  transform-style: preserve-3d;
+  display: flex;
+  align-content: center;
+  align-items: center;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 .side {
   position: absolute;
   text-align: center;
@@ -135,6 +173,7 @@ body {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
+
 form {
   text-align: left;
 }

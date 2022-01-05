@@ -188,16 +188,17 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/11.jpeg"),
       },
     ],
+    kontakt: [
+      {
+        name: "Jani",
+        surname: "Bambič",
+        tel: "+33 40 123 456",
+        address: "Cesta proti pivnici 1",
+      },
+    ],
   },
+
   mutations: {},
   actions: {},
   modules: {},
 });
-
-// .env file daš v giignore
-// npm install dotenv
-// require('dotenv').config();
-// process.env.moj-api
-
-//mogoče tudi:
-// const path = require('path');
