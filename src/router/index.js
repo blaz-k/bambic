@@ -15,6 +15,10 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
+    },
   },
   {
     path: "/about",
@@ -41,6 +45,10 @@ const routes = [
     path: "/kovinski-robniki",
     name: "KovinskiRobniki",
     component: KovinskiRobniki,
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
+    },
   },
   { path: "/ograja-za-polze", name: "OgrajaPolzi", component: OgrajaPolzi },
   { path: "/okenske-police", name: "OkenskePolice", component: OkenskePolice },

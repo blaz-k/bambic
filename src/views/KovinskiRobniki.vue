@@ -1,15 +1,51 @@
 <template>
-  <div id="kovinskiRobniki">
-    <h1>{{ products[0].name }}</h1>
-    <div class="text-content">{{ products[0].text }}</div>
-
-    <!---------- list of lastnosti from products ---------->
-    <ul class="list-unstyled">
-      <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
-        <li>{{ lastnost }}</li>
+  <div id="kovinskiRobniki" class="container">
+    <div class="relativno">
+      <h1 class="mb-4">{{ products[0].name }}</h1>
+      <div class="robniki-content">
+        <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-6">
+          <div class="">{{ products[0].text }}</div>
+        </div>
+        <div class="col col-md-6 drugi">
+          <ul class="">
+            <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
+              <li class="animate__animated animate__backInLeft">
+                {{ lastnost }}
+              </li>
+            </div>
+          </ul>
+        </div>
       </div>
-    </ul>
-    <!-- 
+      <div>to bo drugi del</div>
+
+      <div class="text-content">
+        <div class="left col-md-6">{{ products[0].text }}</div>
+        <ul class="list-unstyled right col-md-6">
+          <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
+            <li>{{ lastnost }}</li>
+          </div>
+        </ul>
+      </div>
+      <h2>tretji</h2>
+      <div class="container">
+        <div class="text-content">
+          <div class="">{{ products[0].text }}</div>
+        </div>
+        <div class="bottom">
+          <ul class="list-unstyled">
+            <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
+              <li class="animate__animated animate__backInLeft">
+                {{ lastnost }}
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <!---------- list of lastnosti from products ---------->
+
+      <!-- 
     <div class="container">
       <ul>
         <li>hitra in enostavna montaža</li>
@@ -20,14 +56,15 @@
       </ul>
     </div> -->
 
-    <!------ cards from Robniki ------>
-    <div class="row g-4 row-cols-1 row-cols-md-3 container-fluid">
-      <div v-for="detail in products[0].details" :key="detail">
-        <Robniki :robniki="detail" />
-        <!-- <div>{{ detail.detailName }}</div> -->
+      <!------ cards from Robniki ------>
+      <div class="row g-4 row-cols-1 row-cols-md-3 container-fluid">
+        <div v-for="detail in products[0].details" :key="detail">
+          <Robniki :robniki="detail" />
+          <!-- <div>{{ detail.detailName }}</div> -->
+        </div>
       </div>
+      <!-- <h2>{{ products[0].details[0] }}</h2> -->
     </div>
-    <!-- <h2>{{ products[0].details[0] }}</h2> -->
   </div>
 </template>
 
@@ -45,10 +82,39 @@ export default {
 </script>
 
 <style scoped>
+#kovinskiRobniki {
+  position: absolute;
+}
+.relativno {
+  position: relative;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drugi {
+  display: flex;
+  justify-content: center;
+}
+.robniki-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.row {
+  margin-top: 5rem;
+}
 #kovinskiRobniki .text-content {
   display: flex;
+  text-align: start;
+
   /* align-items: flex-start; */
-  /* text-align: center; */
+  /* text-align: start; */
   /* justify-content: flex-start; */
   font-size: 1.5rem;
   margin-bottom: 3rem;

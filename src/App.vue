@@ -83,18 +83,16 @@
       </nav>
     </header>
   </div>
-  <router-view />
-  <div id="footer" class="footer-informations">
-    <!-- <footer>
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>
-        &copy; 2021 Bambic &middot; <a href="#">Privacy</a> &middot;
-        <a href="#">Terms</a>&middot; Website created by
-        <a href="https://para-kmeto.herokuapp.com/" target="_blank"
-          >ParaKmeto</a
-        >
-      </p>
-    </footer> -->
+  <router-view v-slot="{ Component, route }">
+    <transition
+      :enter-active-class="route.meta.enterClass"
+      :leave-active-class="route.meta.leaveClass"
+    >
+      <component :is="Component" />
+    </transition>
+  </router-view>
+  <!-- <div id="footer" class="footer-informations">
+
     <div class="container">
       <footer class="py-3 my-4">
         <div class="my-nav border-bottom">
@@ -165,14 +163,14 @@
         <p class="text-center text-muted mt-2">
           &copy; 2021 Bambic.si, Jani Bambič s.p.,
           <span id="kmeto">
-            <a href="https://github.com/blaz-k" target="_blank"
+            <a class="kmet" href="https://github.com/blaz-k" target="_blank"
               >Izdelava: paraKmeto</a
             >
           </span>
         </p>
       </footer>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <style>
@@ -181,9 +179,9 @@
   display: flex;
   justify-content: space-between;
 }
-.footer-informations {
+/* .footer-informations {
   margin-top: 43rem;
-}
+} */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -205,7 +203,7 @@
   color: #000000;
 }
 #footer a:hover {
-  background-color: rgb(180, 180, 56);
+  background-color: rgb(153, 153, 45);
   border-radius: 22px 0px 22px 0px;
   /* color: #cf2187; */
 }
@@ -234,9 +232,14 @@ a:link {
 #footer a {
   color: rgb(202, 199, 11);
 }
+#footer a:hover {
+  background-color: rgb(153, 153, 45);
+  border-radius: 22px 0px 22px 0px;
+  /* color: #cf2187; */
+}
 
-.kmet {
-  color: red;
+#footer a:hover {
+  color: rgb(10, 10, 10);
 }
 #footer #kmeto a:hover {
   background-color: rgb(255, 255, 255);

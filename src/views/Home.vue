@@ -256,6 +256,7 @@
           </div>
         </div>
       </div>
+      <Footer />
 
       <!-- GALLERY -->
 
@@ -273,12 +274,13 @@ import Services from "../components/Services.vue";
 import Carousel from "../components/Carousel.vue";
 import Test from "./Test.vue";
 import Gallery from "../components/Gallery.vue";
+import Footer from "../components/Footer.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
 export default {
   name: "Home",
-  components: { Products, Services, Carousel, Test, Gallery },
+  components: { Products, Services, Carousel, Test, Gallery, Footer },
   computed: {
     ...mapState(["services"]),
     ...mapState(["products"]),
@@ -288,6 +290,9 @@ export default {
 </script>
 
 <style>
+#home {
+  position: absolute;
+}
 #services {
   margin-top: 8rem;
 }
