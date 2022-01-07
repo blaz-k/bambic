@@ -242,6 +242,9 @@
 </template>
 
 <style>
+.container {
+  max-width: 85%;
+}
 .dropdown-menu {
   border: none;
   background-color: rgb(107, 27, 27);
