@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="okenske-police">
     <h1>{{ products[3].name }}</h1>
     <img :src="products[3].imgUrl" alt="" />
     <p class="text">{{ products[3].text }}</p>
@@ -17,4 +17,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#okenske-police {
+  position: absolute;
+}
+</style>

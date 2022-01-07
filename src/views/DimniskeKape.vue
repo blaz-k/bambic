@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dimniske-kape">
     <h1>{{ products[6].name }}</h1>
     <img :src="products[6].imgUrl" alt="" />
     <p class="text">{{ products[6].text }}</p>
@@ -18,4 +18,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#dimniske-kape {
+  position: absolute;
+}
+</style>

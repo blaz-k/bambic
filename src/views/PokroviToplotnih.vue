@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="pokrovi-crpalk">
     <h1>{{ products[4].name }}</h1>
     <img :src="products[4].imgUrl" alt="" />
     <p class="text">{{ products[4].text }}</p>
@@ -17,4 +17,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#pokrovi-crpalk {
+  position: absolute;
+}
+</style>

@@ -11,6 +11,8 @@ import PokroviToplotnih from "../views/PokroviToplotnih.vue";
 import Smetarniki from "../views/Smetarniki.vue";
 
 const routes = [
+  { path: "/test", name: "Test", component: Test },
+
   {
     path: "/",
     name: "Home",
@@ -20,31 +22,7 @@ const routes = [
       leaveClass: "animate__animated animate__fadeOutRight",
     },
   },
-  {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
-  {
-    path: "/contact-us",
-    name: "ContactUs",
-    component: ContactUs,
-  },
-  { path: "/test", name: "Test", component: Test },
-  { path: "/dimniske-kape", name: "DimniskeKape", component: DimniskeKape },
-  {
-    path: "/kovinske-ograje",
-    name: "KovinskeOgraje",
-    component: KovinskeOgraje,
-    meta: {
-      enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeOutRight",
-    },
-  },
+
   {
     path: "/kovinski-robniki",
     name: "KovinskiRobniki",
@@ -54,26 +32,98 @@ const routes = [
       leaveClass: "animate__animated animate__fadeOutLeft",
     },
   },
+
+  {
+    path: "/kovinske-ograje",
+    name: "KovinskeOgraje",
+    component: KovinskeOgraje,
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
+    },
+  },
+
   {
     path: "/ograja-za-polze",
     name: "OgrajaPolzi",
     component: OgrajaPolzi,
     meta: {
-      enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeOutRight",
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
     },
   },
-  { path: "/okenske-police", name: "OkenskePolice", component: OkenskePolice },
+
+  {
+    path: "/smetarniki",
+    name: "Smetarniki",
+    component: Smetarniki,
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
+    },
+  },
+
+  {
+    path: "/okenske-police",
+    name: "OkenskePolice",
+    component: OkenskePolice,
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
+    },
+  },
+
   {
     path: "/pokrovi-toplotnih-crpalk",
     name: "PokroviToplotnih",
     component: PokroviToplotnih,
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
+    },
   },
-  { path: "/smetarniki", name: "Smetarniki", component: Smetarniki },
+
+  {
+    path: "/dimniske-kape",
+    name: "DimniskeKape",
+    component: DimniskeKape,
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
+    },
+  },
+
+  {
+    path: "/about",
+    name: "About",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
+    },
+  },
+  {
+    path: "/contact-us",
+    name: "ContactUs",
+    component: ContactUs,
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
+    },
+  },
+
   {
     path: "/:pathMatch(.*)*",
     name: "Error404",
     component: () => import("../views/Error404.vue"),
+    meta: {
+      enterClass: "animate__animated animate__fadeInTopRight",
+      leaveClass: "animate__animated animate__fadeOutBottomLeft",
+    },
   },
 ];
 
