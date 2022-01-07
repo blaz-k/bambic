@@ -1,33 +1,8 @@
 <template>
-  <div id="kovinskiRobniki" class="container">
+  <div id="kovinskiRobniki" class="">
     <div class="relativno">
       <h1 class="mb-4">{{ products[0].name }}</h1>
-      <div class="robniki-content">
-        <!-- <div class="col-md-1"></div> -->
-        <div class="col-md-6">
-          <div class="">{{ products[0].text }}</div>
-        </div>
-        <div class="col col-md-6 drugi">
-          <ul class="">
-            <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
-              <li class="animate__animated animate__backInLeft">
-                {{ lastnost }}
-              </li>
-            </div>
-          </ul>
-        </div>
-      </div>
-      <div>to bo drugi del</div>
 
-      <div class="text-content">
-        <div class="left col-md-6">{{ products[0].text }}</div>
-        <ul class="list-unstyled right col-md-6">
-          <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
-            <li>{{ lastnost }}</li>
-          </div>
-        </ul>
-      </div>
-      <h2>tretji</h2>
       <div class="container">
         <div class="text-content">
           <div class="">{{ products[0].text }}</div>
@@ -85,25 +60,12 @@ export default {
 #kovinskiRobniki {
   position: absolute;
 }
-.relativno {
+/* .relativno {
   position: relative;
-}
+} */
+
 .bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.drugi {
-  display: flex;
-  justify-content: center;
-}
-.robniki-content {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: start;
-  font-size: 1.5rem;
+  margin-top: 6rem;
   margin-bottom: 3rem;
 }
 .row {
@@ -111,27 +73,20 @@ export default {
 }
 #kovinskiRobniki .text-content {
   display: flex;
-  text-align: start;
-
-  /* align-items: flex-start; */
-  /* text-align: start; */
-  /* justify-content: flex-start; */
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-}
-ul {
-  margin-bottom: 3rem;
-  /* display: flex;
-  align-items: flex-start;
-  text-align: center;
-  justify-content: flex-start; */
-}
-li {
-  margin-top: 0.5em;
-  font-size: 1.1rem;
-  margin-bottom: 3rem;
-  display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+li {
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* this * is good fontfamily */

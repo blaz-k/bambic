@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="kovinske-ograje">
     <h1>{{ products[1].name }}</h1>
     <img :src="products[1].imgUrl" alt="" />
     <p class="text">{{ products[1].text }}</p>
@@ -18,4 +18,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#kovinske-ograje {
+  position: absolute;
+}
+</style>

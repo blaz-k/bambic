@@ -30,35 +30,80 @@
                   >Kovinski Robniki</router-link
                 >
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <router-link class="nav-link" :to="{ name: 'KovinskeOgraje' }"
                   >Kovinske Ograje</router-link
                 >
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" :to="{ name: 'OgrajaPolzi' }"
-                  >Ograja za polže</router-link
+              </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Ograje
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
+                  <li class="dropdown-item">
+                    <router-link
+                      class="nav-link"
+                      :to="{ name: 'KovinskeOgraje' }"
+                      >Kovinske Ograje</router-link
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <router-link class="nav-link" :to="{ name: 'OgrajaPolzi' }"
+                      >Ograja za polže</router-link
+                    >
+                  </li>
+                  <!-- <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li> -->
+                </ul>
               </li>
-              <li class="nav-item">
-                <router-link class="nav-link" :to="{ name: 'OkenskePolice' }"
-                  >Okenske Police</router-link
-                >
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" :to="{ name: 'PokroviToplotnih' }"
-                  >Pokrovi Toplotnih Črpalk</router-link
-                >
-              </li>
+
               <li class="nav-item">
                 <router-link class="nav-link" :to="{ name: 'Smetarniki' }"
                   >Smetarniki</router-link
                 >
               </li>
-              <li class="nav-item">
-                <router-link class="nav-link" :to="{ name: 'DimniskeKape' }"
-                  >Dimniške Kape</router-link
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Ostalo
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item">
+                    <router-link
+                      class="nav-link"
+                      :to="{ name: 'OkenskePolice' }"
+                      >Okenske Police</router-link
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <router-link
+                      class="nav-link"
+                      :to="{ name: 'PokroviToplotnih' }"
+                      >Pokrovi Toplotnih Črpalk</router-link
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <router-link class="nav-link" :to="{ name: 'DimniskeKape' }"
+                      >Dimniške Kape</router-link
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
             <ul class="d-flex mb-2 mb-md-0 list-unstyled">
@@ -72,6 +117,29 @@
                   >Kontakt</router-link
                 >
               </li>
+
+              <!----- Uncomment if you want to use nav items instead of dropdowns ----->
+
+              <!-- <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'OgrajaPolzi' }"
+                  >Ograja za polže</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'OkenskePolice' }"
+                  >Okenske Police</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'PokroviToplotnih' }"
+                  >Pokrovi Toplotnih Črpalk</router-link
+                >
+              </li> 
+               <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'DimniskeKape' }"
+                  >Dimniške Kape</router-link
+                >
+              </li> -->
               <!-- <li class="nav-item">
               <router-link class="nav-link" :to="{ name: 'Test' }">
                 Test
@@ -174,6 +242,21 @@
 </template>
 
 <style>
+.dropdown-menu {
+  border: none;
+  background-color: rgb(107, 27, 27);
+  /* -webkit-box-shadow: 0px 10px 34px -20px rgba(5, 27, 0, 0.41); */
+  /* -moz-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41); */
+  box-shadow: 0px 30px 54px -10px rgba(177, 155, 31, 0.91);
+  border-radius: 86px;
+  /* width: 200%; */
+}
+.dropdown-item {
+  color: greenyellow;
+  background-color: red;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 .my-nav {
   color: red;
   display: flex;
@@ -193,8 +276,8 @@
 
 #nav {
   padding: 32px;
-  /* background-color: rgb(218, 15, 15); */
-  /* background: linear-gradient(90deg, #9c9c9c, #8d8989); */
+  /* background-color: rgb(218, 15, 15);
+  background: linear-gradient(90deg, #9c9c9c, #8d8989); */
   text-transform: uppercase;
   /* font-size: 17px; */
 }
