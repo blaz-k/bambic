@@ -18,8 +18,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #ograja-polzi {
   position: absolute;
+}
+
+#ograja-polzi .p {
+  font-size: 1.5rem;
 }
 </style>

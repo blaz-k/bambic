@@ -39,29 +39,29 @@ const routes = [
   {
     path: "/kovinske-ograje",
     name: "KovinskeOgraje",
-    component: KovinskeOgraje,
     meta: {
       enterClass: "animate__animated animate__fadeInLeft",
       leaveClass: "animate__animated animate__fadeOutRight",
     },
+    component: KovinskeOgraje,
   },
   {
     path: "/kovinski-robniki",
     name: "KovinskiRobniki",
     component: KovinskiRobniki,
-    meta: {
-      enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeOutLeft",
-    },
+    // meta: {
+    //   enterClass: "animate__animated animate__fadeInRight",
+    //   leaveClass: "animate__animated animate__fadeOutLeft",
+    // },
   },
   {
     path: "/ograja-za-polze",
     name: "OgrajaPolzi",
     component: OgrajaPolzi,
-    meta: {
-      enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeOutRight",
-    },
+    // meta: {
+    //   enterClass: "animate__animated animate__fadeInLeft",
+    //   leaveClass: "animate__animated animate__fadeOutRight",
+    // },
   },
   { path: "/okenske-police", name: "OkenskePolice", component: OkenskePolice },
   {
