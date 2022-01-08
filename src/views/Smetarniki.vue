@@ -1,10 +1,9 @@
 <template>
   <div id="smetarniki">
     <h1>{{ products[5].name }}</h1>
+    <img :src="products[5].imgUrl" alt="" />
 
     <div class="container">
-      <img :src="products[5].imgUrl" alt="" />
-
       <div class="text-content">
         <div class="">{{ products[5].text }}</div>
       </div>
@@ -26,14 +25,29 @@ export default {
 </script>
 
 <style scoped>
-#smetarniki .text-content {
+.container {
+  max-width: 85%;
+}
+#kovinske-ograje {
+  position: absolute;
+}
+
+#kovinske-ograje .text-content {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   text-align: start;
   font-size: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
+}
+
+li {
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* this * is good fontfamily */
@@ -44,13 +58,17 @@ export default {
   /* line-height: 80px; */
 }
 
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 h1 {
   font-size: 2.8rem;
   color: rgb(209, 14, 14);
   margin: 40px 0 20px 0;
   text-align: center;
-}
-.container {
-  max-width: 55%;
 }
 </style>

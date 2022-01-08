@@ -1,9 +1,10 @@
 <template>
   <div id="ograja-polzi">
     <h1>{{ products[2].name }}</h1>
-    <img :src="products[2].imgUrl" alt="" />
 
     <div class="container">
+      <img :src="products[1].imgUrl" alt="" />
+
       <div class="text-content">
         <div class="">{{ products[2].text }}</div>
       </div>
@@ -25,6 +26,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  max-width: 85%;
+}
 #ograja-polzi {
   position: absolute;
 }
@@ -38,6 +42,7 @@ export default {
   font-size: 1.5rem;
   margin-top: 3rem;
 }
+
 li {
   font-size: 1rem;
   margin-top: 0rem;
@@ -66,8 +71,5 @@ h1 {
   color: rgb(209, 14, 14);
   margin: 40px 0 20px 0;
   text-align: center;
-}
-.container {
-  max-width: 85%;
 }
 </style>
