@@ -2,8 +2,11 @@
   <div id="smetarnik">
     <h1>{{ products[5].name }}</h1>
     <img :src="products[5].imgUrl" alt="" />
-    <p class="text">{{ products[5].text }}</p>
-    <p class="cena">Cena: {{ products[5].cena }}</p>
+    <div class="container">
+      <div class="text-content">
+        <div class="">{{ products[5].text }}</div>
+      </div>
+    </div>
     <Footer />
   </div>
 </template>
@@ -24,6 +27,13 @@ export default {
 <style scoped>
 #smetarnik {
   position: absolute;
+  border: 3px solid brown;
+  margin-left: auto;
+
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 .p {
   font-size: 1.5rem;

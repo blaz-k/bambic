@@ -34,7 +34,15 @@ const routes = [
     name: "ContactUs",
     component: ContactUs,
   },
-  { path: "/test", name: "Test", component: Test },
+  {
+    path: "/test",
+    name: "Test",
+    component: Test,
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
+    },
+  },
 
   {
     path: "/kovinski-robniki",

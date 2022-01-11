@@ -140,11 +140,11 @@
                   >Dimniške Kape</router-link
                 >
               </li> -->
-              <!-- <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'Test' }">
-                Test
-              </router-link>
-            </li> -->
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'Test' }">
+                  Test
+                </router-link>
+              </li>
             </ul>
           </div>
         </div>

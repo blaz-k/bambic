@@ -1,235 +1,101 @@
 <template>
-  <div class="container marketing">
-    <!-- <h1 class="mb-4">Storitve</h1> -->
-    <!-- Three columns of text below the carousel -->
-    <div class="">
-      <!-- <svg
-        class="bd-placeholder-img rounded-circle"
-        width="140"
-        height="140"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        aria-label="Placeholder: 140x140"
-        preserveAspectRatio="xMidYMid slice"
-        focusable="false"
-      >
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#777" />
-        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-      </svg> -->
-      <img :src="serviceInServices.img" alt="" />
+  <div id="kovinske-ograje">
+    <div class="container">
+      <h1>{{ products[3].name }}</h1>
+      <img :src="products[3].imgUrl" alt="" />
 
-      <h2>{{ serviceInServices.name }}</h2>
-      <p>
-        {{ serviceInServices.text }}
-      </p>
-      <p>
-        {{ serviceInServices.img }}
-      </p>
-      <p>
-        <a class="btn btn-secondary" href="#">View details &raquo;</a>
-      </p>
+      <div class="">
+        <div class="text-content">
+          <div class="">{{ products[3].text }}</div>
+        </div>
+      </div>
     </div>
+    <!-- <h1>{{ products[3].name }}</h1>
+    <img :src="products[3].imgUrl" alt="" />
+
+    <div class="container">
+      <div class="text-content">
+        <div class="">{{ products[3].text }}</div>
+      </div>
+    </div> -->
+
+    <!-- <p class="cont">{{ products[1].text }}</p> -->
+    <Footer />
   </div>
-
-  <!-- <div class="container marketing">
-    <h1 class="mb-4">Storitve</h1> -->
-  <!-- Three columns of text below the carousel -->
-  <!-- <div class="row">
-      <div class="col-lg-4">
-        <svg
-          class="bd-placeholder-img rounded-circle"
-          width="140"
-          height="140"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: 140x140"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777" />
-          <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-        </svg>
-
-        <h2>Heading</h2>
-        <p>
-          Some representative placeholder content for the three columns of text
-          below the carousel. This is the first column.
-        </p>
-        <p>
-          <a class="btn btn-secondary" href="#">View details &raquo;</a>
-        </p>
-      </div> -->
-  <!-- /.col-lg-4 -->
-  <!-- <div class="col-lg-4">
-        <svg
-          class="bd-placeholder-img rounded-circle"
-          width="140"
-          height="140"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: 140x140"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777" />
-          <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-        </svg>
-
-        <h2>Heading</h2>
-        <p>
-          Another exciting bit of representative placeholder content. This time,
-          we've moved on to the second column.
-        </p>
-        <p>
-          <a class="btn btn-secondary" href="#">View details &raquo;</a>
-        </p>
-      </div> -->
-  <!-- /.col-lg-4 -->
-  <!-- <div class="col-lg-4">
-        <svg
-          class="bd-placeholder-img rounded-circle"
-          width="140"
-          height="140"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: 140x140"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777" />
-          <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-        </svg>
-
-        <h2>Heading</h2>
-        <p>
-          And lastly this, the third column of representative placeholder
-          content.
-        </p>
-        <p>
-          <a class="btn btn-secondary" href="#">View details &raquo;</a>
-        </p>
-      </div> -->
-  <!-- /.col-lg-4 -->
-  <!-- </div> -->
-  <!-- /.row -->
-
-  <!-- START THE FEATURETTES -->
-  <!-- 
-    <hr class="featurette-divider" />
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">
-          First featurette heading.
-          <span class="text-muted">It’ll blow your mind.</span>
-        </h2>
-        <p class="lead">
-          Some great placeholder content for the first featurette here. Imagine
-          some exciting prose here.
-        </p>
-      </div>
-      <div class="col-md-5">
-        <svg
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-          width="500"
-          height="500"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: 500x500"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#eee" />
-          <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-        </svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider" />
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">
-          Oh yeah, it’s that good.
-          <span class="text-muted">See for yourself.</span>
-        </h2>
-        <p class="lead">
-          Another featurette? Of course. More placeholder content here to give
-          you an idea of how this layout would work with some actual real-world
-          content in place.
-        </p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-          width="500"
-          height="500"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: 500x500"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#eee" />
-          <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-        </svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider" />
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">
-          And lastly, this one. <span class="text-muted">Checkmate.</span>
-        </h2>
-        <p class="lead">
-          And yes, this is the last block of representative placeholder content.
-          Again, not really intended to be actually read, simply here to give
-          you a better view of what this would look like with some actual
-          content. Your content.
-        </p>
-      </div>
-      <div class="col-md-5">
-        <svg
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-          width="500"
-          height="500"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: 500x500"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#eee" />
-          <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-        </svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider" /> -->
-
-  <!-- /END THE FEATURETTES -->
-  <!-- </div> -->
 </template>
 
 <script>
 import { mapState } from "vuex";
+import Footer from "../components/Footer.vue";
 
 export default {
-  name: "Services",
-  props: ["serviceInServices"],
-  //   computed: {
-  //     ...mapState(["services"]),
-  //   },
+  name: "KovinskeOgraje",
+  computed: {
+    ...mapState(["products"]),
+  },
+  components: { Footer },
 };
 </script>
 
-<style></style>
+<style scoped>
+.container {
+  /* max-width: ; */
+  /* max-width: 85%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center; */
+  /* | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline  */
+}
+#kovinske-ograje {
+  position: absolute;
+  border: 3px solid brown;
+  margin-left: auto;
+
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#kovinske-ograje .text-content {
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1.5rem;
+  margin-top: 3rem; */
+}
+
+li {
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* this * is good fontfamily */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  /* line-height: 80px; */
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: rgb(209, 14, 14);
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+</style>

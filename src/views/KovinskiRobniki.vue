@@ -64,6 +64,13 @@ export default {
 }
 #kovinskiRobniki {
   position: absolute;
+  border: 3px solid brown;
+  margin-left: auto;
+
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 /* .relativno {
   position: relative;
