@@ -40,19 +40,21 @@
       </div>
       <!-- <h2>{{ products[0].details[0] }}</h2> -->
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import { mapState } from "vuex";
 import Robniki from "../components/Robniki.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "KovinskiRobniki",
   computed: {
     ...mapState(["products"]),
   },
-  components: { Robniki },
+  components: { Robniki, Footer },
 };
 </script>
 

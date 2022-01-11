@@ -10,17 +10,20 @@
     </div>
 
     <!-- <p class="cont">{{ products[1].text }}</p> -->
+    <Footer />
   </div>
 </template>
 
 <script>
 import { mapState } from "vuex";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "KovinskeOgraje",
   computed: {
     ...mapState(["products"]),
   },
+  components: { Footer },
 };
 </script>
 

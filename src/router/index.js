@@ -35,7 +35,16 @@ const routes = [
     component: ContactUs,
   },
   { path: "/test", name: "Test", component: Test },
-  { path: "/dimniske-kape", name: "DimniskeKape", component: DimniskeKape },
+
+  {
+    path: "/kovinski-robniki",
+    name: "KovinskiRobniki",
+    component: KovinskiRobniki,
+    meta: {
+      enterClass: "animate__animated animate__fadeInRight",
+      leaveClass: "animate__animated animate__fadeOutLeft",
+    },
+  },
   {
     path: "/kovinske-ograje",
     name: "KovinskeOgraje",
@@ -46,34 +55,60 @@ const routes = [
     component: KovinskeOgraje,
   },
   {
-    path: "/kovinski-robniki",
-    name: "KovinskiRobniki",
-    component: KovinskiRobniki,
-    // meta: {
-    //   enterClass: "animate__animated animate__fadeInRight",
-    //   leaveClass: "animate__animated animate__fadeOutLeft",
-    // },
-  },
-  {
     path: "/ograja-za-polze",
     name: "OgrajaPolzi",
     component: OgrajaPolzi,
-    // meta: {
-    //   enterClass: "animate__animated animate__fadeInLeft",
-    //   leaveClass: "animate__animated animate__fadeOutRight",
-    // },
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
+    },
   },
-  { path: "/okenske-police", name: "OkenskePolice", component: OkenskePolice },
+
+  {
+    path: "/smetarniki",
+    name: "Smetarniki",
+    component: Smetarniki,
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
+    },
+  },
+
+  {
+    path: "/okenske-police",
+    name: "OkenskePolice",
+    component: OkenskePolice,
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
+    },
+  },
   {
     path: "/pokrovi-toplotnih-crpalk",
     name: "PokroviToplotnih",
     component: PokroviToplotnih,
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
+    },
   },
-  { path: "/smetarniki", name: "Smetarniki", component: Smetarniki },
+  {
+    path: "/dimniske-kape",
+    name: "DimniskeKape",
+    component: DimniskeKape,
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
+    },
+  },
   {
     path: "/:pathMatch(.*)*",
     name: "Error404",
     component: () => import("../views/Error404.vue"),
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
+    },
   },
 ];
 

@@ -159,6 +159,7 @@
       <component :is="Component" />
     </transition>
   </router-view>
+
   <!-- <div id="footer" class="footer-informations">
 
     <div class="container">

@@ -231,7 +231,7 @@
       <div id="services">
         <h1>Storitve</h1>
 
-        <div class="row g-4 row-cols-1 row-cols-md-2 container-fluid">
+        <div class="row g-4 row-cols-sm-2 p-0container-fluid">
           <div v-for="service in services" :key="service">
             <Services :serviceInServices="service" />
           </div>
@@ -249,7 +249,7 @@
         </header>
         <div class="-fx-image-gal">
           <!-- <div class="-fx-gal-item"> -->
-          <div class="row g-4 row-cols-1 row-cols-md-4 container-fluid">
+          <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
             <div v-for="photo in photos" :key="photo">
               <Gallery :galleryPhoto="photo" />
             </div>
@@ -257,7 +257,9 @@
           </div>
         </div>
       </div>
-      <Footer />
+      <div id="dol">
+        <Footer />
+      </div>
 
       <!-- GALLERY -->
 
@@ -291,6 +293,9 @@ export default {
 </script>
 
 <style>
+#dol {
+  margin-top: 11rem;
+}
 #home {
   position: absolute;
 }

@@ -86,4 +86,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#footer {
+  margin-top: 7rem;
+}
+</style>
