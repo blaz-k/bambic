@@ -20,9 +20,21 @@ export default {
 </script>
 
 <style scoped>
+.text-center {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
 .error {
   font-size: 9rem;
 }
+
 .error-text {
   font-size: 4rem;
 }

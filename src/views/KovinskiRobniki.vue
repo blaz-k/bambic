@@ -59,11 +59,6 @@ export default {
 </script>
 
 <style scoped>
-/* this * is good fontfamily */
-* {
-  /* line-height: 80px; */
-}
-
 .bottom-list {
   margin-top: 6rem;
   margin-bottom: 3rem;
@@ -81,9 +76,7 @@ h1 {
 
 #kovinskiRobniki {
   position: absolute;
-  border: 3px solid brown;
   margin-left: auto;
-
   margin-right: auto;
   left: 0;
   right: 0;
@@ -92,9 +85,7 @@ h1 {
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-/* .relativno {
-  position: relative;
-} */
+
 #kovinskiRobniki .text-content {
   display: flex;
   justify-content: center;

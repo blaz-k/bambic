@@ -1,6 +1,6 @@
 <template>
   <div id="contact-us">
-    <h2>Kontaktne informacije</h2>
+    <h1 class="title">Kontaktne informacije</h1>
 
     <div class="container">
       <div class="front side">
@@ -81,20 +81,24 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  font-size: 2.8rem;
+  color: rgb(209, 14, 14);
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
 #contact-us {
   position: absolute;
-  border: 3px solid brown;
   margin-left: auto;
-
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
-}
-* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+* {
 }
 body {
   height: 100vh;
