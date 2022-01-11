@@ -1,10 +1,4 @@
 <template>
-  <!-- DELETE THIS ID="NAV" ROUTER LINKS BEFORE END OF PROJECT -->
-  <!-- <div id="nav">
-    <router-link :to="{ name: 'Home' }">Home</router-link> |
-    <router-link :to="{ name: 'About' }">About</router-link> |
-    <router-link :to="{ name: 'ContactUs' }">ContactUs</router-link>
-  </div> -->
   <div id="nav">
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
@@ -140,11 +134,11 @@
                   >Dimniške Kape</router-link
                 >
               </li> -->
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <router-link class="nav-link" :to="{ name: 'Test' }">
                   Test
                 </router-link>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -243,6 +237,10 @@
 </template>
 
 <style>
+.navbar-expand-md {
+  color: red;
+}
+
 .container {
   max-width: 85%;
 }

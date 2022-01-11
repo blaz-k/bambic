@@ -305,6 +305,9 @@ export default {
   left: 0;
   right: 0;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 #services {
   margin-top: 8rem;

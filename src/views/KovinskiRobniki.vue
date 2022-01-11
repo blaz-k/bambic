@@ -7,7 +7,7 @@
         <div class="text-content">
           <div class="">{{ products[0].text }}</div>
         </div>
-        <div class="bottom">
+        <div class="bottom-list">
           <ul class="list-unstyled">
             <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
               <li class="animate__animated animate__backInLeft">
@@ -59,9 +59,26 @@ export default {
 </script>
 
 <style scoped>
+/* this * is good fontfamily */
+* {
+  /* line-height: 80px; */
+}
+
+.bottom-list {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
 .container {
   max-width: 85%;
 }
+
+h1 {
+  font-size: 2.8rem;
+  color: rgb(209, 14, 14);
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
 #kovinskiRobniki {
   position: absolute;
   border: 3px solid brown;
@@ -71,18 +88,13 @@ export default {
   left: 0;
   right: 0;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 /* .relativno {
   position: relative;
 } */
-
-.bottom {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-}
-.row {
-  margin-top: 5rem;
-}
 #kovinskiRobniki .text-content {
   display: flex;
   justify-content: center;
@@ -100,19 +112,7 @@ li {
   display: flex;
   justify-content: flex-start;
 }
-
-/* this * is good fontfamily */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  /* line-height: 80px; */
-}
-
-h1 {
-  font-size: 2.8rem;
-  color: rgb(209, 14, 14);
-  margin: 40px 0 20px 0;
-  text-align: center;
+.row {
+  margin-top: 5rem;
 }
 </style>

@@ -38,16 +38,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  /* max-width: ; */
-  /* max-width: 85%;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center; */
-  /* | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline  */
-}
 #kovinske-ograje {
   position: absolute;
   border: 3px solid brown;
@@ -57,16 +47,6 @@ export default {
   left: 0;
   right: 0;
   text-align: center;
-}
-
-#kovinske-ograje .text-content {
-  /* display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: start;
-  font-size: 1.5rem;
-  margin-top: 3rem; */
 }
 
 li {

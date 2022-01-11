@@ -2,8 +2,11 @@
   <div id="pokrovi-crpalk">
     <h1>{{ products[4].name }}</h1>
     <img :src="products[4].imgUrl" alt="" />
-    <p class="text">{{ products[4].text }}</p>
-    <p class="cena">Cena: {{ products[4].cena }}</p>
+    <div class="container">
+      <div class="text-content">
+        <div class="">{{ products[4].text }} Cena: {{ products[4].cena }}</div>
+      </div>
+    </div>
     <Footer />
   </div>
 </template>
@@ -23,12 +26,30 @@ export default {
 <style>
 #pokrovi-crpalk {
   position: absolute;
-  border: 3px solid brown;
   margin-left: auto;
-
   margin-right: auto;
   left: 0;
   right: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#pokrovi-crpalk .text-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: rgb(209, 14, 14);
+  margin: 40px 0 20px 0;
   text-align: center;
 }
 </style>

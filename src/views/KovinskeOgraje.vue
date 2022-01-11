@@ -31,25 +31,12 @@ export default {
 .container {
   max-width: 85%;
 }
-#kovinske-ograje {
-  position: absolute;
-  border: 3px solid brown;
-  margin-left: auto;
 
-  margin-right: auto;
-  left: 0;
-  right: 0;
+h1 {
+  font-size: 2.8rem;
+  color: rgb(209, 14, 14);
+  margin: 40px 0 20px 0;
   text-align: center;
-}
-
-#kovinske-ograje .text-content {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: start;
-  font-size: 1.5rem;
-  margin-top: 3rem;
 }
 
 li {
@@ -60,25 +47,27 @@ li {
   justify-content: flex-start;
 }
 
-/* this * is good fontfamily */
-* {
+#kovinske-ograje {
+  position: absolute;
+  border: 3px solid brown;
+  margin-left: auto;
+
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  /* line-height: 80px; */
 }
 
-.cards {
-  width: 100%;
+#kovinske-ograje .text-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-h1 {
-  font-size: 2.8rem;
-  color: rgb(209, 14, 14);
-  margin: 40px 0 20px 0;
-  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 </style>

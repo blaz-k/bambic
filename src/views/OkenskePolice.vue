@@ -43,16 +43,25 @@ export default {
 .container {
   max-width: 85%;
 }
+
+h1 {
+  font-size: 2.8rem;
+  color: rgb(209, 14, 14);
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
 #okenske-police {
   position: absolute;
   position: absolute;
-  border: 3px solid brown;
   margin-left: auto;
-
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 #okenske-police .text-content {
