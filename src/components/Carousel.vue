@@ -36,6 +36,18 @@
         data-bs-slide-to="4"
         aria-label="Slide 5"
       ></button>
+      <button
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="5"
+        aria-label="Slide 6"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="6"
+        aria-label="Slide 7"
+      ></button>
     </div>
 
     <div class="carousel-inner">
@@ -59,13 +71,18 @@
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Kovinski robniki</h1>
+            <h1>
+              {{ products[0].name }}
+            </h1>
             <p>
-              Some representative placeholder content for the first slide of the
-              carousel.
+              {{ products[0].text }}
             </p>
             <p>
-              <a class="btn btn-lg btn-primary" href="#">Več o tem</a>
+              <router-link
+                class="btn btn-primary"
+                :to="{ name: 'KovinskiRobniki' }"
+                >Več o tem</router-link
+              >
             </p>
           </div>
         </div>
@@ -91,12 +108,18 @@
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>Kovinske ograje</h1>
+            <h1>{{ products[1].name }}</h1>
             <p>
               Some representative placeholder content for the second slide of
               the carousel.
             </p>
-            <p><a class="btn btn-lg btn-primary" href="#">Več o tem</a></p>
+            <p>
+              <router-link
+                class="btn btn-primary"
+                :to="{ name: 'KovinskeOgraje' }"
+                >Več o tem</router-link
+              >
+            </p>
           </div>
         </div>
       </div>
@@ -114,20 +137,22 @@
           <rect width="100%" height="100%" fill="#777" />
         </svg>
         <img
-          src="../assets/img/crpalke/crpalka1.jpg"
+          src="../assets/img/ograje/ograja.jpg"
           class="d-block w-100"
           alt="..."
         />
 
         <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>Pokrovi toplotnih črpalk</h1>
+          <div class="carousel-caption">
+            <h1>{{ products[2].name }}</h1>
             <p>
-              Some representative placeholder content for the third slide of
-              this carousel.
+              Some representative placeholder content for the second slide of
+              the carousel.
             </p>
             <p>
-              <a class="btn btn-lg btn-primary" href="#">Več o tem</a>
+              <router-link class="btn btn-primary" :to="{ name: 'OgrajaPolzi' }"
+                >Več o tem</router-link
+              >
             </p>
           </div>
         </div>
@@ -153,13 +178,123 @@
 
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>Smetarniki</h1>
+            <h1>{{ products[3].name }}</h1>
             <p>
               Some representative placeholder content for the third slide of
               this carousel.
             </p>
             <p>
-              <a class="btn btn-lg btn-primary" href="#">Več o tem</a>
+              <router-link class="btn btn-primary" :to="{ name: 'Smetarniki' }"
+                >Več o tem</router-link
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <svg
+          class="bd-placeholder-img"
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+          <rect width="100%" height="100%" fill="#777" />
+        </svg>
+        <img
+          src="../assets/img/crpalke/crpalka1.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>{{ products[4].name }}</h1>
+            <p>
+              Some representative placeholder content for the third slide of
+              this carousel.
+            </p>
+            <p>
+              <router-link
+                class="btn btn-primary"
+                :to="{ name: 'OkenskePolice' }"
+                >Več o tem</router-link
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <svg
+          class="bd-placeholder-img"
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+          <rect width="100%" height="100%" fill="#777" />
+        </svg>
+        <img
+          src="../assets/img/crpalke/crpalka1.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>{{ products[5].name }}</h1>
+            <p>
+              Some representative placeholder content for the third slide of
+              this carousel.
+            </p>
+            <p>
+              <router-link
+                class="btn btn-primary"
+                :to="{ name: 'PokroviToplotnih' }"
+                >Več o tem</router-link
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <svg
+          class="bd-placeholder-img"
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+          <rect width="100%" height="100%" fill="#777" />
+        </svg>
+        <img
+          src="../assets/img/crpalke/crpalka1.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>{{ products[6].name }}</h1>
+            <p>
+              Some representative placeholder content for the third slide of
+              this carousel.
+            </p>
+            <p>
+              <router-link
+                class="btn btn-primary"
+                :to="{ name: 'DimniskeKape' }"
+                >Več o tem</router-link
+              >
             </p>
           </div>
         </div>
@@ -188,9 +323,14 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: "Carousel",
   props: ["carouselProduct"],
+  computed: {
+    ...mapState(["products"]),
+  },
 };
 </script>
 
