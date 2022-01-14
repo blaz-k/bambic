@@ -33,10 +33,12 @@
         <div>
           <iframe
             class="cot"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.192231970362!2d14.143070915658598!3d46.10707639833658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ac32fccda7ea9%3A0xd715e5148a37a3fd!2sPot%20na%20Pretov%C4%8D%205%2C%204224%20Gorenja%20vas!5e0!3m2!1sen!2ssi!4v1642161702760!5m2!1sen!2ssi"
+            width="600"
+            height="450"
             style="border: 0"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.504540882342!2d14.558149515783624!3d46.14069839606831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765348c4b0f00e9%3A0xeb678a12f303563a!2sJem%C4%8Deva%20cesta%2026%2C%201236%20Trzin!5e0!3m2!1ssl!2ssi!4v1615888889122!5m2!1ssl!2ssi"
-            frameborder="0"
-            allowfullscreen
+            allowfullscreen=""
+            loading="lazy"
           ></iframe>
         </div>
       </div>
@@ -47,14 +49,20 @@
               <h1>Ali pa nas pokličete</h1>
 
               <div v-for="lastnik in kontakt" :key="lastnik">
-                <p>
-                  <span>{{ lastnik.name }}</span>
-                  <span>{{ lastnik.surname }}</span>
+                <div class="call">
+                  <span class="mr">{{ lastnik.name }} </span>
+                  <span> {{ lastnik.surname }}</span>
                   <br />
-                  Tel: <span>{{ lastnik.tel }}</span> <br />
-                  Naslov:
-                  <span>{{ lastnik.address }}</span>
-                </p>
+                  <span class="naslov">Tel: </span>
+                  <span>{{ lastnik.tel }}</span> <br />
+                  <span class="naslov">Naslov:</span>
+                  <div>
+                    <span>{{ lastnik.address }}</span>
+                  </div>
+                  <div>
+                    <span>{{ lastnik.postalCode }}</span>
+                  </div>
+                </div>
               </div>
               <span class="kontakt"></span>
             </div>
@@ -81,12 +89,25 @@ export default {
 </script>
 
 <style scoped>
+.naslov {
+  border-bottom: 3px solid #444;
+}
+.mr {
+  margin-right: 2vh;
+}
 .title {
   font-size: 2.8rem;
   color: rgb(209, 14, 14);
   margin: 40px 0 20px 0;
   text-align: center;
 }
+
+.call {
+  margin-top: 50px;
+  line-height: 2em;
+  font-size: 32px;
+}
+
 #contact-us {
   position: absolute;
   margin-left: auto;

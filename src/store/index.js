@@ -192,8 +192,10 @@ export default createStore({
       {
         name: "Jani",
         surname: "Bambič",
-        tel: "+33 40 123 456",
-        address: "Cesta proti pivnici 1",
+        tel: "+386 (0) 41 571 155 ",
+        address: "Pot na Pretovč 5",
+        postalCode: "4224 Gorenja vas",
+        email: "Jani.Bambic@gmail.com",
       },
     ],
   },

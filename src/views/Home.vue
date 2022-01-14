@@ -1,233 +1,12 @@
 <template>
   <div id="home">
     <main>
-      <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-        </div>
+      <!-- CAROUSEL -->
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-            <img
-              src="../assets/img/robniki/robnik1.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Kovinski robniki</h1>
-                <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">Več o tem</a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-            <img
-              src="../assets/img/ograje/ograja.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Kovinske ograje</h1>
-                <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
-                </p>
-                <p><a class="btn btn-lg btn-primary" href="#">Več o tem</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-            <img
-              src="../assets/img/crpalke/crpalka1.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>Pokrovi toplotnih črpalk</h1>
-                <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">Več o tem</a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-            <img
-              src="../assets/img/smetarniki/smetarnik1.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>Smetarniki</h1>
-                <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">Več o tem</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> -->
-
-      <!-------------------- CAROUSEL --------------------->
-      <!-- Not working correctly -->
-
-      <!-- <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div v-for="product in products" :key="product">
-            <div class="carousel-item active">
-              <Carousel :carouselProduct="product" />
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> -->
       <Carousel />
 
-      <!-------------------- SEVICES --------------------->
+      <!---- SEVICES ----->
 
-      <!-- <div class="row g-4 row-cols-1 row-cols-md-4 container-fluid">
-        <div v-for="service in services" :key="service">
-          <Test :serviceInServices="service" />
-        </div>
-      </div> -->
       <div id="services">
         <h1>Storitve</h1>
 
@@ -238,6 +17,8 @@
         </div>
       </div>
 
+      <!-- GALLERY -->
+
       <div id="gallery">
         <header>
           <h1>Galerija Slik</h1>
@@ -247,6 +28,7 @@
             ducimus fugit. Omnis, veniam.
           </p>
         </header>
+
         <div class="-fx-image-gal">
           <!-- <div class="-fx-gal-item"> -->
           <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
@@ -257,15 +39,12 @@
           </div>
         </div>
       </div>
+
+      <!-- FOOTER -->
+
       <div id="dol">
         <Footer />
       </div>
-
-      <!-- GALLERY -->
-
-      <!-- PRODUCTS -->
-
-      <!-- FOOTER -->
     </main>
   </div>
 </template>
@@ -319,7 +98,7 @@ export default {
 /* Padding below the footer and lighter body text */
 
 #home main {
-  padding-top: 3rem;
+  padding-top: 0;
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
