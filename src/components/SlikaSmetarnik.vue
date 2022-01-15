@@ -1,9 +1,9 @@
 <template>
   <div class="-fx-gal-image-thumb" tabindex="1">
-    <img :src="galleryPhoto.imgBis" />
+    <img :src="slika.img" />
   </div>
   <div class="-fx-gal-image-big">
-    <img :src="galleryPhoto.imgUrl" />
+    <img :src="slika.img" />
   </div>
 
   <!-- <img
@@ -15,8 +15,8 @@
 
 <script>
 export default {
-  name: "Gallery",
-  props: ["galleryPhoto"],
+  name: "SlikaSmetarnik",
+  props: ["slika"],
 };
 </script>
 

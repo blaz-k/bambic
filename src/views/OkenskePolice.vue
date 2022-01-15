@@ -1,13 +1,15 @@
 <template>
   <div id="okenske-police">
-    <h1>{{ products[3].name }}</h1>
-    <img :src="products[3].imgUrl" alt="" />
+    <h1>{{ products[4].name }}</h1>
 
     <div class="container">
       <div class="text-content">
-        <div>{{ products[3].text }}</div>
+        <div>{{ products[4].text }}</div>
       </div>
     </div>
+
+    <img :src="products[4].imgUrl" alt="" />
+
     <!-- <p class="text">{{ products[3].text }}</p>
     <p class="cena">Cena: {{ products[3].cena }}</p> -->
     <Footer />
@@ -40,8 +42,11 @@ export default {
 </script>
 
 <style scoped>
+img {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
 .container {
-  max-width: 85%;
 }
 
 h1 {

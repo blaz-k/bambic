@@ -11,14 +11,6 @@
                 >Domov</router-link
               >
             </li>
-
-            <li class="nav-item">
-              <router-link
-                class="nav-link px-2 text-muted"
-                :to="{ name: 'KovinskeOgraje' }"
-                >Kovinske Ograje</router-link
-              >
-            </li>
             <li class="nav-item">
               <router-link
                 class="nav-link px-2 text-muted"
@@ -26,6 +18,14 @@
                 >Kovniski Robniki</router-link
               >
             </li>
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'KovinskeOgraje' }"
+                >Kovinske Ograje</router-link
+              >
+            </li>
+
             <li class="nav-item">
               <router-link
                 class="nav-link px-2 text-muted"
@@ -38,6 +38,13 @@
             <li class="nav-item">
               <router-link
                 class="nav-link px-2 text-muted"
+                :to="{ name: 'Smetarniki' }"
+                >Smetarniki</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
                 :to="{ name: 'OkenskePolice' }"
                 >Okenske Police</router-link
               >
@@ -47,13 +54,6 @@
                 class="nav-link px-2 text-muted"
                 :to="{ name: 'PokroviToplotnih' }"
                 >Pokrovi Toplotnih Črpalk</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link
-                class="nav-link px-2 text-muted"
-                :to="{ name: 'Smetarniki' }"
-                >Smetarniki</router-link
               >
             </li>
 
@@ -88,6 +88,6 @@ export default {
 
 <style scoped>
 #footer {
-  margin-top: 7rem;
+  margin-top: 8rem;
 }
 </style>

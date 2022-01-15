@@ -9,8 +9,15 @@ import OgrajaPolzi from "../views/OgrajaPolzi.vue";
 import OkenskePolice from "../views/OkenskePolice.vue";
 import PokroviToplotnih from "../views/PokroviToplotnih.vue";
 import Smetarniki from "../views/Smetarniki.vue";
+import Details from "../views/Details.vue";
 
 const routes = [
+  {
+    path: "/kovinski-robniki/:id",
+    name: "Details",
+    component: Details,
+    props: true,
+  },
   {
     path: "/",
     name: "Home",

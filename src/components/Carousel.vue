@@ -63,11 +63,7 @@
         >
           <rect width="100%" height="100%" fill="#777" />
         </svg>
-        <img
-          src="../assets/img/robniki/robnik1.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
+        <img :src="products[0].imgUrl" class="d-block w-100" alt="..." />
 
         <div class="container">
           <div class="carousel-caption text-start">
@@ -75,7 +71,7 @@
               {{ products[0].name }}
             </h1>
             <p>
-              {{ products[0].text }}
+              {{ products[0].obnova }}
             </p>
             <p>
               <router-link
@@ -100,18 +96,13 @@
         >
           <rect width="100%" height="100%" fill="#777" />
         </svg>
-        <img
-          src="../assets/img/ograje/ograja.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
+        <img :src="products[1].imgUrl" class="d-block w-100" alt="..." />
 
         <div class="container">
           <div class="carousel-caption">
             <h1>{{ products[1].name }}</h1>
             <p>
-              Some representative placeholder content for the second slide of
-              the carousel.
+              {{ products[1].obnova }}
             </p>
             <p>
               <router-link
@@ -136,18 +127,13 @@
         >
           <rect width="100%" height="100%" fill="#777" />
         </svg>
-        <img
-          src="../assets/img/ograje/ograja.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
+        <img :src="products[2].imgUrl" class="d-block w-100" alt="..." />
 
         <div class="container">
           <div class="carousel-caption">
             <h1>{{ products[2].name }}</h1>
             <p>
-              Some representative placeholder content for the second slide of
-              the carousel.
+              {{ products[2].obnova }}
             </p>
             <p>
               <router-link class="btn btn-primary" :to="{ name: 'OgrajaPolzi' }"
@@ -170,18 +156,13 @@
         >
           <rect width="100%" height="100%" fill="#777" />
         </svg>
-        <img
-          src="../assets/img/smetarniki/smetarnik1.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
+        <img :src="products[3].imgUrl" class="d-block w-100" alt="..." />
 
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>{{ products[3].name }}</h1>
             <p>
-              Some representative placeholder content for the third slide of
-              this carousel.
+              {{ products[3].obnova }}
             </p>
             <p>
               <router-link class="btn btn-primary" :to="{ name: 'Smetarniki' }"
@@ -204,18 +185,13 @@
         >
           <rect width="100%" height="100%" fill="#777" />
         </svg>
-        <img
-          src="../assets/img/crpalke/crpalka1.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
+        <img :src="products[4].imgUrl" class="d-block w-100" alt="..." />
 
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>{{ products[4].name }}</h1>
             <p>
-              Some representative placeholder content for the third slide of
-              this carousel.
+              {{ products[4].obnova }}
             </p>
             <p>
               <router-link
@@ -240,18 +216,13 @@
         >
           <rect width="100%" height="100%" fill="#777" />
         </svg>
-        <img
-          src="../assets/img/crpalke/crpalka1.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
+        <img :src="products[5].imgUrl" class="d-block w-100" alt="..." />
 
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>{{ products[5].name }}</h1>
             <p>
-              Some representative placeholder content for the third slide of
-              this carousel.
+              {{ products[5].obnova }}
             </p>
             <p>
               <router-link
@@ -276,18 +247,13 @@
         >
           <rect width="100%" height="100%" fill="#777" />
         </svg>
-        <img
-          src="../assets/img/crpalke/crpalka1.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
+        <img :src="products[6].imgUrl" class="d-block w-100" alt="..." />
 
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>{{ products[6].name }}</h1>
             <p>
-              Some representative placeholder content for the third slide of
-              this carousel.
+              {{ products[6].obnova }}
             </p>
             <p>
               <router-link
@@ -334,4 +300,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+#carousel h1 {
+  color: rgba(47, 0, 255, 0.726);
+  font-weight: 700;
+}
+</style>

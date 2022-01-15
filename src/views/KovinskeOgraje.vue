@@ -1,13 +1,14 @@
 <template>
   <div id="kovinske-ograje">
     <h1>{{ products[1].name }}</h1>
-    <img :src="products[1].imgUrl" alt="" />
 
     <div class="container">
       <div class="text-content">
         <div class="">{{ products[1].text }}</div>
       </div>
     </div>
+    <p>recimo: kakšne vrste ograj delaš?</p>
+    <img :src="products[1].imgUrl" alt="" />
 
     <!-- <p class="cont">{{ products[1].text }}</p> -->
     <Footer />
@@ -28,6 +29,9 @@ export default {
 </script>
 
 <style scoped>
+img {
+  margin-top: 7rem;
+}
 .container {
   max-width: 85%;
 }
@@ -40,7 +44,7 @@ h1 {
 }
 
 li {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-top: 0rem;
   margin-bottom: 2rem;
   display: flex;
@@ -57,7 +61,7 @@ li {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Serif", serif;
 }
 
 #kovinske-ograje .text-content {

@@ -1,10 +1,12 @@
 <template>
   <div id="dimniske-kape">
     <h1>{{ products[6].name }}</h1>
-    <img :src="products[6].imgUrl" alt="" />
     <div class="text-content">
-      <div class="">{{ products[6].text }} Cena: {{ products[6].cena }}</div>
+      <div class="">{{ products[6].text }}</div>
     </div>
+
+    <img :src="products[6].imgUrl" alt="" />
+
     <Footer />
   </div>
 </template>

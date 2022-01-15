@@ -24,6 +24,11 @@
                   >Kovinski Robniki</router-link
                 >
               </li>
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'Smetarniki' }"
+                  >Smetarniki</router-link
+                >
+              </li>
               <!-- <li class="nav-item">
                 <router-link class="nav-link" :to="{ name: 'KovinskeOgraje' }"
                   >Kovinske Ograje</router-link
@@ -61,11 +66,6 @@
                 </ul>
               </li>
 
-              <li class="nav-item">
-                <router-link class="nav-link" :to="{ name: 'Smetarniki' }"
-                  >Smetarniki</router-link
-                >
-              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -117,6 +117,7 @@
       </nav>
     </header>
   </div>
+
   <router-view v-slot="{ Component, route }">
     <transition
       :enter-active-class="route.meta.enterClass"
@@ -159,10 +160,14 @@
   margin-top: 43rem;
 } */
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  /*
+  font-family: "PT Serif", serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;*/
 
   /* color: #2c3e50; */
 }
@@ -200,7 +205,7 @@ a:link {
 }
 
 #nav a:hover {
-  background-color: rgb(107, 107, 89);
+  background-color: rgb(214, 0, 0);
   border-radius: 22px 0px 22px 0px;
   /* color: #cf2187; */
 }

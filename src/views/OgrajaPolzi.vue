@@ -1,12 +1,13 @@
 <template>
   <div id="ograja-polzi">
     <h1>{{ products[2].name }}</h1>
-    <img :src="products[2].imgUrl" alt="" />
     <div class="container">
       <div class="text-content">
-        <div class="">{{ products[2].text }} Cena: {{ products[2].cena }}</div>
+        <div class="">{{ products[2].text }}</div>
       </div>
     </div>
+    <img :src="products[2].imgUrl" alt="" />
+
     <Footer />
   </div>
 </template>
@@ -25,8 +26,11 @@ export default {
 </script>
 
 <style scoped>
+img {
+  margin-top: 7rem;
+}
 h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: rgb(209, 14, 14);
   margin: 40px 0 20px 0;
   text-align: center;
@@ -43,6 +47,20 @@ h1 {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+}
+
+#ograja-polzi .cena {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1.1rem;
+  margin-top: 5rem;
+
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
 }
 #ograja-polzi .text-content {
   display: flex;

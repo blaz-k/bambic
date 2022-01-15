@@ -2,15 +2,27 @@
   <div id="home">
     <main>
       <!-- CAROUSEL -->
+      <div id="carousel">
+        <Carousel />
+      </div>
 
-      <Carousel />
+      <div id="izdelki">
+        <div>
+          <h1>Kaj dealmo: Ali pa "Izdelki":</h1>
+        </div>
+        <div class="row g-4 row-cols-1 row-cols-md-4 izdelek">
+          <div v-for="product in products" :key="product">
+            <Izdelki :izdelek="product" />
+          </div>
+        </div>
+      </div>
 
       <!---- SEVICES ----->
 
       <div id="services">
         <h1>Storitve</h1>
 
-        <div class="row g-4 row-cols-sm-2 p-0container-fluid">
+        <div class="row g-4 row-cols-sm-2 p-0 container-fluid">
           <div v-for="service in services" :key="service">
             <Services :serviceInServices="service" />
           </div>
@@ -22,11 +34,12 @@
       <div id="gallery">
         <header>
           <h1>Galerija Slik</h1>
+          <!--
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, porro
             tempore ut est dignissimos, ea placeat dicta in et neque quisquam
             ducimus fugit. Omnis, veniam.
-          </p>
+          </p>-->
         </header>
 
         <div class="-fx-image-gal">
@@ -57,12 +70,13 @@ import Carousel from "../components/Carousel.vue";
 import Test from "./Test.vue";
 import Gallery from "../components/Gallery.vue";
 import Footer from "../components/Footer.vue";
+import Izdelki from "../components/Izdelki.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
 export default {
   name: "Home",
-  components: { Products, Services, Carousel, Test, Gallery, Footer },
+  components: { Products, Services, Carousel, Test, Gallery, Footer, Izdelki },
   computed: {
     ...mapState(["services"]),
     ...mapState(["products"]),
@@ -72,13 +86,28 @@ export default {
 </script>
 
 <style>
+#izdelki .izdelek {
+  margin-top: -2rem;
+}
+#home #izdelki h1 {
+  color: rgb(107, 107, 89);
+  margin-top: 7rem;
+}
+#home #gallery h1 {
+  color: rgb(107, 107, 89);
+  margin-bottom: 7rem;
+}
+
+#home #services h1 {
+  margin-bottom: 7rem;
+  color: rgb(107, 107, 89);
+}
 #dol {
   margin-top: 11rem;
 }
 #home {
   position: absolute;
   margin-left: auto;
-
   margin-right: auto;
   left: 0;
   right: 0;

@@ -1,9 +1,12 @@
 <template>
   <div id="kovinskiRobniki" class="">
-    <div class="relativno">
+    <div class="container">
+      <!----------  <router-link :to="{ name: 'Details', params: { id: details } }">
+        <h1 class="mb-4">{{ details[0].name }}</h1>
+      </router-link>---->
       <h1 class="mb-4">{{ products[0].name }}</h1>
 
-      <div class="container">
+      <div class="">
         <div class="text-content">
           <div class="">{{ products[0].text }}</div>
         </div>
@@ -18,7 +21,7 @@
         </div>
       </div>
 
-      <!---------- list of lastnosti from products ---------->
+      <!--------- list of lastnosti from products ---------->
 
       <!-- 
     <div class="container">
@@ -32,7 +35,7 @@
     </div> -->
 
       <!------ cards from Robniki ------>
-      <div class="row g-4 row-cols-1 row-cols-md-3 container-fluid">
+      <div class="row g-4 row-cols-1 row-cols-md-3">
         <div v-for="detail in products[0].details" :key="detail">
           <Robniki :robniki="detail" />
           <!-- <div>{{ detail.detailName }}</div> -->
@@ -53,6 +56,7 @@ export default {
   name: "KovinskiRobniki",
   computed: {
     ...mapState(["products"]),
+    ...mapState(["details"]),
   },
   components: { Robniki, Footer },
 };
@@ -63,12 +67,9 @@ export default {
   margin-top: 6rem;
   margin-bottom: 3rem;
 }
-.container {
-  max-width: 85%;
-}
 
 h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: rgb(209, 14, 14);
   margin: 40px 0 20px 0;
   text-align: center;
@@ -83,7 +84,7 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Serif", serif;
 }
 
 #kovinskiRobniki .text-content {
@@ -97,7 +98,8 @@ h1 {
 }
 
 li {
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
   margin-top: 0rem;
   margin-bottom: 2rem;
   display: flex;

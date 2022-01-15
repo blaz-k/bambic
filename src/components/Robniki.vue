@@ -84,7 +84,7 @@ body {
   top: 0;
   opacity: 0;
   padding: 8px 8%;
-  background-color: rgb(194, 187, 187);
+  background-color: rgb(255, 255, 255);
   overflow-y: scroll;
   transition: 1.3s ease;
 }
