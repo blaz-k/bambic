@@ -1,11 +1,14 @@
 <template>
   <div id="dimniske-kape">
     <h1>{{ products[6].name }}</h1>
-    <div class="text-content">
-      <div class="">{{ products[6].text }}</div>
-    </div>
 
-    <img :src="products[6].imgUrl" alt="" />
+    <div class="container">
+      <div class="osnovni-del bg-light p-4">
+        <div class="text-content">
+          <div class="">{{ products[6].text }}</div>
+        </div>
+      </div>
+    </div>
 
     <Footer />
   </div>
@@ -37,7 +40,7 @@ export default {
   font-family: "Roboto", sans-serif;
 }
 
-#dimniske-kape .text-content {
+/*#dimniske-kape .text-content {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -45,7 +48,7 @@ export default {
   text-align: start;
   font-size: 1.5rem;
   margin-top: 3rem;
-}
+}*/
 
 h1 {
   font-size: 2.8rem;

@@ -1,10 +1,13 @@
 <template>
   <div id="kovinske-ograje">
     <h1>{{ products[1].name }}</h1>
+    <hr />
 
     <div class="container">
-      <div class="text-content">
-        <div class="">{{ products[1].text }}</div>
+      <div class="osnovni-del bg-light p-4">
+        <div class="text-content">
+          <div class="">{{ products[1].text }}</div>
+        </div>
       </div>
     </div>
     <p>recimo: kakšne vrste ograj delaš?</p>
@@ -64,7 +67,7 @@ li {
   font-family: "PT Serif", serif;
 }
 
-#kovinske-ograje .text-content {
+/*#kovinske-ograje .text-content {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -72,5 +75,5 @@ li {
   text-align: start;
   font-size: 1.5rem;
   margin-top: 3rem;
-}
+}*/
 </style>

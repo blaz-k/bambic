@@ -2,6 +2,101 @@
   <div id="contact-us">
     <h1 class="title">Kontaktne informacije</h1>
 
+    <div class="row">
+      <div class="col-md-4">
+        <div>
+          <iframe
+            class="cot"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.192231970362!2d14.143070915658598!3d46.10707639833658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ac32fccda7ea9%3A0xd715e5148a37a3fd!2sPot%20na%20Pretov%C4%8D%205%2C%204224%20Gorenja%20vas!5e0!3m2!1sen!2ssi!4v1642161702760!5m2!1sen!2ssi"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="container">
+          <div class="front side">
+            <div class="content">
+              <h1>Lahko nam pošljete sporočilo</h1>
+              <p>
+                Ali vas kakšen izdelek zanima bolj podrobno, ali bi radi
+                izvedeli kaj več? Pošljite nam sporočilo!
+              </p>
+              <span class="kontakt"></span>
+            </div>
+          </div>
+          <div class="back side">
+            <div class="content">
+              <h1>Kontaktirajte nas!</h1>
+              <form>
+                <label>Ime :</label>
+                <input type="text" placeholder="Janez Novak" />
+                <label>Vaš email :</label>
+                <input type="text" placeholder="janez-novak@mail.com" />
+                <label>Vaše sporočilo :</label>
+                <textarea placeholder="Kaj vas zanima?"></textarea>
+                <input type="submit" value="Pošlji" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="cot">
+          <div class="front side">
+            <div class="content">
+              <h1>Ali pa nas pokličete</h1>
+
+              <div v-for="lastnik in kontakt" :key="lastnik">
+                <div class="call">
+                  <div class="jaz">
+                    <span class="mr">{{ lastnik.name }} </span>
+                    <span> {{ lastnik.surname }}</span>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col">
+                      <span class="naslov">Tel:</span>
+                      <div>
+                        <span>{{ lastnik.tel }}</span>
+                      </div>
+
+                      <span class="naslov">Email:</span>
+                      <div>
+                        <span>{{ lastnik.email }}</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <span class="naslov">Naslov:</span>
+                      <div>
+                        <span>{{ lastnik.address }}</span>
+                      </div>
+                      <div>
+                        <span>{{ lastnik.postalCode }}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="kontakt"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <iframe
+        class="cot"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.192231970362!2d14.143070915658598!3d46.10707639833658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ac32fccda7ea9%3A0xd715e5148a37a3fd!2sPot%20na%20Pretov%C4%8D%205%2C%204224%20Gorenja%20vas!5e0!3m2!1sen!2ssi!4v1642161702760!5m2!1sen!2ssi"
+        width="1300"
+        height="550"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
     <div class="container">
       <div class="front side">
         <div class="content">
@@ -28,18 +123,34 @@
         </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-lg-6">
-        <div>
-          <iframe
-            class="cot"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.192231970362!2d14.143070915658598!3d46.10707639833658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ac32fccda7ea9%3A0xd715e5148a37a3fd!2sPot%20na%20Pretov%C4%8D%205%2C%204224%20Gorenja%20vas!5e0!3m2!1sen!2ssi!4v1642161702760!5m2!1sen!2ssi"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+        <div class="container">
+          <div class="front side">
+            <div class="content">
+              <h1>Lahko nam pošljete sporočilo</h1>
+              <p>
+                Ali vas kakšen izdelek zanima bolj podrobno, ali bi radi
+                izvedeli kaj več? Pošljite nam sporočilo!
+              </p>
+              <span class="kontakt"></span>
+            </div>
+          </div>
+          <div class="back side">
+            <div class="content">
+              <h1>Kontaktirajte nas!</h1>
+              <form>
+                <label>Ime :</label>
+                <input type="text" placeholder="Janez Novak" />
+                <label>Vaš email :</label>
+                <input type="text" placeholder="janez-novak@mail.com" />
+                <label>Vaše sporočilo :</label>
+                <textarea placeholder="Kaj vas zanima?"></textarea>
+                <input type="submit" value="Pošlji" />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-sm-6">
@@ -50,17 +161,33 @@
 
               <div v-for="lastnik in kontakt" :key="lastnik">
                 <div class="call">
-                  <span class="mr">{{ lastnik.name }} </span>
-                  <span> {{ lastnik.surname }}</span>
-                  <br />
-                  <span class="naslov">Tel: </span>
-                  <span>{{ lastnik.tel }}</span> <br />
-                  <span class="naslov">Naslov:</span>
-                  <div>
-                    <span>{{ lastnik.address }}</span>
+                  <div class="jaz">
+                    <span class="mr">{{ lastnik.name }} </span>
+                    <span> {{ lastnik.surname }}</span>
                   </div>
-                  <div>
-                    <span>{{ lastnik.postalCode }}</span>
+
+                  <div class="row mt-4">
+                    <div class="col">
+                      <span class="naslov">Tel:</span>
+                      <div>
+                        <span>{{ lastnik.tel }}</span>
+                      </div>
+
+                      <span class="naslov">Email:</span>
+                      <div>
+                        <span>{{ lastnik.email }}</span>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <span class="naslov">Naslov:</span>
+                      <div>
+                        <span>{{ lastnik.address }}</span>
+                      </div>
+                      <div>
+                        <span>{{ lastnik.postalCode }}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -89,8 +216,13 @@ export default {
 </script>
 
 <style scoped>
+.jaz {
+  font-size: 25px;
+  margin-bottom: 2rem;
+}
 .naslov {
   border-bottom: 3px solid #444;
+  color: red;
 }
 .mr {
   margin-right: 2vh;
@@ -105,7 +237,7 @@ export default {
 .call {
   margin-top: 50px;
   line-height: 2em;
-  font-size: 32px;
+  font-size: 22px;
 }
 
 #contact-us {

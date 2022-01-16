@@ -1,24 +1,30 @@
 <template>
   <div id="smetarnik">
-    <h1>{{ products[3].name }}</h1>
+    <div class="">
+      <h1>{{ products[3].name }}</h1>
+      <hr />
+    </div>
     <div class="container">
-      <div class="text-content">
-        <div class="">{{ products[3].text }}</div>
-      </div>
-      <div class="bottom-list">
-        <ul class="list-unstyled">
-          <div v-for="lastnost in products[3].lastnosti" :key="lastnost">
-            <li class="animate__animated animate__backInLeft">
-              {{ lastnost }}
-            </li>
-          </div>
-        </ul>
-      </div>
-      <div class="drugi-text">
-        {{ products[3].secondText }}
+      <div class="osnovni-del bg-light p-4">
+        <div class="text-content">
+          <div class="">{{ products[3].text }}</div>
+        </div>
+        <div class="bottom-list">
+          <ul class="list-unstyled">
+            <div v-for="lastnost in products[3].lastnosti" :key="lastnost">
+              <li class="animate__animated animate__backInLeft">
+                {{ lastnost }}
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="drugi-text">
+          {{ products[3].secondText }}
+        </div>
+
+        <div class="polepsaj">Polepšajte okolico hiše z našimi smetarniki!</div>
       </div>
 
-      <div class="polepsaj">Polepšajte okolico hiše z našimi smetarniki!</div>
       <div id="gallery">
         <div class="-fx-image-gal">
           <div class="row g-4 row-cols-1 row-cols-sm-3 container-fluid">
@@ -50,6 +56,14 @@ export default {
 </script>
 
 <style scoped>
+.osnovni-del {
+  border-radius: 46px;
+}
+hr {
+  border-bottom: 6px solid red;
+  width: 40%;
+  margin: 0 auto 3rem;
+}
 .polepsaj {
   margin-top: 5rem;
   display: flex;
@@ -73,7 +87,7 @@ export default {
 }
 h1 {
   font-size: 3rem;
-  color: rgb(107, 107, 89);
+  color: rgb(173, 9, 9);
   margin: 40px 0 20px 0;
   text-align: center;
 }
@@ -99,7 +113,7 @@ li {
   font-family: "PT Serif", serif;
 }
 
-#smetarnik .text-content {
+/*#smetarnik .text-content {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -107,5 +121,8 @@ li {
   text-align: start;
   font-size: 1.5rem;
   margin-top: 3rem;
+}*/
+
+.naslov {
 }
 </style>

@@ -5,19 +5,22 @@
         <h1 class="mb-4">{{ details[0].name }}</h1>
       </router-link>---->
       <h1 class="mb-4">{{ products[0].name }}</h1>
+      <hr />
 
-      <div class="">
-        <div class="text-content">
-          <div class="">{{ products[0].text }}</div>
-        </div>
-        <div class="bottom-list">
-          <ul class="list-unstyled">
-            <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
-              <li class="animate__animated animate__backInLeft">
-                {{ lastnost }}
-              </li>
-            </div>
-          </ul>
+      <div class="container">
+        <div class="osnovni-del bg-light p-4 pt-3">
+          <div class="text-content">
+            <div class="">{{ products[0].text }}</div>
+          </div>
+          <div class="bottom-list">
+            <ul class="list-unstyled">
+              <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
+                <li class="animate__animated animate__backInLeft">
+                  {{ lastnost }}
+                </li>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -87,7 +90,7 @@ h1 {
   font-family: "PT Serif", serif;
 }
 
-#kovinskiRobniki .text-content {
+/*#kovinskiRobniki .text-content {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -95,7 +98,7 @@ h1 {
   text-align: start;
   font-size: 1.5rem;
   margin-top: 3rem;
-}
+}*/
 
 li {
   font-weight: 700;

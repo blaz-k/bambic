@@ -1,9 +1,12 @@
 <template>
   <div id="ograja-polzi">
     <h1>{{ products[2].name }}</h1>
+    <hr />
     <div class="container">
-      <div class="text-content">
-        <div class="">{{ products[2].text }}</div>
+      <div class="osnovni-del bg-light p-4">
+        <div class="text-content">
+          <div class="">{{ products[2].text }}</div>
+        </div>
       </div>
     </div>
     <img :src="products[2].imgUrl" alt="" />
@@ -62,13 +65,12 @@ h1 {
   display: flex;
   justify-content: flex-start;
 }
-#ograja-polzi .text-content {
+/*#ograja-polzi .text-content {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   text-align: start;
   font-size: 1.5rem;
-  margin-top: 3rem;
-}
+}*/
 </style>

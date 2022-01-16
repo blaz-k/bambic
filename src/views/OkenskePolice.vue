@@ -3,8 +3,10 @@
     <h1>{{ products[4].name }}</h1>
 
     <div class="container">
-      <div class="text-content">
-        <div>{{ products[4].text }}</div>
+      <div class="osnovni-del bg-light p-4">
+        <div class="text-content">
+          <div>{{ products[4].text }}</div>
+        </div>
       </div>
     </div>
 
@@ -69,7 +71,7 @@ h1 {
   font-family: "Roboto", sans-serif;
 }
 
-#okenske-police .text-content {
+/*#okenske-police .text-content {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -77,5 +79,5 @@ h1 {
   text-align: start;
   font-size: 1.5rem;
   margin-top: 3rem;
-}
+}*/
 </style>

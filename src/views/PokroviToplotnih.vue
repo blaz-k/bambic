@@ -2,12 +2,14 @@
   <div id="pokrovi-crpalk">
     <h1>{{ products[5].name }}</h1>
     <div class="container">
-      <div class="text-content">
-        <div class="">{{ products[5].text }}</div>
-      </div>
+      <div class="osnovni-del bg-light p-4">
+        <div class="text-content">
+          <div class="">{{ products[5].text }}</div>
+        </div>
 
-      <div class="cena">
-        Cena: {{ products[5].cena }} ----> a jo sploh prikažemo?
+        <div class="cena">
+          Cena: {{ products[5].cena }} ----> a jo sploh prikažemo?
+        </div>
       </div>
 
       <img :src="products[5].imgUrl" alt="" />
@@ -57,7 +59,7 @@ img {
   font-family: "Roboto", sans-serif;
 }
 
-#pokrovi-crpalk .text-content {
+/*#pokrovi-crpalk .text-content {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -65,7 +67,7 @@ img {
   text-align: start;
   font-size: 1.5rem;
   margin-top: 3rem;
-}
+}*/
 
 h1 {
   font-size: 2.8rem;

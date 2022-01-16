@@ -1,0 +1,23 @@
+.osnovni-del {
+  border-radius: 46px;
+  align-items: center;
+  align-content: center;
+}
+.hr {
+  border-bottom: 6px solid red;
+  width: 40%;
+  margin: 0 auto 3rem;
+}
+
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1.5rem;
+}
+
+.container {
+  margin-top: 3rem;
+}
