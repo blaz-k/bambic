@@ -4,7 +4,7 @@
       <div class="card border-0">
         <div class="face face1">
           <div class="content">
-            <img src="../assets/img/gallery/10bis.jpeg" />
+            <img src="../assets/img/gallery/11bis.jpeg" />
             <h3>{{ izdelek.name }}</h3>
           </div>
         </div>
