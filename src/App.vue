@@ -97,6 +97,14 @@
                       >Dimniške Kape</router-link
                     >
                   </li>
+
+                  <li class="dropdown-item">
+                    <router-link
+                      class="nav-link"
+                      :to="{ name: 'RobotskeKosilnice' }"
+                      >Hiša za robotske kosilnice</router-link
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>

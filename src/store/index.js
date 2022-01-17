@@ -147,6 +147,19 @@ export default createStore({
         text: "Na voljo več različnih dimenzij",
         obnova: `Na voljo tudi več različnih dimenzij dimniških kap`,
       },
+      {
+        id: 8,
+        name: "Hiša za robotske kosilnice",
+        imgUrl: require("@/assets/img/gallery/7.jpeg"),
+        details: [
+          { material: "Nerjaveča pločevina" },
+          { profileHeight: "" },
+          { profileLenght: "" },
+        ],
+        cena: "že od 40€/kos",
+        text: "Na voljo tudi več različnih dimenzij hisk za kosilnice",
+        obnova: `Na voljo tudi več različnih dimenzij hisk za kosilnice`,
+      },
     ],
     images: [
       { img: require("@/assets/img/smetarniki/smetarnik1.jpg") },
@@ -224,6 +237,7 @@ export default createStore({
       },
       {
         id: 10,
+
         imgUrl: require("@/assets/img/gallery/10.jpeg"),
       },
       {

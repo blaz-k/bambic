@@ -10,6 +10,7 @@ import OkenskePolice from "../views/OkenskePolice.vue";
 import PokroviToplotnih from "../views/PokroviToplotnih.vue";
 import Smetarniki from "../views/Smetarniki.vue";
 import Details from "../views/Details.vue";
+import RobotskeKosilnice from "../views/RobotskeKosilnice.vue";
 
 const routes = [
   {
@@ -111,6 +112,15 @@ const routes = [
     path: "/dimniske-kape",
     name: "DimniskeKape",
     component: DimniskeKape,
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
+    },
+  },
+  {
+    path: "/hisa-za-robotske-kosilnice",
+    name: "RobotskeKosilnice",
+    component: RobotskeKosilnice,
     meta: {
       enterClass: "animate__animated animate__fadeInLeft",
       leaveClass: "animate__animated animate__fadeOutRight",
