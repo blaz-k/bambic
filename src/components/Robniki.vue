@@ -1,5 +1,16 @@
 <template>
-  <router-link :to="{ name: 'RobnikiDetails', params: { robnikiId: robniki } }">
+  <router-link
+    :to="{
+      name: 'RobnikiDetails',
+      params: {
+        robnikiId: this.robniki.id,
+        robnikName: this.robniki.detailName,
+        robnikText: this.robniki.detailText,
+        robnikImages: this.robniki.images,
+        imgRobnik: this.robniki.imgRobnik,
+      },
+    }"
+  >
     {{ robniki.id }}
   </router-link>
 
