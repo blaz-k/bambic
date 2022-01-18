@@ -2,6 +2,29 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
+    ostaliRobniki: [
+      {
+        id: 1,
+        detailName: "Osnovni robniki",
+        detailText:
+          "Osnovni -robniki so tako rekoč univerzalni robniki. Uporabljajo se lahko tako za ravne linije kot tudi za krivulje-izdelavo krogov.",
+        imgRobnik: require("@/assets/img/gallery/11.jpeg"),
+      },
+      {
+        id: 2,
+        detailName: "l robniki",
+        detailText:
+          "Osnovni I-robniki so tako rekoč univerzalni robniki. Uporabljajo se lahko tako za ravne linije kot tudi za krivulje-izdelavo krogov.",
+        imgRobnik: require("@/assets/img/gallery/11.jpeg"),
+      },
+      {
+        id: 3,
+        detailName: "Z robniki",
+        detailText:
+          "Osnovni I-robniki so tako rekoč univerzalni robniki. Uporabljajo se lahko tako za ravne linije kot tudi za krivulje-izdelavo krogov.",
+        imgRobnik: require("@/assets/img/gallery/11.jpeg"),
+      },
+    ],
     products: [
       {
         id: 1,
@@ -27,17 +50,18 @@ export default createStore({
             imgBis: require("@/assets/img/gallery/11bis.jpeg"),
           },
         ],
+
         details: [
           {
             id: 1,
             detailName: "Osnovni robniki",
             detailText:
               "Osnovni I-robniki so tako rekoč univerzalni robniki. Uporabljajo se lahko tako za ravne linije kot tudi za krivulje-izdelavo krogov.",
-            imgRobnik: require("@/assets/img/gallery/11bis.jpeg"),
+            imgRobnik: require("@/assets/img/gallery/11.jpeg"),
             images: [
               {
-                id: 1,
-                imgUrl: require("@/assets/img/gallery/11.jpeg"),
+                // id: 1,
+                // imgUrl: require("@/assets/img/gallery/11.jpeg"),
                 imgBis: require("@/assets/img/gallery/11bis.jpeg"),
               },
             ],
@@ -51,7 +75,7 @@ export default createStore({
             imgRobnik: require("@/assets/img/gallery/11bis.jpeg"),
             images: [
               {
-                id: 1,
+                // id: 1,
                 imgUrl: require("@/assets/img/gallery/11.jpeg"),
                 imgBis: require("@/assets/img/gallery/11bis.jpeg"),
               },
@@ -66,7 +90,7 @@ export default createStore({
             imgRobnik: require("@/assets/img/gallery/11bis.jpeg"),
             images: [
               {
-                id: 1,
+                // id: 1,
                 imgUrl: require("@/assets/img/gallery/11.jpeg"),
                 imgBis: require("@/assets/img/gallery/11bis.jpeg"),
               },
@@ -84,7 +108,7 @@ export default createStore({
             imgRobnik: require("@/assets/img/gallery/11bis.jpeg"),
             images: [
               {
-                id: 1,
+                // id: 1,
                 imgUrl: require("@/assets/img/gallery/11.jpeg"),
                 imgBis: require("@/assets/img/gallery/11bis.jpeg"),
               },
@@ -98,7 +122,7 @@ export default createStore({
             imgRobnik: require("@/assets/img/gallery/11bis.jpeg"),
             images: [
               {
-                id: 1,
+                // id: 1,
                 imgUrl: require("@/assets/img/gallery/11.jpeg"),
                 imgBis: require("@/assets/img/gallery/11bis.jpeg"),
               },

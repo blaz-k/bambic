@@ -11,28 +11,14 @@ import PokroviToplotnih from "../views/PokroviToplotnih.vue";
 import Smetarniki from "../views/Smetarniki.vue";
 import RobnikiDetails from "../views/RobnikiDetails.vue";
 import RobotskeKosilnice from "../views/RobotskeKosilnice.vue";
-import BookDetails from "../views/BookDetails.vue";
-// import NoviRobnik from "../views/NoviRobnik.vue";
 
 const routes = [
-  {
-    path: "/kovinski-robniki/:id",
-    name: "BookDetails",
-    component: BookDetails,
-    props: true,
-  },
   {
     path: "/kovinski-robniki/:robnikName",
     name: "RobnikiDetails",
     component: RobnikiDetails,
     props: true,
   },
-  // {
-  //   path: "/kovinski-robniki/:id",
-  //   name: "NoviRobnik",
-  //   component: NoviRobnik,
-  //   props: true,
-  // },
   {
     path: "/",
     name: "Home",

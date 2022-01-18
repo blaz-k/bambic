@@ -35,13 +35,13 @@
     </div> -->
 
       <!------ cards from Robniki ------>
-
       <div class="row g-4 row-cols-1 row-cols-md-3">
-        <div v-for="detail in products[0].details" :key="detail">
+        <div v-for="detail in products[0].details" :key="detail.id">
           <Robniki :robniki="detail" :test="details" />
           <!-- <div>{{ detail.detailName }}</div> -->
         </div>
       </div>
+
       <!-- <h2>{{ products[0].details[0] }}</h2> -->
     </div>
     <Footer />
@@ -59,6 +59,7 @@ export default {
   computed: {
     ...mapState(["products"]),
     ...mapState(["details"]),
+    ...mapState(["ostaliRobniki"]),
   },
   components: { Robniki, Footer },
 };
