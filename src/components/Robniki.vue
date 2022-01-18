@@ -1,4 +1,8 @@
 <template>
+  <router-link :to="{ name: 'RobnikiDetails', params: { robnikiId: robniki } }">
+    {{ robniki.id }}
+  </router-link>
+
   <div>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -22,7 +26,11 @@ import { mapState } from "vuex";
 
 export default {
   name: "Robniki",
-  props: ["robniki"],
+  props: ["robniki", "test"],
+
+  setup(props) {
+    // console.log(props.robniki.id);
+  },
 };
 </script>
 

@@ -536,7 +536,11 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik17bis.jpg"),
       },
-
+      // {
+      //   id: 62,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik18.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik18bis.jpg"),
+      // },
       // {
       //   id: 63,
       //   imgUrl: require("@/assets/img/gallery/toplotna1.JPG"),
