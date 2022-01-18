@@ -1,9 +1,6 @@
 <template>
   <div id="kovinskiRobniki" class="">
     <div class="container">
-      <!----------  <router-link :to="{ name: 'Details', params: { id: details } }">
-        <h1 class="mb-4">{{ details[0].name }}</h1>
-      </router-link>---->
       <h1 class="mb-4">{{ products[0].name }}</h1>
       <hr />
 
@@ -38,9 +35,10 @@
     </div> -->
 
       <!------ cards from Robniki ------>
+
       <div class="row g-4 row-cols-1 row-cols-md-3">
         <div v-for="detail in products[0].details" :key="detail">
-          <Robniki :robniki="detail" />
+          <Robniki :robniki="detail" :test="details" />
           <!-- <div>{{ detail.detailName }}</div> -->
         </div>
       </div>
@@ -57,6 +55,7 @@ import Footer from "../components/Footer.vue";
 
 export default {
   name: "KovinskiRobniki",
+
   computed: {
     ...mapState(["products"]),
     ...mapState(["details"]),
