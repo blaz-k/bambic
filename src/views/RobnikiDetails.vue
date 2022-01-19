@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="robniki-details">
     <button @click="back">Nazaj</button>
     <!-- <button @click="forward">Forward</button> -->
     <!-- <button @click="redirect">Redirect</button> -->
@@ -60,9 +60,15 @@ button {
   color: #42b983;
 }
 
-#nav a {
-}
-
-#nav a.router-link-exact-active {
+#robniki-details {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Serif", sans-serif;
 }
 </style>

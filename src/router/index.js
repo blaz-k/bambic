@@ -14,12 +14,6 @@ import RobotskeKosilnice from "../views/RobotskeKosilnice.vue";
 
 const routes = [
   {
-    path: "/kovinski-robniki/:robnikName",
-    name: "RobnikiDetails",
-    component: RobnikiDetails,
-    props: true,
-  },
-  {
     path: "/",
     name: "Home",
     component: Home,
@@ -59,6 +53,16 @@ const routes = [
     meta: {
       enterClass: "animate__animated animate__fadeInRight",
       leaveClass: "animate__animated animate__fadeOutLeft",
+    },
+  },
+  {
+    path: "/kovinski-robniki/:robnikName",
+    name: "RobnikiDetails",
+    component: RobnikiDetails,
+    props: true,
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
     },
   },
   {

@@ -12,23 +12,23 @@
     }"
   >
     {{ robniki.id }}
-  </router-link>
 
-  <div>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <div class="cards">
-      <div class="card">
-        <h2 class="card-title">{{ robniki.detailName }}</h2>
-        <img :src="robniki.imgRobnik" alt="" />
-        <p class="card-desc">
-          {{ robniki.detailText }}
-        </p>
+    <div>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        rel="stylesheet"
+      />
+      <div class="cards">
+        <div class="card">
+          <h2 class="card-title">{{ robniki.detailName }}</h2>
+          <img :src="robniki.imgRobnik" alt="" />
+          <p class="card-desc">
+            {{ robniki.detailText }}
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </router-link>
   <!-- <h2>{{ products[0].details[0] }}</h2> -->
 </template>
 

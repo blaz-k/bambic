@@ -87,7 +87,7 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: "PT Serif", serif;
+  font-family: "PT Serif", sans-serif;
 }
 
 /*#kovinskiRobniki .text-content {
