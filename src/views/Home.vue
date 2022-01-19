@@ -8,7 +8,7 @@
 
       <div id="izdelki">
         <div>
-          <h1>Kaj dealmo: Ali pa "Izdelki":</h1>
+          <h1>Naša ponudba:</h1>
         </div>
         <div class="row g-4 row-cols-1 row-cols-md-4 izdelek">
           <div v-for="product in products" :key="product">
@@ -90,17 +90,18 @@ export default {
   margin-top: -2rem;
 }
 #home #izdelki h1 {
-  color: rgb(107, 107, 89);
+  color: rgb(209, 14, 14);
   margin-top: 7rem;
 }
 #home #gallery h1 {
-  color: rgb(107, 107, 89);
+  color: rgb(209, 14, 14);
   margin-bottom: 7rem;
 }
 
 #home #services h1 {
   margin-bottom: 7rem;
-  color: rgb(107, 107, 89);
+  /* color: rgb(107, 107, 89); */
+  color: rgb(209, 14, 14);
 }
 #dol {
   margin-top: 11rem;

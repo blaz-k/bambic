@@ -3,7 +3,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
         <div class="container-fluid">
-          <router-link class="navbar-brand" :to="{ name: 'Home' }"
+          <router-link class="navbar-brand bambic" :to="{ name: 'Home' }"
             >Bambic.si</router-link
           >
           <button
@@ -213,7 +213,7 @@ a:link {
 }
 
 #nav a:hover {
-  background-color: rgb(214, 0, 0);
+  background-color: rgb(107, 107, 89);
   border-radius: 22px 0px 22px 0px;
   /* color: #cf2187; */
 }
@@ -232,5 +232,9 @@ a:link {
 }
 #footer #kmeto a:hover {
   background-color: rgb(255, 255, 255);
+}
+
+#nav .bambic {
+  color: rgb(209, 14, 14);
 }
 </style>

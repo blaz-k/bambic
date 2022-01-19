@@ -5,14 +5,15 @@
         <div class="face face1">
           <div class="content">
             <img src="../assets/img/gallery/11bis.jpeg" />
-            <h3>{{ izdelek.name }}</h3>
+            <!-- <h3>{{ izdelek.name }}</h3> -->
           </div>
         </div>
         <div class="face face2">
           <div class="content">
-            <p>
+            <!-- <p>
               {{ izdelek.obnova }}
-            </p>
+            </p> -->
+            <h3>{{ izdelek.name }}</h3>
           </div>
         </div>
       </div>
@@ -82,6 +83,8 @@ body {
   position: relative; /*naceloma nerabis */
   display: flex;
   justify-content: space-between;
+  border: 2px solid red;
+  margin-bottom: -4rem;
 }
 
 .container .card {

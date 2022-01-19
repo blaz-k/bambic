@@ -11,8 +11,6 @@
       },
     }"
   >
-    {{ robniki.id }}
-
     <div>
       <link
         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -24,6 +22,7 @@
           <img :src="robniki.imgRobnik" alt="" />
           <p class="card-desc">
             {{ robniki.detailText }}
+            <button class="btn btn-outline-secondary">Več</button>
           </p>
         </div>
       </div>
@@ -118,5 +117,9 @@ h1 {
   color: #fff;
   margin: 40px 0 20px 0;
   text-align: center;
+}
+
+.router-link {
+  color: rgb(236, 9, 9);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="robniki-details">
-    <button @click="back">Nazaj</button>
+    <button class="btn btn-outline-danger" @click="back">Nazaj</button>
     <!-- <button @click="forward">Forward</button> -->
     <!-- <button @click="redirect">Redirect</button> -->
     <div id="robniki-details">
@@ -56,8 +56,9 @@ export default {
 <style scoped>
 button {
   font-weight: bold;
+  margin-bottom: 2rem;
   color: #2c3e50;
-  color: #42b983;
+  /* color: #42b983; */
 }
 
 #robniki-details {
