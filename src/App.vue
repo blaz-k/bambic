@@ -1,11 +1,24 @@
 <template>
   <div id="nav">
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top"
+        style="background-color: #272626"
+      >
         <div class="container-fluid">
-          <router-link class="navbar-brand bambic" :to="{ name: 'Home' }"
-            >Bambic.si</router-link
+          <router-link
+            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+            :to="{ name: 'Home' }"
           >
+            <img
+              class="bi me-2"
+              width="40"
+              height="32"
+              role="img"
+              aria-label="Bootstrap"
+              src="./assets/img/logo/logo-b.png"
+            />
+          </router-link>
           <button
             class="navbar-toggler"
             type="button"
@@ -179,6 +192,9 @@
 
   /* color: #2c3e50; */
 }
+#nav .nav {
+  background-color: rgb(16, 201, 72);
+}
 
 #nav {
   padding: 32px;
@@ -199,7 +215,7 @@
 
 #nav a {
   font-weight: bold;
-  color: #000000;
+  color: #868686;
 }
 
 #nav a.router-link-exact-active {

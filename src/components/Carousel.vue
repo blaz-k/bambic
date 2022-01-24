@@ -77,7 +77,7 @@
               <router-link
                 class="btn btn-primary"
                 :to="{ name: 'KovinskiRobniki' }"
-                >Več o tem</router-link
+                >{{ more }}</router-link
               >
             </p>
           </div>
@@ -108,7 +108,7 @@
               <router-link
                 class="btn btn-primary"
                 :to="{ name: 'KovinskeOgraje' }"
-                >Več o tem</router-link
+                >{{ more }}</router-link
               >
             </p>
           </div>
@@ -136,8 +136,10 @@
               {{ products[2].obnova }}
             </p>
             <p>
-              <router-link class="btn btn-primary" :to="{ name: 'OgrajaPolzi' }"
-                >Več o tem</router-link
+              <router-link
+                class="btn btn-primary"
+                :to="{ name: 'OgrajaPolzi' }"
+                >{{ more }}</router-link
               >
             </p>
           </div>
@@ -165,8 +167,10 @@
               {{ products[3].obnova }}
             </p>
             <p>
-              <router-link class="btn btn-primary" :to="{ name: 'Smetarniki' }"
-                >Več o tem</router-link
+              <router-link
+                class="btn btn-primary"
+                :to="{ name: 'Smetarniki' }"
+                >{{ more }}</router-link
               >
             </p>
           </div>
@@ -197,7 +201,7 @@
               <router-link
                 class="btn btn-primary"
                 :to="{ name: 'OkenskePolice' }"
-                >Več o tem</router-link
+                >{{ more }}</router-link
               >
             </p>
           </div>
@@ -228,7 +232,7 @@
               <router-link
                 class="btn btn-primary"
                 :to="{ name: 'PokroviToplotnih' }"
-                >Več o tem</router-link
+                >{{ more }}</router-link
               >
             </p>
           </div>
@@ -259,7 +263,7 @@
               <router-link
                 class="btn btn-primary"
                 :to="{ name: 'DimniskeKape' }"
-                >Več o tem</router-link
+                >{{ more }}</router-link
               >
             </p>
           </div>
@@ -297,12 +301,21 @@ export default {
   computed: {
     ...mapState(["products"]),
   },
+  data() {
+    return {
+      more: "Preberi več",
+    };
+  },
 };
 </script>
 
 <style scoped>
 #carousel h1 {
-  color: rgba(47, 0, 255, 0.726);
+  color: #868686;
   font-weight: 700;
+}
+.btn-primary {
+  background-color: #272626;
+  border-radius: 0px 36px 0px 36px;
 }
 </style>
