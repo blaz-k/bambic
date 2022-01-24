@@ -34,7 +34,7 @@ img {
 }
 h1 {
   font-size: 3rem;
-  color: rgb(209, 14, 14);
+  color: #ff1100;
   margin: 40px 0 20px 0;
   text-align: center;
 }

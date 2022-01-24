@@ -29,6 +29,8 @@
         </div>
       </div>
 
+      <Sporba />
+
       <!-- GALLERY -->
 
       <div id="gallery">
@@ -71,12 +73,22 @@ import Test from "./Test.vue";
 import Gallery from "../components/Gallery.vue";
 import Footer from "../components/Footer.vue";
 import Izdelki from "../components/Izdelki.vue";
+import Sporba from "../components/Sporba.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
 export default {
   name: "Home",
-  components: { Products, Services, Carousel, Test, Gallery, Footer, Izdelki },
+  components: {
+    Products,
+    Services,
+    Carousel,
+    Test,
+    Gallery,
+    Footer,
+    Izdelki,
+    Sporba,
+  },
   computed: {
     ...mapState(["services"]),
     ...mapState(["products"]),

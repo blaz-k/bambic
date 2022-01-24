@@ -3,7 +3,7 @@
     <header>
       <nav
         class="navbar navbar-expand-md navbar-dark fixed-top"
-        style="background-color: #272626"
+        style="background-color: #242424"
       >
         <div class="container-fluid">
           <router-link
@@ -58,7 +58,11 @@
                 >
                   Ograje
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                  style="background-color: #242424"
+                >
                   <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
                   <li class="dropdown-item">
                     <router-link
@@ -90,7 +94,11 @@
                 >
                   Ostalo
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                  style="background-color: #242424"
+                >
                   <li class="dropdown-item">
                     <router-link
                       class="nav-link"
@@ -215,7 +223,7 @@
 
 #nav a {
   font-weight: bold;
-  color: #868686;
+  color: #ededed;
 }
 
 #nav a.router-link-exact-active {
