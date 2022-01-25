@@ -5,12 +5,7 @@
         <img :src="serviceInServices.img" alt="images" />
       </div>
       <div class="details">
-        <h2>
-          {{ serviceInServices.name }}<br />
-          <!-- <span>{{
-            serviceInServices.text
-          }}</span> -->
-        </h2>
+        <h2>{{ serviceInServices.name }}<br /></h2>
       </div>
     </div>
   </div>
@@ -24,23 +19,6 @@ export default {
 </script>
 
 <style scoped>
-/* body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #212121;
-  font-family: sans-serif;
-} */
-/* .box {
-  width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 15px;
-  margin: 0 auto;
-} */
 .card {
   position: relative;
   width: 300px;

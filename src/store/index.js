@@ -263,11 +263,11 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/11.jpeg"),
         imgBis: require("@/assets/img/gallery/11bis.jpeg"),
       },
-      // {
-      //   id: 2,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja1.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja1bis.JPG"),
-      // },
+      {
+        id: 2,
+        imgUrl: "kovinska-ograja1.jpg",
+        imgBis: "kovinska-ograja1bis.JPG",
+      },
       // {
       //   id: 3,
       //   imgUrl: require("@/assets/img/gallery/kovinska-ograja2.JPG"),
@@ -392,8 +392,8 @@ export default createStore({
 
       {
         id: 27,
-        imgUrl: require("@/assets/img/gallery/robnik1.png"),
-        imgBis: require("@/assets/img/gallery/robnik1bis.png"),
+        imgUrl: require("../assets/img/gallery/robnik1.png"),
+        imgBis: require("../assets/img/gallery/robnik1bis.png"),
       },
       {
         id: 28,

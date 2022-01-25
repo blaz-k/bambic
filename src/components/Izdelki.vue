@@ -1,65 +1,25 @@
 <template>
-  <body>
-    <div class="container">
-      <div class="card border-0">
-        <div class="face face1">
-          <div class="content">
-            <img src="../assets/img/gallery/11bis.jpeg" />
-            <!-- <h3>{{ izdelek.name }}</h3> -->
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <!-- <p>
-              {{ izdelek.obnova }}
-            </p> -->
-            <h3>{{ izdelek.name }}</h3>
-          </div>
-        </div>
+  <!-- <div class="container">
+    <div class="card card3">
+      <img class="food" src="../assets/img/gallery/11bis.jpeg" />
+      <div class="text">
+        <h4 class="cook">{{ izdelek.name }}</h4>
+        
       </div>
-
-      <!--
-      <div class="card">
-        <div class="face face1">
-          <div class="content">
-            <img
-              src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-            />
-            <h3>Code</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum
-              cumque minus iste veritatis provident at.
-            </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="face face1">
-          <div class="content">
-            <img
-              src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true"
-            />
-            <h3>Launch</h3>
-          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum
-              cumque minus iste veritatis provident at.
-            </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-      </div>
-      --->
     </div>
-  </body>
+  </div> -->
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:300"
+    rel="stylesheet"
+  />
+  <!-- <h2>{{ izdelek.name }}</h2> -->
+  <a href="http://www.abhisheq.com" target="_blank" rel="dofollow">
+    <div class="card-cover">
+      <div class="card"></div>
+      <p>{{ izdelek.name }}</p>
+    </div>
+  </a>
 </template>
 
 <script>
@@ -70,103 +30,139 @@ export default {
 </script>
 
 <style scoped>
+.card-cover {
+  width: 100%;
+  height: 250px;
+  max-width: 350px;
+  margin: auto;
+
+  background: url("../assets/img/gallery/11.jpeg");
+  background-size: cover;
+  position: relative;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+.card {
+  width: 100%;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.card + p {
+  color: #fff;
+  text-decoration: none !important;
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  z-index: 6;
+  font-family: raleway;
+  font-size: 22px;
+  letter-spacing: 0.8px;
+  font-variant: small-caps;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+.card-cover:after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0.8;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+.card-cover:hover:after {
+  width: 100px;
+  bottom: 30px;
+  opacity: 1;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+.card-cover:hover {
+  background-position: -1px;
+  transition: 0.8s;
+  /* transition-timing-function: ease-out; */
+  /* backface-visibility: hidden; */
+}
+.card-cover:hover p {
+  bottom: 15px;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+h2 {
+  font-family: raleway;
+  font-weight: normal;
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: consolas;
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* @import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: Roboto;
+  background: #cecece;
+}
+
+h5 {
+  margin-top: -15px;
+  font-size: 20px;
 }
 
 .container {
-  position: relative; /*naceloma nerabis */
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid red;
-  margin-bottom: -4rem;
+  width: 100%;
+  padding: 2px 16px;
+}
+.card {
+  transition: 0.75s;
+  margin-left: 10px;
+  margin-top: 10px;
+  background: white;
+  border-radius: 5px;
+  float: left;
+  width: 200px;
+  height: 250px;
+}
+.card:hover {
+  z-index: 10 !important;
+  transform: scale(1.05);
 }
 
-.container .card {
-  position: relative;
-  cursor: pointer;
+.text {
+  padding: 2px 16px;
 }
 
-.container .card .face {
-  width: 300px;
-  height: 200px;
-  transition: 1s;
+.cook {
+  position: absolute;
+  color: #c7260a;
+  margin-top: 0px;
 }
-
-.container .card .face.face1 {
-  position: relative;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  transform: translateY(100px);
-}
-
-.container .card:hover .face.face1 {
-  background: #a39197;
-  transform: translateY(0);
-}
-
-.container .card .face.face1 .content {
-  opacity: 0.4;
-  transition: 2s;
-}
-
-.container .card:hover .face.face1 .content {
-  opacity: 1;
-}
-
-.container .card .face.face1 .content img {
-  max-width: 120px;
-}
-
-.container .card .face.face1 .content h3 {
-  margin: 10px 0 0;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.container .card .face.face2 {
-  position: relative;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-  transform: translateY(-100px);
-}
-
-.container .card:hover .face.face2 {
-  transform: translateY(0);
-}
-
-.container .card .face.face2 .content p {
-  margin: 0;
-  padding: 0;
-}
-
-.container .card .face.face2 .content a {
-  margin: 15px 0 0;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 900;
-  color: #333;
-  padding: 5px;
-  border: 1px solid #333;
-}
-
-.container .card .face.face2 .content a:hover {
-  background: #333;
-  color: #fff;
-}
+.food {
+  width: 200px;
+  height: auto;
+  border-bottom: 6px solid #145b09;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+} */
 </style>

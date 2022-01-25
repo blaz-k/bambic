@@ -2,8 +2,9 @@
   <div id="nav">
     <header>
       <nav
-        class="navbar navbar-expand-md navbar-dark fixed-top"
+        class="navbar navbar-expand-md navbar-dark fixed-top py-3"
         style="background-color: #242424"
+        height-32px
       >
         <div class="container-fluid">
           <router-link
@@ -205,7 +206,7 @@
 }
 
 #nav {
-  padding: 32px;
+  padding: 28px;
   /* background-color: rgb(218, 15, 15);
   background: linear-gradient(90deg, #9c9c9c, #8d8989); */
   text-transform: uppercase;

@@ -10,7 +10,7 @@
         <div>
           <h1>Naša ponudba:</h1>
         </div>
-        <div class="row g-4 row-cols-1 row-cols-md-4 izdelek">
+        <div class="row g-4 row-cols-1 row-cols-sm-3 izdelek">
           <div v-for="product in products" :key="product">
             <Izdelki :izdelek="product" />
           </div>
@@ -28,8 +28,6 @@
           </div>
         </div>
       </div>
-
-      <Sporba />
 
       <!-- GALLERY -->
 
@@ -73,7 +71,6 @@ import Test from "./Test.vue";
 import Gallery from "../components/Gallery.vue";
 import Footer from "../components/Footer.vue";
 import Izdelki from "../components/Izdelki.vue";
-import Sporba from "../components/Sporba.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
@@ -87,7 +84,6 @@ export default {
     Gallery,
     Footer,
     Izdelki,
-    Sporba,
   },
   computed: {
     ...mapState(["services"]),
@@ -99,7 +95,7 @@ export default {
 
 <style>
 #izdelki .izdelek {
-  margin-top: -2rem;
+  margin-top: 0rem;
 }
 #home #izdelki h1 {
   color: rgb(209, 14, 14);
@@ -160,14 +156,14 @@ export default {
 
 /* Declare heights because of positioning of img element */
 #home .carousel-item {
-  height: 32rem;
+  height: 50rem;
 }
 #home .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem;
+  height: 50rem;
 }
 
 /* MARKETING CONTENT
