@@ -1,23 +1,20 @@
 <template>
   <div id="kovinskiRobniki" class="">
+    <h1 class="mb-4">{{ products[0].name }}</h1>
+    <hr />
     <div class="container">
-      <h1 class="mb-4">{{ products[0].name }}</h1>
-      <hr />
-
-      <div class="container">
-        <div class="osnovni-del bg-light p-4 pt-3">
-          <div class="text-content">
-            <div class="">{{ products[0].text }}</div>
-          </div>
-          <div class="bottom-list">
-            <ul class="list-unstyled">
-              <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
-                <li class="animate__animated animate__backInLeft">
-                  {{ lastnost }}
-                </li>
-              </div>
-            </ul>
-          </div>
+      <div class="osnovni-del p-4 pt-3">
+        <div class="text-content">
+          <div class="">{{ products[0].text }}</div>
+        </div>
+        <div class="bottom-list">
+          <ul class="list-unstyled">
+            <div v-for="lastnost in products[0].lastnosti" :key="lastnost">
+              <li class="animate__animated animate__backInLeft">
+                {{ lastnost }}
+              </li>
+            </div>
+          </ul>
         </div>
       </div>
 
@@ -66,12 +63,32 @@ export default {
 </script>
 
 <style scoped>
+/* hr {
+  border-bottom: 6px solid #001aff4b;
+  width: 40%;
+  margin: 0 auto 3rem;
+} */
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #ededed;
+
+  /* font-weight: 400; */
+}
+
+hr {
+  background-color: rgb(131, 28, 21);
+  /* height: 0px; */
+  border: solid 2px rgb(177, 18, 7);
+  width: 40%;
+  margin: 0 auto 3rem;
+}
 .bottom-list {
   margin-top: 6rem;
   margin-bottom: 3rem;
 }
 
 h1 {
+  text-transform: uppercase;
   font-size: 3rem;
   color: #ff1100;
   margin: 40px 0 20px 0;
@@ -87,7 +104,7 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: "PT Serif", sans-serif;
+  /* font-family: "PT Serif", sans-serif; */
 }
 
 /*#kovinskiRobniki .text-content {
@@ -101,10 +118,10 @@ h1 {
 }*/
 
 li {
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
   margin-top: 0rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
 }

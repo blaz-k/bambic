@@ -11,7 +11,6 @@ import PokroviToplotnih from "../views/PokroviToplotnih.vue";
 import Smetarniki from "../views/Smetarniki.vue";
 import RobnikiDetails from "../views/RobnikiDetails.vue";
 import RobotskeKosilnice from "../views/RobotskeKosilnice.vue";
-
 const routes = [
   {
     path: "/",
@@ -41,8 +40,8 @@ const routes = [
     name: "Test",
     component: Test,
     meta: {
-      enterClass: "animate__animated animate__fadeInRight",
-      leaveClass: "animate__animated animate__fadeOutLeft",
+      enterClass: "animate__animated animate__zoomInRight",
+      leaveClass: "animate__animated animate__zoomOutLeft",
     },
   },
 

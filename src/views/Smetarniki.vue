@@ -1,6 +1,6 @@
 <template>
   <div id="smetarnik">
-    <div class="">
+    <div>
       <h1>{{ products[3].name }}</h1>
       <hr />
     </div>
@@ -56,11 +56,17 @@ export default {
 </script>
 
 <style scoped>
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  /* font-weight: 400; */
+}
 .osnovni-del {
   border-radius: 46px;
 }
 hr {
-  border-bottom: 6px solid red;
+  background-color: rgba(255, 17, 0, 255);
+  height: 6px;
+  border: solid rgba(255, 17, 0, 255);
   width: 40%;
   margin: 0 auto 3rem;
 }
@@ -86,17 +92,19 @@ hr {
   margin-top: 6rem;
 }
 h1 {
+  text-transform: uppercase;
   font-size: 3rem;
-  color: #ff1100;
+  color: #242424;
   margin: 40px 0 20px 0;
   text-align: center;
+  /* font-weight: 700; */
 }
 
 li {
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
   margin-top: 0rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
 }
@@ -110,7 +118,7 @@ li {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: "PT Serif", serif;
+  /* font-family: "PT Serif", serif; */
 }
 
 /*#smetarnik .text-content {
@@ -122,7 +130,4 @@ li {
   font-size: 1.5rem;
   margin-top: 3rem;
 }*/
-
-.naslov {
-}
 </style>

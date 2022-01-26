@@ -29,6 +29,11 @@ export default {
 </script>
 
 <style scoped>
+hr {
+  border-bottom: 6px solid #001aff4b;
+  width: 40%;
+  margin: 0 auto 3rem;
+}
 img {
   margin-top: 7rem;
 }

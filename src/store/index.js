@@ -61,7 +61,7 @@ export default createStore({
             images: [
               {
                 // id: 1,
-                // imgUrl: require("@/assets/img/gallery/11.jpeg"),
+                imgUrl: require("@/assets/img/gallery/11.jpeg"),
                 imgBis: require("@/assets/img/gallery/11bis.jpeg"),
               },
             ],
@@ -133,7 +133,7 @@ export default createStore({
       {
         id: 2,
         name: "Kovinske ograje",
-        imgUrl: require("@/assets/img/gallery/11.jpeg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik2bis.jpg"),
         details: [""],
         cena: "že od 6€ na tekoči meter letvice/lamele širine 10cm",
         text: `Bi radi zamenjali staro dotrajano leseno ograjo z novo iz pločevine? Brez vzdrževanja, odporna proti vsem vremenskim razmeram,
@@ -145,7 +145,7 @@ export default createStore({
       {
         id: 3,
         name: "Zaščitna ograja proti polžem",
-        imgUrl: require("@/assets/img/gallery/11.jpeg"),
+        imgUrl: require("@/assets/img/smetarniki/Smetarnik4.jpg"),
         details: [
           { material: "Aluminij/Pocinkana pločevina/Inox " },
           { profileHeight: "20cm" },
@@ -196,7 +196,7 @@ export default createStore({
       {
         id: 6,
         name: "Pokrovi za toplotne črpalke",
-        imgUrl: require("@/assets/img/gallery/11.jpeg"),
+        imgUrl: require("@/assets/img/gallery/robnik1.png"),
         details: [""],
         cena: "že od 300 €",
         text: "Zaščita za zunanjo enoto toplotne črpalke ali klime. Ohišje narejeno iz aluminija. Na voljo več različnih barv in materialov.",
@@ -231,7 +231,7 @@ export default createStore({
       },
     ],
     images: [
-      { img: require("@/assets/img/smetarniki/Smetarnik1.jpg") },
+      // { img: require("@/assets/img/smetarniki/Smetarnik1.jpg") },
       { img: require("@/assets/img/smetarniki/Smetarnik2.jpg") },
       { img: require("@/assets/img/smetarniki/Smetarnik3.jpg") },
       { img: require("@/assets/img/smetarniki/Smetarnik4.jpg") },
@@ -480,11 +480,11 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/Smetarnik.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnikbis.jpg"),
       },
-      {
-        id: 45,
-        imgUrl: require("@/assets/img/gallery/Smetarnik1.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik1bis.jpg"),
-      },
+      // {
+      //   id: 45,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik1.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik1bis.jpg"),
+      // },
       {
         id: 46,
         imgUrl: require("@/assets/img/gallery/Smetarnik2.jpg"),

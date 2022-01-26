@@ -156,14 +156,14 @@ export default {
 
 /* Declare heights because of positioning of img element */
 #home .carousel-item {
-  height: 50rem;
+  height: 45rem;
 }
 #home .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 50rem;
+  height: 45rem;
 }
 
 /* MARKETING CONTENT

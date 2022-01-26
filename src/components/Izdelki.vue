@@ -14,18 +14,23 @@
     rel="stylesheet"
   />
   <!-- <h2>{{ izdelek.name }}</h2> -->
-  <a href="http://www.abhisheq.com" target="_blank" rel="dofollow">
+  <a href="#" rel="dofollow">
     <div class="card-cover">
-      <div class="card"></div>
+      <div class="card">
+        <img :src="izdelek.imgUrl" alt="" />
+      </div>
       <p>{{ izdelek.name }}</p>
     </div>
   </a>
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: "Izdelki",
   props: ["izdelek"],
+  ...mapState(["ostaliRobniki"]),
 };
 </script>
 
@@ -36,7 +41,7 @@ export default {
   max-width: 350px;
   margin: auto;
 
-  background: url("../assets/img/gallery/11.jpeg");
+  /* background: url("../assets/img/gallery/11.jpeg"); */
   background-size: cover;
   position: relative;
   transition: 0.4s;
@@ -44,6 +49,11 @@ export default {
   backface-visibility: hidden;
 }
 .card {
+  width: 100%;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.4);
+}
+img {
   width: 100%;
   height: 250px;
   background: rgba(0, 0, 0, 0.4);
@@ -106,11 +116,11 @@ h2 {
   font-size: 21px;
 }
 body {
-  background: #8e9eab; /* fallback for old browsers */
+  background: #ab9b8e; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #eef2f3,
-    #8e9eab
+    #ab998e
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,

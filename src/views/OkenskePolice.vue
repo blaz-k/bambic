@@ -1,6 +1,7 @@
 <template>
   <div id="okenske-police">
     <h1>{{ products[4].name }}</h1>
+    <hr />
 
     <div class="container">
       <div class="osnovni-del bg-light p-4">
@@ -44,6 +45,11 @@ export default {
 </script>
 
 <style scoped>
+hr {
+  border-bottom: 6px solid #001aff4b;
+  width: 40%;
+  margin: 0 auto 3rem;
+}
 img {
   margin-top: 7rem;
   margin-bottom: 3rem;

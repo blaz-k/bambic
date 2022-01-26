@@ -1,0 +1,43 @@
+.osnovni-del {
+  background: linear-gradient(to right, #8b8686, #242424) center no-repeat;
+  /* background: #242424; */
+  background-size: cover;
+  border-radius: 16px;
+  align-items: center;
+  align-content: center;
+  color: #ededed;
+  font-family: "Roboto Condensed", sans-serif;
+
+  /* background: #ff0; */
+  /* height: auto !important;
+  height: 100%;
+  position: relative;
+  width: 1024px;
+  text-align: left;
+  margin: 0 auto;
+  min-height: 100%; */
+}
+/* hr {
+  border-bottom: 6px solid #001aff4b;
+  width: 40%;
+  margin: 0 auto 3rem;
+} */
+/* .hr {
+  border-bottom: 6px solid #ff1100;
+  width: 40%;
+  margin: 0 auto 3rem;
+} */
+
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1.5rem;
+  color: #ededed;
+}
+
+.container {
+  margin-top: 3rem;
+}
