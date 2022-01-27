@@ -30,6 +30,7 @@ import { mapState } from "vuex";
 export default {
   name: "Izdelki",
   props: ["izdelek"],
+
   ...mapState(["ostaliRobniki"]),
 };
 </script>

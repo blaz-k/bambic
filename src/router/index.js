@@ -29,6 +29,10 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    meta: {
+      enterClass: "animate__animated animate__fadeInLeft",
+      leaveClass: "animate__animated animate__fadeOutRight",
+    },
   },
   {
     path: "/contact-us",
