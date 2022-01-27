@@ -29,6 +29,14 @@
         </div>
       </div>
 
+      <div id="testimonials">
+        <!-- <h1>Kaj pravijo naše stranke</h1> -->
+        <div class="row g-4 row-cols-1 row-cols-sm-3 container-fluid">
+          <div v-for="mnenje in mnenja" :key="mnenje">
+            <Testimonials :mnenje="mnenje" />
+          </div>
+        </div>
+      </div>
       <!-- GALLERY -->
 
       <div id="gallery">
@@ -71,6 +79,7 @@ import Test from "./Test.vue";
 import Gallery from "../components/Gallery.vue";
 import Footer from "../components/Footer.vue";
 import Izdelki from "../components/Izdelki.vue";
+import Testimonials from "../components/Testimonials.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
@@ -84,16 +93,28 @@ export default {
     Gallery,
     Footer,
     Izdelki,
+    Testimonials,
   },
   computed: {
     ...mapState(["services"]),
     ...mapState(["products"]),
     ...mapState(["photos"]),
+    ...mapState(["mnenja"]),
   },
 };
 </script>
 
 <style>
+#testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: flex-start;
+  margin-top: 9rem;
+}
+#testimonials h1 {
+  margin-bottom: 7rem;
+}
 #izdelki .izdelek {
   margin-top: 0rem;
 }

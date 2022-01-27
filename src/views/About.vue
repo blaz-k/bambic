@@ -146,7 +146,32 @@
       </div>
     </div>
   </div> -->
-  <div>
+
+  <div id="kontakt">
+    <div>
+      <h1>O nas</h1>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="osnovni-del bg-light p-4">
+        <div class="text-content">
+          <div class="">{{ text }}</div>
+        </div>
+        <!-- <div class="bottom-list">
+            <ul class="list-unstyled">
+              <div v-for="lastnost in products[3].lastnosti" :key="lastnost">
+                <li class="animate__animated animate__backInLeft">
+                  {{ lastnost }}
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="drugi-text">
+            {{ products[3].secondText }}
+          </div> -->
+      </div>
+    </div>
+
     <!-- ------------ Font awesome CDN link ------------------ -->
     <div class="image-area">
       <div class="img-wrapper">
@@ -183,9 +208,65 @@
         </ul>
       </div>
     </div>
+    <div class="dol">
+      <Footer />
+    </div>
   </div>
 </template>
+
+<script>
+import Footer from "../components/Footer.vue";
+
+export default {
+  data() {
+    return {
+      text: `"Naše podjetje ponuja rešitve na področju oblikovanja okolice vašega doma. Ukvarjamo se s preoblikovanjem pločevine v izdelke za vrt in dom. 
+       Naše prednosti so predvsem kvaliteta, zanesljivost in cenovna dostopnost. Cilj nam je ustvariti zadovoljstvo svojih strank."`,
+    };
+  },
+  components: {
+    Footer,
+  },
+};
+</script>
 <style scoped>
+.dol {
+  margin-top: 37rem;
+}
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  /* font-weight: 400; */
+}
+.osnovni-del {
+  border-radius: 46px;
+}
+hr {
+  background-color: rgba(255, 17, 0, 255);
+  height: 6px;
+  border: solid rgba(255, 17, 0, 255);
+  width: 40%;
+  margin: 0 auto 3rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #242424;
+  margin: 40px 0 20px 0;
+  text-align: center;
+  /* font-weight: 700; */
+}
+
+#kontakt {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 /* .back-img {
   background: url("../assets/img/unsplash-photo-3.jpg");
 }
@@ -276,17 +357,12 @@
   background-size: cover;
 } */
 
-* {
-  background: #f1f2f6;
-  margin: 0;
-  padding: 0;
-}
-
 .image-area {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  margin-top: 2rem;
 }
 
 .img-wrapper {

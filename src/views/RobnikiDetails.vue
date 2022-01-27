@@ -55,6 +55,7 @@ export default {
 
 <style scoped>
 button {
+  margin-top: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
   color: #2c3e50;
