@@ -17,6 +17,12 @@
         </div>
       </div>
 
+      <div class="row g-4 row-cols-1 row-cols-sm-3">
+        <div v-for="mnenje in mnenja" :key="mnenje">
+          <Nekaj :mnenje="mnenje" />
+        </div>
+      </div>
+
       <!---- SEVICES ----->
 
       <div id="services">
@@ -80,6 +86,7 @@ import Gallery from "../components/Gallery.vue";
 import Footer from "../components/Footer.vue";
 import Izdelki from "../components/Izdelki.vue";
 import Testimonials from "../components/Testimonials.vue";
+import Nekaj from "../components/Nekaj.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
@@ -94,6 +101,7 @@ export default {
     Footer,
     Izdelki,
     Testimonials,
+    Nekaj,
   },
   computed: {
     ...mapState(["services"]),
