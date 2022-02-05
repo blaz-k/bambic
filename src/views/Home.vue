@@ -10,18 +10,19 @@
         <div>
           <h1>Naša ponudba:</h1>
         </div>
-        <div class="row g-4 row-cols-1 row-cols-sm-3 izdelek">
-          <div v-for="product in products" :key="product">
+        <!-- <div class="row g-4 row-cols-1 row-cols-sm-3 izdelek"> -->
+        <!-- <div v-for="product in products" :key="product">
             <Izdelki :izdelek="product" />
-          </div>
-        </div>
+          </div> -->
+        <Ponudba />
+        <!-- </div> -->
       </div>
-
+      <!-- 
       <div class="row g-4 row-cols-1 row-cols-sm-3">
         <div v-for="mnenje in mnenja" :key="mnenje">
           <Nekaj :mnenje="mnenje" />
         </div>
-      </div>
+      </div> -->
 
       <!---- SEVICES ----->
 
@@ -87,6 +88,7 @@ import Footer from "../components/Footer.vue";
 import Izdelki from "../components/Izdelki.vue";
 import Testimonials from "../components/Testimonials.vue";
 import Nekaj from "../components/Nekaj.vue";
+import Ponudba from "../components/Ponudba.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
@@ -102,6 +104,7 @@ export default {
     Izdelki,
     Testimonials,
     Nekaj,
+    Ponudba,
   },
   computed: {
     ...mapState(["services"]),
