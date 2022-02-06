@@ -1,15 +1,18 @@
 <template>
   <div class="content-wrapper">
     <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
+      <router-link
+        :to="{ name: 'KovinskiRobniki' }"
+        class="news-card__card-link"
+      ></router-link>
       <img
-        src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        src="../assets/img/gallery/robnik.jpg"
         alt=""
         class="news-card__image"
       />
       <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">Amazing First Title</h2>
-        <div class="news-card__post-date">Jan 29, 2018</div>
+        <h2 class="news-card__title">{{ this.ponudba1 }}</h2>
+        <div class="news-card__post-date"></div>
         <div class="news-card__details-wrapper">
           <p class="news-card__excerpt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
@@ -24,17 +27,20 @@
     </div>
 
     <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
+      <router-link
+        :to="{ name: 'Smetarniki' }"
+        class="news-card__card-link"
+      ></router-link>
       <img
-        src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        src="../assets/img/gallery/Smetarnik.jpg"
         alt=""
         class="news-card__image"
       />
       <div class="news-card__text-wrapper">
         <h2 class="news-card__title">
-          Amazing Second Title that is Quite Long
+          {{ this.ponudba2 }}
         </h2>
-        <div class="news-card__post-date">Jan 29, 2018</div>
+        <div class="news-card__post-date"></div>
         <div class="news-card__details-wrapper">
           <p class="news-card__excerpt">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
@@ -48,15 +54,18 @@
     </div>
 
     <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
+      <router-link
+        :to="{ name: 'KovinskeOgraje' }"
+        class="news-card__card-link"
+      ></router-link>
       <img
-        src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        src="../assets/img/gallery/Smetarnik6.jpg"
         alt=""
         class="news-card__image"
       />
       <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">Amazing Title</h2>
-        <div class="news-card__post-date">Jan 29, 2018</div>
+        <h2 class="news-card__title">{{ this.ponudba3 }}</h2>
+        <div class="news-card__post-date"></div>
         <div class="news-card__details-wrapper">
           <p class="news-card__excerpt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
@@ -70,17 +79,23 @@
     </div>
 
     <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
+      <router-link
+        :to="{ name: 'OgrajaPolzi' }"
+        class="news-card__card-link"
+      ></router-link>
       <img
-        src="https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        src="../assets/img/gallery/Smetarnik5.jpg"
         alt=""
         class="news-card__image"
       />
       <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">Amazing Forth Title that is Quite Long</h2>
-        <div class="news-card__post-date">Jan 29, 2018</div>
+        <h2 class="news-card__title">{{ this.ponudba4 }}</h2>
+        <div class="news-card__post-date"></div>
         <div class="news-card__details-wrapper">
-          <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
+          <p class="news-card__excerpt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            beataeLorem ipsum dolor sit amet!
+          </p>
           <a href="#" class="news-card__read-more"
             >Read more <i class="fas fa-long-arrow-alt-right"></i
           ></a>
@@ -89,15 +104,18 @@
     </div>
 
     <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
+      <router-link
+        :to="{ name: 'OkenskePolice' }"
+        class="news-card__card-link"
+      ></router-link>
       <img
-        src="https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        src="../assets/img/gallery/Smetarnik3.jpg"
         alt=""
         class="news-card__image"
       />
       <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">Amazing Fifth Title</h2>
-        <div class="news-card__post-date">Jan 29, 2018</div>
+        <h2 class="news-card__title">{{ this.ponudba5 }}</h2>
+        <div class="news-card__post-date"></div>
         <div class="news-card__details-wrapper">
           <p class="news-card__excerpt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
@@ -112,15 +130,68 @@
     </div>
 
     <div class="news-card">
-      <a href="#" class="news-card__card-link"></a>
+      <router-link
+        :to="{ name: 'PokroviToplotnih' }"
+        class="news-card__card-link"
+      ></router-link>
       <img
-        src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        src="../assets/img/gallery/robnik2.png"
         alt=""
         class="news-card__image"
       />
       <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">Amazing 6<sup>th</sup> Title</h2>
-        <div class="news-card__post-date">Jan 29, 2018</div>
+        <h2 class="news-card__title">{{ this.ponudba6 }}</h2>
+        <div class="news-card__post-date"></div>
+        <div class="news-card__details-wrapper">
+          <p class="news-card__excerpt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            pariatur nemo tempore repellat? Ullam sed officia.
+          </p>
+          <a href="#" class="news-card__read-more"
+            >Read more <i class="fas fa-long-arrow-alt-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <router-link
+        :to="{ name: 'DimniskeKape' }"
+        class="news-card__card-link"
+      ></router-link>
+      <img
+        src="../assets/img/gallery/robnik1.png"
+        alt=""
+        class="news-card__image"
+      />
+      <div class="news-card__text-wrapper">
+        <h2 class="news-card__title">{{ this.ponudba7 }}</h2>
+        <div class="news-card__post-date"></div>
+        <div class="news-card__details-wrapper">
+          <p class="news-card__excerpt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            pariatur nemo tempore repellat? Ullam sed officia.
+          </p>
+          <a href="#" class="news-card__read-more"
+            >Read more <i class="fas fa-long-arrow-alt-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <router-link
+        :to="{ name: 'RobotskeKosilnice' }"
+        class="news-card__card-link"
+      ></router-link>
+      <img
+        src="../assets/img/gallery/robnik4.jpg"
+        alt=""
+        class="news-card__image"
+      />
+      <div class="news-card__text-wrapper">
+        <h2 class="news-card__title">{{ this.ponudba8 }}</h2>
+        <div class="news-card__post-date"></div>
         <div class="news-card__details-wrapper">
           <p class="news-card__excerpt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
@@ -138,15 +209,28 @@
 <script>
 export default {
   name: "Ponudba",
+  data() {
+    return {
+      ponudba1: "Kovinski robniki",
+
+      ponudba2: "Smetarniki",
+      ponudba3: "Kovinske ograje",
+      ponudba4: "Ograje za polže",
+      ponudba5: "Okenske police",
+      ponudba6: "Pokrovi toplotnih črpalk",
+      ponudba7: "Dimniške kape",
+      ponudba8: "Hiša za robotske kosilnice",
+    };
+  },
   //   setup() {
-  //     ponudba1: "hi";
-  //     ponudba2: "";
-  //     ponudba3: "";
-  //     ponudba4: "";
-  //     ponudba5: "";
-  //     ponudba6: "";
-  //     ponudba7: "";
-  //     ponudba8: "";
+  //     ponudba1 = "Kovinski robniki";
+  //     // ponudba2: "";
+  //     // ponudba3: "";
+  //     // ponudba4: "";
+  //     // ponudba5: "";
+  //     // ponudba6: "";
+  //     // ponudba7: "";
+  //     // ponudba8: "";
 
   //     return {
   //       ponudba1,
@@ -174,7 +258,7 @@ export default {
 $card-height-large-screen: 20rem;
 $card-height-mobile: 12rem; */
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -183,7 +267,7 @@ $card-height-mobile: 12rem; */
 
 body {
   background-color: #555;
-}
+} */
 
 .content-wrapper {
   margin: 0 auto;
@@ -252,7 +336,9 @@ body {
 }
 .news-card__title {
   transition: color 1s ease;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
 }
 .news-card__post-date {
   font-size: 0.7rem;
@@ -311,7 +397,6 @@ body {
 } */
 
 .news-card:hover {
-  left: 0.5rem;
-  color: yellow;
+  transform: scale(1.05);
 }
 </style>

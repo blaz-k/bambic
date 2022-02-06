@@ -14,7 +14,9 @@
         <!-- <div v-for="product in products" :key="product">
             <Izdelki :izdelek="product" />
           </div> -->
-        <Ponudba />
+        <div class="mt-4">
+          <Ponudba />
+        </div>
         <!-- </div> -->
       </div>
       <!-- 
@@ -24,9 +26,9 @@
         </div>
       </div> -->
 
-      <!---- SEVICES ----->
+      <!---- SEVICES  zaenkrat ne ----->
 
-      <div id="services">
+      <!-- <div id="services">
         <h1>Storitve</h1>
 
         <div class="row g-4 row-cols-sm-2 p-0 container-fluid">
@@ -34,16 +36,19 @@
             <Services :serviceInServices="service" />
           </div>
         </div>
-      </div>
+      </div> -->
+      <!-- <div>
+        <Mnenja />
+      </div> -->
 
-      <div id="testimonials">
-        <!-- <h1>Kaj pravijo naše stranke</h1> -->
-        <div class="row g-4 row-cols-1 row-cols-sm-3 container-fluid">
+      <!-- <div id="testimonials"> -->
+      <!-- <h1>Kaj pravijo naše stranke</h1> -->
+      <!-- <div class="row g-4 row-cols-1 row-cols-sm-3 container-fluid">
           <div v-for="mnenje in mnenja" :key="mnenje">
             <Testimonials :mnenje="mnenje" />
           </div>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
       <!-- GALLERY -->
 
       <div id="gallery">
@@ -89,6 +94,7 @@ import Izdelki from "../components/Izdelki.vue";
 import Testimonials from "../components/Testimonials.vue";
 import Nekaj from "../components/Nekaj.vue";
 import Ponudba from "../components/Ponudba.vue";
+import Mnenja from "../components/Mnenja.vue";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
@@ -105,6 +111,7 @@ export default {
     Testimonials,
     Nekaj,
     Ponudba,
+    Mnenja,
   },
   computed: {
     ...mapState(["services"]),
@@ -188,14 +195,14 @@ export default {
 
 /* Declare heights because of positioning of img element */
 #home .carousel-item {
-  height: 45rem;
+  height: 35rem;
 }
 #home .carousel-item > img {
   position: absolute;
-  top: 0;
+  top: 15px;
   left: 0;
   min-width: 100%;
-  height: 45rem;
+  height: 35rem;
 }
 
 /* MARKETING CONTENT
@@ -234,38 +241,73 @@ export default {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
+/* @media (min-width: 40em) {
   #home .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+    margin-bottom: 0.25rem;
+    font-size: 1.85rem;
+    line-height: 1.6;
+    color: yellow;
   }
 
   #home .featurette-heading {
     font-size: 50px;
   }
-}
+} */
 
-@media (min-width: 62em) {
+/* @media (min-width: 62em) {
+  #home .carousel-caption p {
+    margin-bottom: 0.25rem;
+    font-size: 1.85rem;
+    line-height: 1.6;
+    color: white;
+  }
+
   #home .featurette-heading {
+    font-size: 50px;
     margin-top: 7rem;
   }
 }
 
 @media (max-width: 62em) {
+  #home .carousel-caption p {
+    margin-bottom: 0.25rem;
+    font-size: 1.65rem;
+    line-height: 1.2;
+    color: white;
+  }
+
+  #home .featurette-heading {
+    font-size: 50px;
+    margin-top: 7rem;
+  }
   #home .carousel-item {
-    height: 22rem;
+    height: 24rem;
   }
 }
 
 @media (max-width: 40em) {
+  #home .carousel-caption p {
+    margin-bottom: 0.25rem;
+
+    color: white;
+  }
+
+  #home .featurette-heading {
+    font-size: 50px;
+    margin-top: 7rem;
+  }
+
   #home .carousel-item {
-    height: 15rem;
+    height: 22rem;
   }
   #home .carousel-caption {
-    bottom: 0.5rem;
+    bottom: 0.8rem;
     z-index: 10;
   }
-}
+  #home .carousel-caption p {
+    margin-bottom: 0.25rem;
+    font-size: 1.15rem;
+    line-height: 1.1;
+  }
+} */
 </style>

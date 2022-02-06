@@ -1,15 +1,17 @@
 <template>
   <div id="pokrovi-crpalk">
     <h1>{{ products[5].name }}</h1>
+    <hr />
+
     <div class="container">
       <div class="osnovni-del bg-light p-4">
         <div class="text-content">
           <div class="">{{ products[5].text }}</div>
         </div>
 
-        <div class="cena">
-          Cena: {{ products[5].cena }} ----> a jo sploh prikažemo?
-        </div>
+        <!-- <div class="cena">
+          Cena: {{ products[5].cena }}  a jo sploh prikažemo?
+        </div> -->
       </div>
 
       <img :src="products[5].imgUrl" alt="" />
@@ -69,8 +71,17 @@ img {
   margin-top: 3rem;
 }*/
 
+hr {
+  background-color: rgba(255, 17, 0, 255);
+  height: 6px;
+  border: solid rgba(255, 17, 0, 255);
+  width: 55%;
+  margin: 0 auto 3rem;
+}
+
 h1 {
-  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-size: 3rem;
   color: #ff1100;
   margin: 40px 0 20px 0;
   text-align: center;

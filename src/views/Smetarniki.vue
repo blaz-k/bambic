@@ -63,13 +63,7 @@ export default {
 .osnovni-del {
   border-radius: 46px;
 }
-hr {
-  background-color: rgba(255, 17, 0, 255);
-  height: 6px;
-  border: solid rgba(255, 17, 0, 255);
-  width: 40%;
-  margin: 0 auto 3rem;
-}
+
 .polepsaj {
   margin-top: 5rem;
   display: flex;
@@ -91,14 +85,37 @@ hr {
   font-size: 1.5rem;
   margin-top: 6rem;
 }
+
+hr {
+  background-color: rgba(255, 17, 0, 255);
+  height: 6px;
+  border: solid rgba(255, 17, 0, 255);
+  width: 55%;
+  margin: 0 auto 3rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ff1100;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+/* hr {
+  background-color: rgba(255, 17, 0, 255);
+  height: 6px;
+  border: solid rgba(255, 17, 0, 255);
+  width: 40%;
+  margin: 0 auto 3rem;
+}
 h1 {
   text-transform: uppercase;
   font-size: 3rem;
   color: #242424;
   margin: 40px 0 20px 0;
   text-align: center;
-  /* font-weight: 700; */
-}
+} */
 
 li {
   font-weight: 400;

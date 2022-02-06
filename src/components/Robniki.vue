@@ -1,17 +1,17 @@
 <template>
-  <router-link
-    :to="{
-      name: 'RobnikiDetails',
-      params: {
-        robnikiId: this.robniki.id,
-        robnikName: this.robniki.detailName,
-        robnikText: this.robniki.detailText,
-        robnikImages: this.robniki.images,
-        imgRobnik: this.robniki.imgRobnik,
-      },
-    }"
-  >
-    <div>
+  <div>
+    <router-link
+      :to="{
+        name: 'RobnikiDetails',
+        params: {
+          robnikiId: this.robniki.id,
+          robnikName: this.robniki.detailName,
+          robnikText: this.robniki.detailText,
+          robnikImages: this.robniki.images,
+          imgRobnik: this.robniki.imgRobnik,
+        },
+      }"
+    >
       <link
         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
         rel="stylesheet"
@@ -22,12 +22,14 @@
           <img :src="robniki.imgRobnik" alt="" />
           <p class="card-desc">
             {{ robniki.detailText }}
+
             <button class="btn btn-outline-secondary">Več</button>
           </p>
         </div>
       </div>
-    </div>
-  </router-link>
+    </router-link>
+  </div>
+
   <!-- <h2>{{ products[0].details[0] }}</h2> -->
 </template>
 
@@ -59,6 +61,17 @@ body {
   background-color: #34495e;
 } */
 
+.btn-outline-secondary {
+  border-radius: 15px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
 .cards {
   width: 100%;
   display: flex;
@@ -67,7 +80,7 @@ body {
 }
 
 .card {
-  margin: 40px;
+  margin: 20px;
   position: relative;
   max-width: 250px;
   max-height: 350px;
@@ -79,10 +92,12 @@ body {
   text-align: center;
   font-size: 24px;
   color: #fff;
-  background-color: #6184a8;
+  /* background-color: #6184a8; */
   padding: 2%;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
+  background: linear-gradient(to right, #8b8686, #242424) center no-repeat;
+  /* text-transform: uppercase; */
 }
 
 .card img {
@@ -102,7 +117,8 @@ body {
   top: 0;
   opacity: 0;
   padding: 8px 8%;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background: linear-gradient(to right, #8b8686, #242424) center no-repeat;
   overflow-y: scroll;
   transition: 1.3s ease;
 }
@@ -121,5 +137,12 @@ h1 {
 
 .router-link {
   color: rgb(236, 9, 9);
+}
+
+a {
+  color: #fff;
+}
+a:hover {
+  color: #fff;
 }
 </style>

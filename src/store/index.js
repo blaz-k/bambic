@@ -32,8 +32,8 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/11.jpeg"),
         text: `Kovinski robniki so ena najbolj elegantnih rešitev za oblikovanje vašega vrta ali okolice. Največkrat jih uporabljamo za razmejitev okrasnega 
         lubja in trate. Uporabljajo pa se lahko tudi za številne druge namene. Odlikujejo jih lastnosti kot so: `,
-        obnova: `Kovinski robniki so ena najbolj elegantnih rešitev za oblikovanje vašega vrta ali okolice. Največkrat jih uporabljamo za razmejitev okrasnega 
-        lubja in trate. Uporabljajo pa se lahko tudi za številne druge namene.`,
+        obnova: `So ena najbolj elegantnih rešitev za oblikovanje vašega vrta ali okolice. Največkrat jih uporabljamo za razmejitev okrasnega 
+        lubja in trate.`,
         lastnosti: [
           "- hitra in enostavna montaža",
           "- obstojen in nerjaveč material",
@@ -140,7 +140,7 @@ export default createStore({
          zelo dolga življenska doba, estetsko dovršeno, enostavna montaža. Horizontalna ali vertikalna postavitev letvic. Na voljo več različnih barv, 
          materialov, dimenzij ter profilov. Tudi v imitaciji lesa (dolžine po naročilu)`,
         obnova: `Brez vzdrževanja, odporna proti vsem vremenskim razmeram,
-         zelo dolga življenska doba, estetsko dovršeno, enostavna montaža. Horizontalna ali vertikalna postavitev letvic. Tudi v imitaciji lesa (dolžine po naročilu)`,
+         zelo dolga življenska doba, estetsko dovršeno, enostavna montaža. Horizontalna ali vertikalna postavitev letvic. Tudi v imitaciji lesa `,
       },
       {
         id: 3,
@@ -269,127 +269,127 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik17bis.jpg"),
       },
-      // {
-      //   id: 3,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja2.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja2bis.JPG"),
-      // },
-      // {
-      //   id: 4,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja3.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja3bis.JPG"),
-      // },
-      // {
-      //   id: 5,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja4.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja4bis.JPG"),
-      // },
-      // {
-      //   id: 6,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja5.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja5bis.JPG"),
-      // },
-      // {
-      //   id: 7,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja3.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja3bis.JPG"),
-      // },
-      // {
-      //   id: 8,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja3.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja3bis.JPG"),
-      // },
-      // {
-      //   id: 4,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja6.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja6bis.JPG"),
-      // },
-      // {
-      //   id: 9,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja7.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja7bis.JPG"),
-      // },
-      // {
-      //   id: 10,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja8.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja8bis.JPG"),
-      // },
-      // {
-      //   id: 11,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja9.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja9bis.JPG"),
-      // },
-      // {
-      //   id: 12,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja10.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja10bis.JPG"),
-      // },
-      // {
-      //   id: 13,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja11.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja11bis.JPG"),
-      // },
-      // {
-      //   id: 14,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja12.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja12bis.JPG"),
-      // },
-      // {
-      //   id: 15,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja13.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja13bis.JPG"),
-      // },
-      // {
-      //   id: 16,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja14.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja14bis.JPG"),
-      // },
-      // {
-      //   id: 17,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja15.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja15bis.JPG"),
-      // },
-      // {
-      //   id: 18,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja16.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja16bis.JPG"),
-      // },
-      // {
-      //   id: 19,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja17.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja17bis.JPG"),
-      // },
-      // {
-      //   id: 20,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja18.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja18bis.JPG"),
-      // },
+      {
+        id: 3,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja2.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja2bis.jpg"),
+      },
+      {
+        id: 4,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja3.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja3bis.jpg"),
+      },
+      {
+        id: 5,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja4.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja4bis.jpg"),
+      },
+      {
+        id: 6,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja5.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja5bis.jpg"),
+      },
+      {
+        id: 7,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja3.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja3bis.jpg"),
+      },
+      {
+        id: 8,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja3.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja3bis.jpg"),
+      },
+      {
+        id: 4,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja6.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja6bis.jpg"),
+      },
+      {
+        id: 9,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja7.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja7bis.jpg"),
+      },
+      {
+        id: 10,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja8.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja8bis.jpg"),
+      },
+      {
+        id: 11,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja9.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja9bis.jpg"),
+      },
+      {
+        id: 12,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja10.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja10bis.jpg"),
+      },
+      {
+        id: 13,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja11.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja11bis.jpg"),
+      },
+      {
+        id: 14,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja12.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja12bis.jpg"),
+      },
+      {
+        id: 15,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja13.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja13bis.jpg"),
+      },
+      {
+        id: 16,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja14.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja14bis.jpg"),
+      },
+      {
+        id: 17,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja15.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja15bis.jpg"),
+      },
+      {
+        id: 18,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja16.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja16bis.jpg"),
+      },
+      {
+        id: 19,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja17.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja17bis.jpg"),
+      },
+      {
+        id: 20,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja18.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja18bis.jpg"),
+      },
 
-      // {
-      //   id: 22,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja20.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja20bis.JPG"),
-      // },
-      // {
-      //   id: 23,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja21.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja21bis.JPG"),
-      // },
-      // {
-      //   id: 24,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja22.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja22bis.JPG"),
-      // },
-      // {
-      //   id: 25,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja23.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja23bis.JPG"),
-      // },
-      // {
-      //   id: 26,
-      //   imgUrl: require("@/assets/img/gallery/kovinska-ograja24.JPG"),
-      //   imgBis: require("@/assets/img/gallery/kovinska-ograja24bis.JPG"),
-      // },
+      {
+        id: 22,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja20.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja20bis.jpg"),
+      },
+      {
+        id: 23,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja21.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja21bis.jpg"),
+      },
+      {
+        id: 24,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja22.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja22bis.jpg"),
+      },
+      {
+        id: 25,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja23.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja23bis.jpg"),
+      },
+      {
+        id: 26,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja24.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja24bis.jpg"),
+      },
 
       {
         id: 27,
@@ -411,56 +411,56 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/robnik4.jpg"),
         imgBis: require("@/assets/img/gallery/robnik4bis.jpg"),
       },
-      // {
-      //   id: 31,
-      //   imgUrl: require("@/assets/img/gallery/robnik5.JPG"),
-      //   imgBis: require("@/assets/img/gallery/robnik5bis.JPG"),
-      // },
-      // {
-      //   id: 32,
-      //   imgUrl: require("@/assets/img/gallery/robnik6.JPG"),
-      //   imgBis: require("@/assets/img/gallery/robnik6bis.JPG"),
-      // },
-      // {
-      //   id: 33,
-      //   imgUrl: require("@/assets/img/gallery/robnik7.JPG"),
-      //   imgBis: require("@/assets/img/gallery/robnik7bis.JPG"),
-      // },
-      // {
-      //   id: 34,
-      //   imgUrl: require("@/assets/img/gallery/robnik8.JPG"),
-      //   imgBis: require("@/assets/img/gallery/robnik8bis.JPG"),
-      // },
-      // {
-      //   id: 35,
-      //   imgUrl: require("@/assets/img/gallery/robnik9.JPG"),
-      //   imgBis: require("@/assets/img/gallery/robnik9bis.JPG"),
-      // },
-      // {
-      //   id: 36,
-      //   imgUrl: require("@/assets/img/gallery/robnik10.JPG"),
-      //   imgBis: require("@/assets/img/gallery/robnik10bis.JPG"),
-      // },
-      // {
-      //   id: 37,
-      //   imgUrl: require("@/assets/img/gallery/robnik11.JPG"),
-      //   imgBis: require("@/assets/img/gallery/robnik11bis.JPG"),
-      // },
-      // {
-      //   id: 38,
-      //   imgUrl: require("@/assets/img/gallery/robnik12.JPG"),
-      //   imgBis: require("@/assets/img/gallery/robnik12bis.JPG"),
-      // },
-      // {
-      //   id: 39,
-      //   imgUrl: require("@/assets/img/gallery/robnik13.JPG"),
-      //   imgBis: require("@/assets/img/gallery/robnik13bis.JPG"),
-      // },
-      // {
-      //   id: 40,
-      //   imgUrl: require("@/assets/img/gallery/robnik14.JPG"),
-      //   imgBis: require("@/assets/img/gallery/robnik14bis.JPG"),
-      // },
+      {
+        id: 31,
+        imgUrl: require("@/assets/img/gallery/robnik5.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik5bis.jpg"),
+      },
+      {
+        id: 32,
+        imgUrl: require("@/assets/img/gallery/robnik6.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik6bis.jpg"),
+      },
+      {
+        id: 33,
+        imgUrl: require("@/assets/img/gallery/robnik7.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik7bis.jpg"),
+      },
+      {
+        id: 34,
+        imgUrl: require("@/assets/img/gallery/robnik8.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik8bis.jpg"),
+      },
+      {
+        id: 35,
+        imgUrl: require("@/assets/img/gallery/robnik9.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik9bis.jpg"),
+      },
+      {
+        id: 36,
+        imgUrl: require("@/assets/img/gallery/robnik10.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik10bis.jpg"),
+      },
+      {
+        id: 37,
+        imgUrl: require("@/assets/img/gallery/robnik11.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik11bis.jpg"),
+      },
+      {
+        id: 38,
+        imgUrl: require("@/assets/img/gallery/robnik12.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik12bis.jpg"),
+      },
+      {
+        id: 39,
+        imgUrl: require("@/assets/img/gallery/robnik13.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik13bis.jpg"),
+      },
+      {
+        id: 40,
+        imgUrl: require("@/assets/img/gallery/robnik14.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik14bis.jpg"),
+      },
       {
         id: 41,
         imgUrl: require("@/assets/img/gallery/robnik15.jpg"),
@@ -468,8 +468,23 @@ export default createStore({
       },
       {
         id: 42,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnicabis.jpg"),
+      },
+      {
+        id: 75,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica1.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica1bis.jpg"),
+      },
+      {
+        id: 76,
         imgUrl: require("@/assets/img/gallery/robotska-kosilnica2.jpg"),
         imgBis: require("@/assets/img/gallery/robotska-kosilnica2bis.jpg"),
+      },
+      {
+        id: 77,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica3.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica3bis.jpg"),
       },
       {
         id: 43,
@@ -481,11 +496,11 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/Smetarnik.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnikbis.jpg"),
       },
-      // {
-      //   id: 45,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik1.jpg"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik1bis.jpg"),
-      // },
+      {
+        id: 45,
+        imgUrl: require("@/assets/img/gallery/Smetarnik1.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik1bis.jpg"),
+      },
       {
         id: 46,
         imgUrl: require("@/assets/img/gallery/Smetarnik2.jpg"),
@@ -511,46 +526,46 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/Smetarnik6.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik6bis.jpg"),
       },
-      // {
-      //   id: 51,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik7.JPG"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik7bis.JPG"),
-      // },
-      // {
-      //   id: 52,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik8.JPG"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik8bis.JPG"),
-      // },
-      // {
-      //   id: 53,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik9.JPG"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik9bis.JPG"),
-      // },
-      // {
-      //   id: 54,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik10.JPG"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik10bis.JPG"),
-      // },
-      // {
-      //   id: 55,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik11.JPG"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik11bis.JPG"),
-      // },
-      // {
-      //   id: 57,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik13.JPG"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik13bis.JPG"),
-      // },
-      // {
-      //   id: 58,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik14.JPG"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik14bis.JPG"),
-      // },
-      // {
-      //   id: 59,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik15.JPG"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik15bis.JPG"),
-      // },
+      {
+        id: 51,
+        imgUrl: require("@/assets/img/gallery/Smetarnik7.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik7bis.jpg"),
+      },
+      {
+        id: 52,
+        imgUrl: require("@/assets/img/gallery/Smetarnik8.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik8bis.jpg"),
+      },
+      {
+        id: 53,
+        imgUrl: require("@/assets/img/gallery/Smetarnik9.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik9bis.jpg"),
+      },
+      {
+        id: 54,
+        imgUrl: require("@/assets/img/gallery/Smetarnik10.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik10bis.jpg"),
+      },
+      {
+        id: 55,
+        imgUrl: require("@/assets/img/gallery/Smetarnik11.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik11bis.jpg"),
+      },
+      {
+        id: 57,
+        imgUrl: require("@/assets/img/gallery/Smetarnik13.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik13bis.jpg"),
+      },
+      {
+        id: 58,
+        imgUrl: require("@/assets/img/gallery/Smetarnik14.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik14bis.jpg"),
+      },
+      {
+        id: 59,
+        imgUrl: require("@/assets/img/gallery/Smetarnik15.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik15bis.jpg"),
+      },
       {
         id: 60,
         imgUrl: require("@/assets/img/gallery/Smetarnik16.jpg"),
@@ -566,66 +581,66 @@ export default createStore({
       //   imgUrl: require("@/assets/img/gallery/Smetarnik18.jpg"),
       //   imgBis: require("@/assets/img/gallery/Smetarnik18bis.jpg"),
       // },
-      // {
-      //   id: 63,
-      //   imgUrl: require("@/assets/img/gallery/toplotna1.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna1bis.JPG"),
-      // },
-      // {
-      //   id: 64,
-      //   imgUrl: require("@/assets/img/gallery/toplotna2.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna2bis.JPG"),
-      // },
-      // {
-      //   id: 65,
-      //   imgUrl: require("@/assets/img/gallery/toplotna3.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna3bis.JPG"),
-      // },
-      // {
-      //   id: 66,
-      //   imgUrl: require("@/assets/img/gallery/toplotna4.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna4bis.JPG"),
-      // },
-      // {
-      //   id: 67,
-      //   imgUrl: require("@/assets/img/gallery/toplotna5.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna5bis.JPG"),
-      // },
-      // {
-      //   id: 68,
-      //   imgUrl: require("@/assets/img/gallery/toplotna6.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna6bis.JPG"),
-      // },
-      // {
-      //   id: 69,
-      //   imgUrl: require("@/assets/img/gallery/toplotna7.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna7bis.JPG"),
-      // },
-      // {
-      //   id: 70,
-      //   imgUrl: require("@/assets/img/gallery/toplotna8.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna8bis.JPG"),
-      // },
-      // {
-      //   id: 71,
-      //   imgUrl: require("@/assets/img/gallery/toplotna9.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna9bis.JPG"),
-      // },
-      // {
-      //   id: 72,
-      //   imgUrl: require("@/assets/img/gallery/toplotna10.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna10bis.JPG"),
-      // },
-      // {
-      //   id: 73,
-      //   imgUrl: require("@/assets/img/gallery/toplotna11.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna11bis.JPG"),
-      // },
-      // {
-      //   id: 74,
-      //   imgUrl: require("@/assets/img/gallery/toplotna12.JPG"),
-      //   imgBis: require("@/assets/img/gallery/toplotna12bis.JPG"),
-      // },
+      {
+        id: 63,
+        imgUrl: require("@/assets/img/gallery/toplotna1.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna1bis.jpg"),
+      },
+      {
+        id: 64,
+        imgUrl: require("@/assets/img/gallery/toplotna2.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna2bis.jpg"),
+      },
+      {
+        id: 65,
+        imgUrl: require("@/assets/img/gallery/toplotna3.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna3bis.jpg"),
+      },
+      {
+        id: 66,
+        imgUrl: require("@/assets/img/gallery/toplotna4.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna4bis.jpg"),
+      },
+      {
+        id: 67,
+        imgUrl: require("@/assets/img/gallery/toplotna5.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna5bis.jpg"),
+      },
+      {
+        id: 68,
+        imgUrl: require("@/assets/img/gallery/toplotna6.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna6bis.jpg"),
+      },
+      {
+        id: 69,
+        imgUrl: require("@/assets/img/gallery/toplotna7.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna7bis.jpg"),
+      },
+      {
+        id: 70,
+        imgUrl: require("@/assets/img/gallery/toplotna8.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna8bis.jpg"),
+      },
+      {
+        id: 71,
+        imgUrl: require("@/assets/img/gallery/toplotna9.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna9bis.jpg"),
+      },
+      {
+        id: 72,
+        imgUrl: require("@/assets/img/gallery/toplotna10.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna10bis.jpg"),
+      },
+      {
+        id: 73,
+        imgUrl: require("@/assets/img/gallery/toplotna11.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna11bis.jpg"),
+      },
+      {
+        id: 74,
+        imgUrl: require("@/assets/img/gallery/toplotna12.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna12bis.jpg"),
+      },
     ],
     kontakt: [
       {

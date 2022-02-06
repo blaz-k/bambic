@@ -13,6 +13,12 @@
     <p>recimo: kakšne vrste ograj delaš?</p>
     <img :src="products[1].imgUrl" alt="" />
 
+    <hr />
+
+    <div>
+      <SlikaKovinskeOgraje />
+    </div>
+
     <!-- <p class="cont">{{ products[1].text }}</p> -->
     <Footer />
   </div>
@@ -21,22 +27,18 @@
 <script>
 import { mapState } from "vuex";
 import Footer from "../components/Footer.vue";
+import SlikaKovinskeOgraje from "../components/SlikaKovinskeOgraje.vue";
 
 export default {
   name: "KovinskeOgraje",
   computed: {
     ...mapState(["products"]),
   },
-  components: { Footer },
+  components: { Footer, SlikaKovinskeOgraje },
 };
 </script>
 
 <style scoped>
-hr {
-  border-bottom: 6px solid #001aff4b;
-  width: 40%;
-  margin: 0 auto 3rem;
-}
 img {
   margin-top: 7rem;
 }
@@ -44,8 +46,17 @@ img {
   max-width: 85%;
 }
 
+hr {
+  background-color: rgba(255, 17, 0, 255);
+  height: 6px;
+  border: solid rgba(255, 17, 0, 255);
+  width: 55%;
+  margin: 0 auto 3rem;
+}
+
 h1 {
-  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-size: 3rem;
   color: #ff1100;
   margin: 40px 0 20px 0;
   text-align: center;

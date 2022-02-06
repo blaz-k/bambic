@@ -1,6 +1,6 @@
 <template>
   <div id="robniki-details">
-    <button class="btn btn-outline-danger" @click="back">Nazaj</button>
+    <button class="btn btn-outline-warning" @click="back">Nazaj</button>
     <!-- <button @click="forward">Forward</button> -->
     <!-- <button @click="redirect">Redirect</button> -->
     <div id="robniki-details">
@@ -60,6 +60,7 @@ button {
   margin-bottom: 2rem;
   color: #2c3e50;
   /* color: #42b983; */
+  background: linear-gradient(to right, #8b8686, #5a5757) center no-repeat;
 }
 
 #robniki-details {

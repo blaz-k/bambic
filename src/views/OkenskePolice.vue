@@ -45,11 +45,6 @@ export default {
 </script>
 
 <style scoped>
-hr {
-  border-bottom: 6px solid #001aff4b;
-  width: 40%;
-  margin: 0 auto 3rem;
-}
 img {
   margin-top: 7rem;
   margin-bottom: 3rem;
@@ -57,8 +52,17 @@ img {
 .container {
 }
 
+hr {
+  background-color: rgba(255, 17, 0, 255);
+  height: 6px;
+  border: solid rgba(255, 17, 0, 255);
+  width: 55%;
+  margin: 0 auto 3rem;
+}
+
 h1 {
-  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-size: 3rem;
   color: #ff1100;
   margin: 40px 0 20px 0;
   text-align: center;

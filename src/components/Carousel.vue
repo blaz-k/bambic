@@ -310,12 +310,107 @@ export default {
 </script>
 
 <style scoped>
-#carousel h1 {
+/* #carousel h1 {
+  font-size: 5rem;
   color: #868686;
   font-weight: 700;
-}
-.btn-primary {
+} */
+/* .btn-primary {
   background-color: #272626;
   border-radius: 0px 36px 0px 36px;
+  size: auto;
+} */
+
+@media (min-width: 62em) {
+  #carousel h1 {
+    font-size: 3.2rem;
+
+    color: #868686;
+    font-weight: 700;
+  }
+
+  #home .carousel-caption p {
+    margin-bottom: 0.25rem;
+    font-size: 1.85rem;
+    line-height: 1.6;
+    color: white;
+  }
+  .btn-primary {
+    background-color: #272626;
+    border-radius: 0px 36px 0px 36px;
+    font-size: 1.3rem;
+  }
+
+  #home .featurette-heading {
+    font-size: 50px;
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 62em) {
+  #carousel h1 {
+    color: #868686;
+    font-size: 3.3rem;
+    font-weight: 700;
+  }
+  #home .carousel-caption p {
+    margin-bottom: 0.25rem;
+    font-size: 1.65rem;
+    line-height: 1.2;
+    color: white;
+  }
+  .btn-primary {
+    background-color: #272626;
+    border-radius: 0px 36px 0px 36px;
+    /* width: 120px !important; */
+
+    font-size: 1.2rem;
+  }
+
+  #home .featurette-heading {
+    font-size: 50px;
+    margin-top: 7rem;
+  }
+  #home .carousel-item {
+    height: 24rem;
+  }
+}
+
+@media (max-width: 40em) {
+  #carousel h1 {
+    color: #868686;
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+  #home .carousel-caption p {
+    margin-bottom: 0.25rem;
+
+    color: white;
+  }
+  .btn-primary {
+    background-color: #272626;
+    border-radius: 0px 36px 0px 36px;
+    /* padding-bottom: ; */
+    /* width: 120px !important; */
+    font-size: 0.7rem;
+  }
+
+  #home .featurette-heading {
+    font-size: 50px;
+    margin-top: 7rem;
+  }
+
+  #home .carousel-item {
+    height: 22rem;
+  }
+  #home .carousel-caption {
+    bottom: 0.8rem;
+    z-index: 10;
+  }
+  #home .carousel-caption p {
+    margin-bottom: 0.25rem;
+    font-size: 1.12rem;
+    line-height: 1.1;
+  }
 }
 </style>

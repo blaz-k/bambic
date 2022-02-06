@@ -75,22 +75,39 @@ export default {
   /* font-weight: 400; */
 }
 
-hr {
-  background-color: rgb(131, 28, 21);
-  /* height: 0px; */
-  border: solid 2px rgb(177, 18, 7);
-  width: 40%;
-  margin: 0 auto 3rem;
-}
 .bottom-list {
   margin-top: 6rem;
   margin-bottom: 3rem;
+}
+
+/* hr {
+  background-color: rgb(131, 28, 21);
+  border: solid 2px rgb(177, 18, 7);
+  width: 40%;
+  margin: 0 auto 3rem;
+} */
+
+/* h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ff1100;
+  margin: 40px 0 20px 0;
+  text-align: center;
+} */
+hr {
+  background-color: rgba(255, 17, 0, 255);
+  height: 6px;
+  border: solid rgba(255, 17, 0, 255);
+  width: 55%;
+  margin: 0 auto 3rem;
 }
 
 h1 {
   text-transform: uppercase;
   font-size: 3rem;
   color: #ff1100;
+  /* color: rgb(209, 14, 14); */
+
   margin: 40px 0 20px 0;
   text-align: center;
 }

@@ -38,8 +38,17 @@ img {
   max-width: 85%;
 }
 
+hr {
+  background-color: rgba(255, 17, 0, 255);
+  height: 6px;
+  border: solid rgba(255, 17, 0, 255);
+  width: 55%;
+  margin: 0 auto 3rem;
+}
+
 h1 {
-  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-size: 3rem;
   color: #ff1100;
   margin: 40px 0 20px 0;
   text-align: center;
