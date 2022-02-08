@@ -199,7 +199,8 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/robnik1.png"),
         details: [""],
         cena: "že od 300 €",
-        text: "Zaščita za zunanjo enoto toplotne črpalke ali klime. Ohišje narejeno iz aluminija. Na voljo več različnih barv in materialov.",
+        text: ` " Da bi zunanja enota vaše toplotne črpalke ali klime naprave izgledala kar se da lepo imamo za vas rešitev in sicer kovinski pokrov. 
+        Zaščita za zunanjo enoto toplotne črpalke ali klime. Ohišje narejeno iz aluminija. Na voljo več različnih barv in materialov."`,
         obnova: `Zaščita za zunanjo enoto toplotne črpalke ali klime. Ohišje narejeno iz aluminija. Na voljo več različnih barv in materialov.`,
       },
 
@@ -259,16 +260,101 @@ export default createStore({
     ],
     photos: [
       {
-        id: 1,
+        id: 44,
+        imgUrl: require("@/assets/img/gallery/Smetarnik.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnikbis.jpg"),
+      },
+      {
+        id: 45,
+        imgUrl: require("@/assets/img/gallery/Smetarnik1.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik1bis.jpg"),
+      },
+      {
+        id: 46,
+        imgUrl: require("@/assets/img/gallery/Smetarnik2.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik2bis.jpg"),
+      },
+      {
+        id: 47,
+        imgUrl: require("@/assets/img/gallery/Smetarnik3.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik3bis.jpg"),
+      },
+      {
+        id: 48,
+        imgUrl: require("@/assets/img/gallery/Smetarnik4.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik4bis.jpg"),
+      },
+      {
+        id: 49,
+        imgUrl: require("@/assets/img/gallery/Smetarnik5.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik5bis.jpg"),
+      },
+      {
+        id: 50,
+        imgUrl: require("@/assets/img/gallery/Smetarnik6.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik6bis.jpg"),
+      },
+      {
+        id: 51,
+        imgUrl: require("@/assets/img/gallery/Smetarnik7.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik7bis.jpg"),
+      },
+      {
+        id: 52,
+        imgUrl: require("@/assets/img/gallery/Smetarnik8.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik8bis.jpg"),
+      },
+      {
+        id: 53,
+        imgUrl: require("@/assets/img/gallery/Smetarnik9.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik9bis.jpg"),
+      },
+      {
+        id: 54,
+        imgUrl: require("@/assets/img/gallery/Smetarnik10.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik10bis.jpg"),
+      },
+      {
+        id: 55,
+        imgUrl: require("@/assets/img/gallery/Smetarnik11.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik11bis.jpg"),
+      },
+      {
+        id: 57,
+        imgUrl: require("@/assets/img/gallery/Smetarnik13.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik13bis.jpg"),
+      },
+      {
+        id: 58,
+        imgUrl: require("@/assets/img/gallery/Smetarnik14.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik14bis.jpg"),
+      },
+      {
+        id: 59,
+        imgUrl: require("@/assets/img/gallery/Smetarnik15.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik15bis.jpg"),
+      },
+      {
+        id: 60,
         imgUrl: require("@/assets/img/gallery/Smetarnik16.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik16bis.jpg"),
       },
-
       {
-        id: 2,
+        id: 61,
         imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik17bis.jpg"),
       },
+      // {
+      //   id: 1,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik16.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik16bis.jpg"),
+      // },
+
+      // {
+      //   id: 2,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik17bis.jpg"),
+      // },
       {
         id: 3,
         imgUrl: require("@/assets/img/gallery/kovinska-ograja2.jpg"),
@@ -491,91 +577,7 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/robnik.jpg"),
         imgBis: require("@/assets/img/gallery/robnikbis.jpg"),
       },
-      {
-        id: 44,
-        imgUrl: require("@/assets/img/gallery/Smetarnik.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnikbis.jpg"),
-      },
-      {
-        id: 45,
-        imgUrl: require("@/assets/img/gallery/Smetarnik1.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik1bis.jpg"),
-      },
-      {
-        id: 46,
-        imgUrl: require("@/assets/img/gallery/Smetarnik2.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik2bis.jpg"),
-      },
-      {
-        id: 47,
-        imgUrl: require("@/assets/img/gallery/Smetarnik3.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik3bis.jpg"),
-      },
-      {
-        id: 48,
-        imgUrl: require("@/assets/img/gallery/Smetarnik4.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik4bis.jpg"),
-      },
-      {
-        id: 49,
-        imgUrl: require("@/assets/img/gallery/Smetarnik5.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik5bis.jpg"),
-      },
-      {
-        id: 50,
-        imgUrl: require("@/assets/img/gallery/Smetarnik6.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik6bis.jpg"),
-      },
-      {
-        id: 51,
-        imgUrl: require("@/assets/img/gallery/Smetarnik7.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik7bis.jpg"),
-      },
-      {
-        id: 52,
-        imgUrl: require("@/assets/img/gallery/Smetarnik8.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik8bis.jpg"),
-      },
-      {
-        id: 53,
-        imgUrl: require("@/assets/img/gallery/Smetarnik9.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik9bis.jpg"),
-      },
-      {
-        id: 54,
-        imgUrl: require("@/assets/img/gallery/Smetarnik10.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik10bis.jpg"),
-      },
-      {
-        id: 55,
-        imgUrl: require("@/assets/img/gallery/Smetarnik11.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik11bis.jpg"),
-      },
-      {
-        id: 57,
-        imgUrl: require("@/assets/img/gallery/Smetarnik13.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik13bis.jpg"),
-      },
-      {
-        id: 58,
-        imgUrl: require("@/assets/img/gallery/Smetarnik14.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik14bis.jpg"),
-      },
-      {
-        id: 59,
-        imgUrl: require("@/assets/img/gallery/Smetarnik15.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik15bis.jpg"),
-      },
-      {
-        id: 60,
-        imgUrl: require("@/assets/img/gallery/Smetarnik16.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik16bis.jpg"),
-      },
-      {
-        id: 61,
-        imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik17bis.jpg"),
-      },
+
       // {
       //   id: 62,
       //   imgUrl: require("@/assets/img/gallery/Smetarnik18.jpg"),
@@ -686,6 +688,300 @@ export default createStore({
         kraj: "Ljubljane",
         besedilo: `"Zahvalil bi se vam za pomoč pri izbiri vrste kovinskih robnikov za naš vrt. Poleg vsega pa ste zelo prijazni in ustrežljivi.
         Tudi dostavili ste nam jih takoj naslednji dan. Le tako naprej!"`,
+      },
+    ],
+
+    slikeKovinska: [
+      {
+        id: 3,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja2.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja2bis.jpg"),
+      },
+      {
+        id: 4,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja3.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja3bis.jpg"),
+      },
+      {
+        id: 5,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja4.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja4bis.jpg"),
+      },
+      {
+        id: 6,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja5.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja5bis.jpg"),
+      },
+      {
+        id: 7,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja3.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja3bis.jpg"),
+      },
+      {
+        id: 8,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja3.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja3bis.jpg"),
+      },
+      {
+        id: 4,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja6.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja6bis.jpg"),
+      },
+      {
+        id: 9,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja7.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja7bis.jpg"),
+      },
+      {
+        id: 10,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja8.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja8bis.jpg"),
+      },
+      {
+        id: 11,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja9.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja9bis.jpg"),
+      },
+      {
+        id: 12,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja10.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja10bis.jpg"),
+      },
+      {
+        id: 13,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja11.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja11bis.jpg"),
+      },
+      {
+        id: 14,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja12.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja12bis.jpg"),
+      },
+      {
+        id: 15,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja13.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja13bis.jpg"),
+      },
+      {
+        id: 16,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja14.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja14bis.jpg"),
+      },
+      {
+        id: 17,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja15.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja15bis.jpg"),
+      },
+      {
+        id: 18,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja16.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja16bis.jpg"),
+      },
+      {
+        id: 19,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja17.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja17bis.jpg"),
+      },
+      {
+        id: 20,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja18.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja18bis.jpg"),
+      },
+
+      {
+        id: 22,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja20.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja20bis.jpg"),
+      },
+      {
+        id: 23,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja21.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja21bis.jpg"),
+      },
+      {
+        id: 24,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja22.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja22bis.jpg"),
+      },
+      {
+        id: 25,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja23.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja23bis.jpg"),
+      },
+      {
+        id: 26,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja24.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja24bis.jpg"),
+      },
+    ],
+
+    slikeRobniki: [
+      {
+        id: 43,
+        imgUrl: require("@/assets/img/gallery/robnik.jpg"),
+        imgBis: require("@/assets/img/gallery/robnikbis.jpg"),
+      },
+      {
+        id: 27,
+        imgUrl: require("../assets/img/gallery/robnik1.png"),
+        imgBis: require("../assets/img/gallery/robnik1bis.png"),
+      },
+      {
+        id: 28,
+        imgUrl: require("@/assets/img/gallery/robnik2.png"),
+        imgBis: require("@/assets/img/gallery/robnik2bis.png"),
+      },
+      {
+        id: 29,
+        imgUrl: require("@/assets/img/gallery/robnik3.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik3bis.jpg"),
+      },
+      {
+        id: 30,
+        imgUrl: require("@/assets/img/gallery/robnik4.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik4bis.jpg"),
+      },
+      {
+        id: 31,
+        imgUrl: require("@/assets/img/gallery/robnik5.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik5bis.jpg"),
+      },
+      {
+        id: 32,
+        imgUrl: require("@/assets/img/gallery/robnik6.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik6bis.jpg"),
+      },
+      {
+        id: 33,
+        imgUrl: require("@/assets/img/gallery/robnik7.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik7bis.jpg"),
+      },
+      {
+        id: 34,
+        imgUrl: require("@/assets/img/gallery/robnik8.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik8bis.jpg"),
+      },
+      {
+        id: 35,
+        imgUrl: require("@/assets/img/gallery/robnik9.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik9bis.jpg"),
+      },
+      {
+        id: 36,
+        imgUrl: require("@/assets/img/gallery/robnik10.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik10bis.jpg"),
+      },
+      {
+        id: 37,
+        imgUrl: require("@/assets/img/gallery/robnik11.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik11bis.jpg"),
+      },
+      {
+        id: 38,
+        imgUrl: require("@/assets/img/gallery/robnik12.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik12bis.jpg"),
+      },
+      {
+        id: 39,
+        imgUrl: require("@/assets/img/gallery/robnik13.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik13bis.jpg"),
+      },
+      {
+        id: 40,
+        imgUrl: require("@/assets/img/gallery/robnik14.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik14bis.jpg"),
+      },
+      {
+        id: 41,
+        imgUrl: require("@/assets/img/gallery/robnik15.jpg"),
+        imgBis: require("@/assets/img/gallery/robnik15bis.jpg"),
+      },
+    ],
+    slikeSmetarnik: [
+      {
+        id: 44,
+        imgUrl: require("@/assets/img/gallery/Smetarnik.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnikbis.jpg"),
+      },
+      {
+        id: 45,
+        imgUrl: require("@/assets/img/gallery/Smetarnik1.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik1bis.jpg"),
+      },
+      {
+        id: 46,
+        imgUrl: require("@/assets/img/gallery/Smetarnik2.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik2bis.jpg"),
+      },
+      {
+        id: 47,
+        imgUrl: require("@/assets/img/gallery/Smetarnik3.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik3bis.jpg"),
+      },
+      {
+        id: 48,
+        imgUrl: require("@/assets/img/gallery/Smetarnik4.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik4bis.jpg"),
+      },
+      {
+        id: 49,
+        imgUrl: require("@/assets/img/gallery/Smetarnik5.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik5bis.jpg"),
+      },
+      {
+        id: 50,
+        imgUrl: require("@/assets/img/gallery/Smetarnik6.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik6bis.jpg"),
+      },
+      {
+        id: 51,
+        imgUrl: require("@/assets/img/gallery/Smetarnik7.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik7bis.jpg"),
+      },
+      {
+        id: 52,
+        imgUrl: require("@/assets/img/gallery/Smetarnik8.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik8bis.jpg"),
+      },
+      {
+        id: 53,
+        imgUrl: require("@/assets/img/gallery/Smetarnik9.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik9bis.jpg"),
+      },
+      {
+        id: 54,
+        imgUrl: require("@/assets/img/gallery/Smetarnik10.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik10bis.jpg"),
+      },
+      {
+        id: 55,
+        imgUrl: require("@/assets/img/gallery/Smetarnik11.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik11bis.jpg"),
+      },
+      {
+        id: 57,
+        imgUrl: require("@/assets/img/gallery/Smetarnik13.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik13bis.jpg"),
+      },
+      {
+        id: 58,
+        imgUrl: require("@/assets/img/gallery/Smetarnik14.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik14bis.jpg"),
+      },
+      {
+        id: 59,
+        imgUrl: require("@/assets/img/gallery/Smetarnik15.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik15bis.jpg"),
+      },
+      {
+        id: 60,
+        imgUrl: require("@/assets/img/gallery/Smetarnik16.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik16bis.jpg"),
+      },
+      {
+        id: 61,
+        imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik17bis.jpg"),
       },
     ],
   },
