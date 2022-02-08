@@ -1,8 +1,50 @@
 <template>
   <div id="contact-us">
     <h1 class="title">Kontaktne informacije</h1>
+    <hr />
 
     <div class="row">
+      <!-- <div class="cot">
+        <div class="front side">
+          <div class="content">
+            <h1>Ali pa nas pokličete</h1>
+
+            <div v-for="lastnik in kontakt" :key="lastnik">
+              <div class="call">
+                <div class="jaz">
+                  <span class="mr">{{ lastnik.name }} </span>
+                  <span> {{ lastnik.surname }}</span>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col">
+                    <span class="naslov">Tel:</span>
+                    <div>
+                      <span>{{ lastnik.tel }}</span>
+                    </div>
+
+                    <span class="naslov">Email:</span>
+                    <div>
+                      <span>{{ lastnik.email }}</span>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <span class="naslov">Naslov:</span>
+                    <div>
+                      <span>{{ lastnik.address }}</span>
+                    </div>
+                    <div>
+                      <span>{{ lastnik.postalCode }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="kontakt"></span>
+          </div>
+        </div>
+      </div> -->
       <!-- <div class="col-md-4">
         <div>
           <iframe
@@ -97,35 +139,105 @@
         loading="lazy"
       ></iframe>
     </div> -->
+    <!-- <div class="container">
+      <div class="cot">
+        <div class="front side">
+          <div class="content">
+            <h1>Kontaktirajte nas</h1>
+
+            <div v-for="lastnik in kontakt" :key="lastnik">
+              <div class="call">
+                <div class="jaz">
+                  <span class="mr">{{ lastnik.name }} </span>
+                  <span> {{ lastnik.surname }}</span>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col">
+                    <span class="naslov">Tel:</span>
+                    <div>
+                      <span>{{ lastnik.tel }}</span>
+                    </div>
+
+                    <span class="naslov">Email:</span>
+                    <div>
+                      <span>{{ lastnik.email }}</span>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <span class="naslov">Naslov:</span>
+                    <div>
+                      <span>{{ lastnik.address }}</span>
+                    </div>
+                    <div>
+                      <span>{{ lastnik.postalCode }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="kontakt"></span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
     <div class="container">
-      <div class="front side">
-        <div class="content">
-          <h1>Lahko nam pošljete sporočilo</h1>
-          <p>
-            Ali vas kakšen izdelek zanima bolj podrobno, ali bi radi izvedeli
-            kaj več? Pošljite nam sporočilo!
-          </p>
-          <span class="kontakt"></span>
+      <div class="cot">
+        <div class="front side">
+          <div class="content">
+            <h1>Kontaktirajte nas</h1>
+
+            <div v-for="lastnik in kontakt" :key="lastnik">
+              <div class="call">
+                <div class="jaz">
+                  <span class="mr">{{ lastnik.name }} </span>
+                  <span> {{ lastnik.surname }}</span>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col">
+                    <span class="naslov">Tel:</span>
+                    <div>
+                      <span>{{ lastnik.tel }}</span>
+                    </div>
+
+                    <span class="naslov">Email:</span>
+                    <div>
+                      <span>{{ lastnik.email }}</span>
+                    </div>
+                  </div>
+
+                  <div class="col nas">
+                    <span class="naslov">Naslov:</span>
+                    <div>
+                      <span>{{ lastnik.address }}</span>
+                    </div>
+                    <div>
+                      <span>{{ lastnik.postalCode }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <span class="kontakt"></span> -->
+          </div>
         </div>
       </div>
-      <div class="back side">
-        <div class="content">
-          <h1>Kontaktirajte nas!</h1>
-          <form>
-            <label>Ime :</label>
-            <input type="text" placeholder="Janez Novak" />
-            <label>Vaš email :</label>
-            <input type="text" placeholder="janez-novak@mail.com" />
-            <label>Vaše sporočilo :</label>
-            <textarea placeholder="Kaj vas zanima?"></textarea>
-            <input type="submit" value="Pošlji" />
-          </form>
-        </div>
-      </div>
+      <iframe
+        class="cot"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.192231970362!2d14.143070915658598!3d46.10707639833658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ac32fccda7ea9%3A0xd715e5148a37a3fd!2sPot%20na%20Pretov%C4%8D%205%2C%204224%20Gorenja%20vas!5e0!3m2!1sen!2ssi!4v1642161702760!5m2!1sen!2ssi"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
     </div>
 
-    <div class="row">
-      <div class="col-sm-6">
+    <!-- <div class="row">
+      <div class="col-sm-4">
         <iframe
           class="cot"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.192231970362!2d14.143070915658598!3d46.10707639833658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ac32fccda7ea9%3A0xd715e5148a37a3fd!2sPot%20na%20Pretov%C4%8D%205%2C%204224%20Gorenja%20vas!5e0!3m2!1sen!2ssi!4v1642161702760!5m2!1sen!2ssi"
@@ -136,7 +248,7 @@
           loading="lazy"
         ></iframe>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-8">
         <div class="cot">
           <div class="front side">
             <div class="content">
@@ -179,7 +291,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <Footer />
   </div>
   <!-- <div id="contact-us">
@@ -520,6 +632,21 @@ input[type="file"] {
   }
 } */
 
+hr {
+  background-color: rgb(255, 17, 0);
+  height: 2px;
+  border: solid rgb(255, 17, 0);
+  width: 55%;
+  margin: 0 auto 3rem;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ff1100;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
 .jaz {
   font-size: 25px;
   margin-bottom: 2rem;
@@ -531,12 +658,12 @@ input[type="file"] {
 .mr {
   margin-right: 2vh;
 }
-.title {
+/* .title {
   font-size: 2.8rem;
   color: rgb(209, 14, 14);
   margin: 40px 0 20px 0;
   text-align: center;
-}
+} */
 
 .call {
   margin-top: 50px;
@@ -555,37 +682,16 @@ input[type="file"] {
   padding: 0;
   box-sizing: border-box;
 }
-* {
-}
-body {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: relative;
-  background-color: #111;
-  font-family: "Montserrat";
-}
 
 .container {
-  min-width: 220px;
+  min-width: 120px;
   min-height: 425px;
   border-radius: 20px;
-  position: relative;
-  -webkit-transition: 1.5s ease-in-out;
+  /* position: relative; */
+  /* -webkit-transition: 1.5s ease-in-out;
   transition: 1.5s ease-in-out;
-  transform-style: preserve-3d;
-  display: flex;
+  transform-style: preserve-3d; */
+  /* display: flex; */
   /* margin-right: auto;
     margin-left: auto; */
   margin-top: 3rem;
@@ -593,7 +699,7 @@ body {
 }
 
 .cot {
-  min-width: 450px;
+  min-width: 150px;
   min-height: 455px;
   border-radius: 20px;
   /* position: absolute; */
@@ -679,10 +785,10 @@ body {
   padding-top: 10px;
   background-image: url("../assets/img/front-background.jpeg");
 }
-.container:hover {
+/* .container:hover {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-}
+} */
 
 form {
   text-align: left;
@@ -733,5 +839,11 @@ form input[type="submit"] {
 .white-mode:hover {
   background-color: #fff;
   color: #122;
+}
+
+@media (max-width: 575px) {
+  .nas {
+    display: none;
+  }
 }
 </style>

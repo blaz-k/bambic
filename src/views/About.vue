@@ -241,20 +241,19 @@ export default {
   border-radius: 46px;
 }
 hr {
-  background-color: rgba(255, 17, 0, 255);
-  height: 6px;
-  border: solid rgba(255, 17, 0, 255);
-  width: 40%;
+  background-color: rgb(255, 17, 0);
+  height: 2px;
+  border: solid rgb(255, 17, 0);
+  width: 55%;
   margin: 0 auto 3rem;
 }
 
 h1 {
   text-transform: uppercase;
   font-size: 3rem;
-  color: #242424;
+  color: #ff1100;
   margin: 40px 0 20px 0;
   text-align: center;
-  /* font-weight: 700; */
 }
 
 #kontakt {
