@@ -1,12 +1,20 @@
 <template>
   <div id="dimniske-kape">
-    <h1>{{ products[6].name }}</h1>
+    <h2>{{ products[6].name }}</h2>
+
+    <div class="">
+      <div class="container mb-4 text">{{ products[6].text }}</div>
+    </div>
     <hr />
 
     <div class="container">
-      <div class="osnovni-del bg-light p-4">
-        <div class="text-content">
-          <div class="">{{ products[6].text }}</div>
+      <div class="-fx-image-gal slika">
+        <!-- <div class="-fx-gal-item"> -->
+        <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+          <div v-for="slika in slikeDimniskih" :key="slika">
+            <SlikeDimniske :slika="slika" />
+          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -18,13 +26,15 @@
 <script>
 import { mapState } from "vuex";
 import Footer from "../components/Footer.vue";
+import SlikeDimniske from "../components/SlikeStrani/SlikeDimniske.vue";
 
 export default {
   name: "DimniskeKape",
   computed: {
     ...mapState(["products"]),
+    ...mapState(["slikeDimniskih"]),
   },
-  components: { Footer },
+  components: { Footer, SlikeDimniske },
 };
 </script>
 
@@ -59,11 +69,14 @@ hr {
   margin: 0 auto 3rem;
 }
 
-h1 {
+h2 {
   text-transform: uppercase;
-  font-size: 2rem;
-  color: #362c2b;
+  color: #242424;
   margin: 40px 0 20px 0;
   text-align: center;
+}
+
+.text {
+  font-size: 17px;
 }
 </style>

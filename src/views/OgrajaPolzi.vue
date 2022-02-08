@@ -1,11 +1,23 @@
 <template>
   <div id="ograja-polzi">
-    <h1>{{ products[2].name }}</h1>
+    <h2>{{ products[2].name }}</h2>
+    <div class=""></div>
+    <div class="container mb-4 text">{{ products[2].text }}</div>
     <hr />
     <div class="container">
-      <div class="osnovni-del bg-light p-4">
+      <!-- <div class="osnovni-del bg-light p-4">
         <div class="text-content">
           <div class="">{{ products[2].text }}</div>
+        </div>
+      </div> -->
+
+      <div class="-fx-image-gal slika">
+        <!-- <div class="-fx-gal-item"> -->
+        <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+          <div v-for="slika in slikePolzi" :key="slika">
+            <SlikePolzi :slika="slika" />
+          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -18,13 +30,15 @@
 <script>
 import { mapState } from "vuex";
 import Footer from "../components/Footer.vue";
+import SlikePolzi from "../components/SlikeStrani/SlikePolzi.vue";
 
 export default {
   name: "“Polzi",
   computed: {
     ...mapState(["products"]),
+    ...mapState(["slikePolzi"]),
   },
-  components: { Footer },
+  components: { Footer, SlikePolzi },
 };
 </script>
 
@@ -40,10 +54,9 @@ hr {
   margin: 0 auto 3rem;
 }
 
-h1 {
+h2 {
   text-transform: uppercase;
-  font-size: 2rem;
-  color: #362c2b;
+  color: #242424;
   margin: 40px 0 20px 0;
   text-align: center;
 }
@@ -82,4 +95,8 @@ h1 {
   text-align: start;
   font-size: 1.5rem;
 }*/
+
+.text {
+  font-size: 17px;
+}
 </style>

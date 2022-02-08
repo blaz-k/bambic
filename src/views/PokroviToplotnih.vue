@@ -1,19 +1,26 @@
 <template>
   <div id="pokrovi-crpalk">
-    <h1>{{ products[5].name }}</h1>
+    <h2>{{ products[5].name }}</h2>
+    <div class="">
+      <div class="container mb-4 text">{{ products[5].text }}</div>
+    </div>
     <hr />
 
     <div class="container">
-      <div class="osnovni-del bg-light p-4">
+      <!-- <div class="osnovni-del bg-light p-4">
         <div class="text-content">
           <div class="">{{ products[5].text }}</div>
         </div>
-
-        <!-- <div class="cena">
-          Cena: {{ products[5].cena }}  a jo sploh prikažemo?
-        </div> -->
+      </div> -->
+      <div class="-fx-image-gal slika">
+        <!-- <div class="-fx-gal-item"> -->
+        <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+          <div v-for="slika in slikeToplotnih" :key="slika">
+            <SlikeToplotnih :slika="slika" />
+          </div>
+          <!-- </div> -->
+        </div>
       </div>
-
       <!-- <img :src="products[5].imgUrl" alt="" /> -->
     </div>
     <!-- <Footer /> -->
@@ -22,13 +29,15 @@
 <script>
 import { mapState } from "vuex";
 import Footer from "../components/Footer.vue";
+import SlikeToplotnih from "../components/SlikeStrani/SlikeToplotnih.vue";
 
 export default {
   name: "PokroviToplotnih",
   computed: {
     ...mapState(["products"]),
+    ...mapState(["slikeToplotnih"]),
   },
-  components: { Footer },
+  components: { Footer, SlikeToplotnih },
 };
 </script>
 
@@ -49,6 +58,11 @@ export default {
 img {
   margin-top: 7rem;
 }
+
+.slika {
+  margin-top: 7rem;
+}
+
 #pokrovi-crpalk {
   /* position: absolute; */
   margin-left: auto;
@@ -79,11 +93,14 @@ hr {
   margin: 0 auto 3rem;
 }
 
-h1 {
+h2 {
   text-transform: uppercase;
-  font-size: 2rem;
-  color: #362c2b;
+  color: #242424;
   margin: 40px 0 20px 0;
   text-align: center;
+}
+
+.text {
+  font-size: 17px;
 }
 </style>

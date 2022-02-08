@@ -199,8 +199,8 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/robnik1.png"),
         details: [""],
         cena: "že od 300 €",
-        text: ` " Da bi zunanja enota vaše toplotne črpalke ali klime naprave izgledala kar se da lepo imamo za vas rešitev in sicer kovinski pokrov. 
-        Zaščita za zunanjo enoto toplotne črpalke ali klime. Ohišje narejeno iz aluminija. Na voljo več različnih barv in materialov."`,
+        text: `Da bi zunanja enota vaše toplotne črpalke ali klime naprave izgledala kar se da lepo imamo za vas rešitev in sicer kovinski pokrov. 
+        Zaščita za zunanjo enoto toplotne črpalke ali klime. Ohišje narejeno iz aluminija. Na voljo več različnih barv in materialov.`,
         obnova: `Zaščita za zunanjo enoto toplotne črpalke ali klime. Ohišje narejeno iz aluminija. Na voljo več različnih barv in materialov.`,
       },
 
@@ -982,6 +982,161 @@ export default createStore({
         id: 61,
         imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik17bis.jpg"),
+      },
+    ],
+
+    slikePolzi: [
+      {
+        id: 42,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnicabis.jpg"),
+      },
+      {
+        id: 75,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica1.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica1bis.jpg"),
+      },
+      {
+        id: 76,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica2.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica2bis.jpg"),
+      },
+      {
+        id: 77,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica3.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica3bis.jpg"),
+      },
+    ],
+
+    slikeToplotnih: [
+      {
+        id: 63,
+        imgUrl: require("@/assets/img/gallery/toplotna1.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna1bis.jpg"),
+      },
+      {
+        id: 64,
+        imgUrl: require("@/assets/img/gallery/toplotna2.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna2bis.jpg"),
+      },
+      {
+        id: 65,
+        imgUrl: require("@/assets/img/gallery/toplotna3.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna3bis.jpg"),
+      },
+      {
+        id: 66,
+        imgUrl: require("@/assets/img/gallery/toplotna4.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna4bis.jpg"),
+      },
+      {
+        id: 67,
+        imgUrl: require("@/assets/img/gallery/toplotna5.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna5bis.jpg"),
+      },
+      {
+        id: 68,
+        imgUrl: require("@/assets/img/gallery/toplotna6.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna6bis.jpg"),
+      },
+      {
+        id: 69,
+        imgUrl: require("@/assets/img/gallery/toplotna7.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna7bis.jpg"),
+      },
+      {
+        id: 70,
+        imgUrl: require("@/assets/img/gallery/toplotna8.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna8bis.jpg"),
+      },
+      {
+        id: 71,
+        imgUrl: require("@/assets/img/gallery/toplotna9.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna9bis.jpg"),
+      },
+      {
+        id: 72,
+        imgUrl: require("@/assets/img/gallery/toplotna10.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna10bis.jpg"),
+      },
+      {
+        id: 73,
+        imgUrl: require("@/assets/img/gallery/toplotna11.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna11bis.jpg"),
+      },
+      {
+        id: 74,
+        imgUrl: require("@/assets/img/gallery/toplotna12.jpg"),
+        imgBis: require("@/assets/img/gallery/toplotna12bis.jpg"),
+      },
+    ],
+
+    slikeDimniskih: [
+      {
+        id: 42,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnicabis.jpg"),
+      },
+      {
+        id: 75,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica1.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica1bis.jpg"),
+      },
+      {
+        id: 76,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica2.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica2bis.jpg"),
+      },
+      {
+        id: 77,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica3.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica3bis.jpg"),
+      },
+    ],
+
+    slikeRobotskih: [
+      {
+        id: 42,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnicabis.jpg"),
+      },
+      {
+        id: 75,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica1.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica1bis.jpg"),
+      },
+      {
+        id: 76,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica2.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica2bis.jpg"),
+      },
+      {
+        id: 77,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica3.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica3bis.jpg"),
+      },
+    ],
+
+    slikeOkenske: [
+      {
+        id: 42,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnicabis.jpg"),
+      },
+      {
+        id: 75,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica1.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica1bis.jpg"),
+      },
+      {
+        id: 76,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica2.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica2bis.jpg"),
+      },
+      {
+        id: 77,
+        imgUrl: require("@/assets/img/gallery/robotska-kosilnica3.jpg"),
+        imgBis: require("@/assets/img/gallery/robotska-kosilnica3bis.jpg"),
       },
     ],
   },

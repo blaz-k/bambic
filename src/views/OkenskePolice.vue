@@ -1,12 +1,19 @@
 <template>
   <div id="okenske-police">
-    <h1>{{ products[4].name }}</h1>
+    <h2>{{ products[4].name }}</h2>
+    <div class="">
+      <div class="container mb-4 text">{{ products[4].text }}</div>
+    </div>
     <hr />
 
     <div class="container">
-      <div class="osnovni-del bg-light p-4">
-        <div class="text-content">
-          <div>{{ products[4].text }}</div>
+      <div class="-fx-image-gal slika">
+        <!-- <div class="-fx-gal-item"> -->
+        <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+          <div v-for="slika in slikeOkenske" :key="slika">
+            <SlikeOkenske :slika="slika" />
+          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -34,13 +41,15 @@
 <script>
 import { mapState } from "vuex";
 import Footer from "../components/Footer.vue";
+import SlikeOkenske from "../components/SlikeStrani/SlikeOkenske.vue";
 
 export default {
   name: "OkenskePolice",
   computed: {
     ...mapState(["products"]),
+    ...mapState(["slikeOkenske"]),
   },
-  components: { Footer },
+  components: { Footer, SlikeOkenske },
 };
 </script>
 
@@ -60,10 +69,10 @@ hr {
   margin: 0 auto 3rem;
 }
 
-h1 {
+h2 {
   text-transform: uppercase;
-  font-size: 2rem;
-  color: #362c2b;
+  /* font-size: 2rem; */
+  color: #242424;
   margin: 40px 0 20px 0;
   text-align: center;
 }
@@ -90,4 +99,8 @@ h1 {
   font-size: 1.5rem;
   margin-top: 3rem;
 }*/
+
+.text {
+  font-size: 17px;
+}
 </style>
