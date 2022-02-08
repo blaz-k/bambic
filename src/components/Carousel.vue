@@ -24,30 +24,6 @@
         data-bs-slide-to="2"
         aria-label="Slide 3"
       ></button>
-      <button
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide-to="3"
-        aria-label="Slide 4"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide-to="4"
-        aria-label="Slide 5"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide-to="5"
-        aria-label="Slide 6"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide-to="6"
-        aria-label="Slide 7"
-      ></button>
     </div>
 
     <div class="carousel-inner">
@@ -127,37 +103,6 @@
         >
           <rect width="100%" height="100%" fill="#777" />
         </svg>
-        <img :src="products[2].imgUrl" class="d-block w-100" alt="..." />
-
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>{{ products[2].name }}</h1>
-            <p>
-              {{ products[2].obnova }}
-            </p>
-            <p>
-              <router-link
-                class="btn btn-primary"
-                :to="{ name: 'OgrajaPolzi' }"
-                >{{ more }}</router-link
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <svg
-          class="bd-placeholder-img"
-          width="100%"
-          height="100%"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <rect width="100%" height="100%" fill="#777" />
-        </svg>
         <img :src="products[3].imgUrl" class="d-block w-100" alt="..." />
 
         <div class="container">
@@ -170,99 +115,6 @@
               <router-link
                 class="btn btn-primary"
                 :to="{ name: 'Smetarniki' }"
-                >{{ more }}</router-link
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <svg
-          class="bd-placeholder-img"
-          width="100%"
-          height="100%"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <rect width="100%" height="100%" fill="#777" />
-        </svg>
-        <img :src="products[4].imgUrl" class="d-block w-100" alt="..." />
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>{{ products[4].name }}</h1>
-            <p>
-              {{ products[4].obnova }}
-            </p>
-            <p>
-              <router-link
-                class="btn btn-primary"
-                :to="{ name: 'OkenskePolice' }"
-                >{{ more }}</router-link
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <svg
-          class="bd-placeholder-img"
-          width="100%"
-          height="100%"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <rect width="100%" height="100%" fill="#777" />
-        </svg>
-        <img :src="products[5].imgUrl" class="d-block w-100" alt="..." />
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>{{ products[5].name }}</h1>
-            <p>
-              {{ products[5].obnova }}
-            </p>
-            <p>
-              <router-link
-                class="btn btn-primary"
-                :to="{ name: 'PokroviToplotnih' }"
-                >{{ more }}</router-link
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <svg
-          class="bd-placeholder-img"
-          width="100%"
-          height="100%"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <rect width="100%" height="100%" fill="#777" />
-        </svg>
-        <img :src="products[6].imgUrl" class="d-block w-100" alt="..." />
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>{{ products[6].name }}</h1>
-            <p>
-              {{ products[6].obnova }}
-            </p>
-            <p>
-              <router-link
-                class="btn btn-primary"
-                :to="{ name: 'DimniskeKape' }"
                 >{{ more }}</router-link
               >
             </p>

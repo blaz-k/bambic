@@ -80,7 +80,7 @@
 
     <div class="news-card">
       <router-link
-        :to="{ name: 'OgrajaPolzi' }"
+        :to="{ name: 'Ostalo' }"
         class="news-card__card-link"
       ></router-link>
       <img
@@ -105,7 +105,7 @@
 
     <div class="news-card">
       <router-link
-        :to="{ name: 'OkenskePolice' }"
+        :to="{ name: 'Ostalo' }"
         class="news-card__card-link"
       ></router-link>
       <img
@@ -131,7 +131,7 @@
 
     <div class="news-card">
       <router-link
-        :to="{ name: 'PokroviToplotnih' }"
+        :to="{ name: 'Ostalo' }"
         class="news-card__card-link"
       ></router-link>
       <img
@@ -156,7 +156,7 @@
 
     <div class="news-card">
       <router-link
-        :to="{ name: 'DimniskeKape' }"
+        :to="{ name: 'Ostalo' }"
         class="news-card__card-link"
       ></router-link>
       <img
@@ -181,7 +181,7 @@
 
     <div class="news-card">
       <router-link
-        :to="{ name: 'RobotskeKosilnice' }"
+        :to="{ name: 'Ostalo' }"
         class="news-card__card-link"
       ></router-link>
       <img

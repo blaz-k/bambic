@@ -43,12 +43,12 @@
                   >Smetarniki</router-link
                 >
               </li>
-              <!-- <li class="nav-item">
+              <li class="nav-item">
                 <router-link class="nav-link" :to="{ name: 'KovinskeOgraje' }"
                   >Kovinske Ograje</router-link
                 >
-              </li> -->
-              <li class="nav-item dropdown">
+              </li>
+              <!-- <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -64,7 +64,6 @@
                   aria-labelledby="navbarDropdown"
                   style="background-color: #242424"
                 >
-                  <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
                   <li class="dropdown-item">
                     <router-link
                       class="nav-link"
@@ -77,10 +76,7 @@
                       >Ograja za polže</router-link
                     >
                   </li>
-                  <!-- <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li> -->
+                
                 </ul>
               </li>
 
@@ -128,6 +124,11 @@
                     >
                   </li>
                 </ul>
+              </li> -->
+              <li class="nav-item">
+                <router-link class="nav-link" :to="{ name: 'Ostalo' }"
+                  >Ostalo</router-link
+                >
               </li>
             </ul>
             <ul class="d-flex mb-2 mb-md-0 list-unstyled">

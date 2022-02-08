@@ -10,13 +10,15 @@
         </div>
       </div>
     </div>
-    <p>recimo: kakšne vrste ograj delaš?</p>
-    <img :src="products[1].imgUrl" alt="" />
 
-    <hr />
-
-    <div>
-      <SlikaKovinskeOgraje />
+    <div class="-fx-image-gal">
+      <!-- <div class="-fx-gal-item"> -->
+      <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+        <div v-for="slika in slikeKovinska" :key="slika">
+          <SlikeKovinska :slika="slika" />
+        </div>
+        <!-- </div> -->
+      </div>
     </div>
 
     <!-- <p class="cont">{{ products[1].text }}</p> -->
@@ -27,18 +29,22 @@
 <script>
 import { mapState } from "vuex";
 import Footer from "../components/Footer.vue";
-import SlikaKovinskeOgraje from "../components/SlikaKovinskeOgraje.vue";
+import SlikeKovinska from "../components/SlikeStrani/SlikeKovinska.vue";
 
 export default {
   name: "KovinskeOgraje",
   computed: {
     ...mapState(["products"]),
+    ...mapState(["slikeKovinska"]),
   },
-  components: { Footer, SlikaKovinskeOgraje },
+  components: { Footer, SlikeKovinska },
 };
 </script>
 
 <style scoped>
+.-fx-image-gal {
+  margin-top: 10rem;
+}
 img {
   margin-top: 7rem;
 }

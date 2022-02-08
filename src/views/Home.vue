@@ -87,7 +87,6 @@ import { mapState } from "vuex";
 import Products from "../components/Products.vue";
 import Services from "../components/Services.vue";
 import Carousel from "../components/Carousel.vue";
-import Test from "./Test.vue";
 import Gallery from "../components/Gallery.vue";
 import Footer from "../components/Footer.vue";
 import Izdelki from "../components/Izdelki.vue";
@@ -104,7 +103,7 @@ export default {
     Products,
     Services,
     Carousel,
-    Test,
+
     Gallery,
     Footer,
     Izdelki,

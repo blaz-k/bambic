@@ -25,14 +25,6 @@
                 >Kovinske Ograje</router-link
               >
             </li>
-
-            <li class="nav-item">
-              <router-link
-                class="nav-link px-2 text-muted"
-                :to="{ name: 'OgrajaPolzi' }"
-                >Ograja za polže</router-link
-              >
-            </li>
           </ul>
           <ul class="nav justify-content-center pb-3 mb-3">
             <li class="nav-item">
@@ -40,20 +32,6 @@
                 class="nav-link px-2 text-muted"
                 :to="{ name: 'Smetarniki' }"
                 >Smetarniki</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link
-                class="nav-link px-2 text-muted"
-                :to="{ name: 'OkenskePolice' }"
-                >Okenske Police</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link
-                class="nav-link px-2 text-muted"
-                :to="{ name: 'PokroviToplotnih' }"
-                >Pokrovi Toplotnih Črpalk</router-link
               >
             </li>
 

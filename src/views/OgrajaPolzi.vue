@@ -9,9 +9,9 @@
         </div>
       </div>
     </div>
-    <img :src="products[2].imgUrl" alt="" />
+    <!-- <img :src="products[2].imgUrl" alt="" /> -->
 
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -20,7 +20,7 @@ import { mapState } from "vuex";
 import Footer from "../components/Footer.vue";
 
 export default {
-  name: "OgrajaPolzi",
+  name: "“Polzi",
   computed: {
     ...mapState(["products"]),
   },
@@ -42,14 +42,14 @@ hr {
 
 h1 {
   text-transform: uppercase;
-  font-size: 3rem;
-  color: #ff1100;
+  font-size: 2rem;
+  color: #362c2b;
   margin: 40px 0 20px 0;
   text-align: center;
 }
 
 #ograja-polzi {
-  position: absolute;
+  /* position: absolute; */
   margin-left: auto;
 
   margin-right: auto;

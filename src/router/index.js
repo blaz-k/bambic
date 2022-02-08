@@ -1,16 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import ContactUs from "../views/ContactUs.vue";
-import Test from "../views/Test.vue";
-import DimniskeKape from "../views/DimniskeKape.vue";
 import KovinskeOgraje from "../views/KovinskeOgraje.vue";
 import KovinskiRobniki from "../views/KovinskiRobniki.vue";
-import OgrajaPolzi from "../views/OgrajaPolzi.vue";
-import OkenskePolice from "../views/OkenskePolice.vue";
-import PokroviToplotnih from "../views/PokroviToplotnih.vue";
 import Smetarniki from "../views/Smetarniki.vue";
 import RobnikiDetails from "../views/RobnikiDetails.vue";
-import RobotskeKosilnice from "../views/RobotskeKosilnice.vue";
+import Ostalo from "../views/Ostalo.vue";
+
+// import DimniskeKape from "../views/DimniskeKape.vue";
+// import OkenskePolice from "../views/OkenskePolice.vue";
+// import PokroviToplotnih from "../views/PokroviToplotnih.vue";
+// import RobotskeKosilnice from "../views/RobotskeKosilnice.vue";
+
 const routes = [
   {
     path: "/",
@@ -38,15 +39,6 @@ const routes = [
     path: "/contact-us",
     name: "ContactUs",
     component: ContactUs,
-  },
-  {
-    path: "/test",
-    name: "Test",
-    component: Test,
-    meta: {
-      enterClass: "animate__animated animate__zoomInRight",
-      leaveClass: "animate__animated animate__zoomOutLeft",
-    },
   },
 
   {
@@ -77,15 +69,6 @@ const routes = [
     },
     component: KovinskeOgraje,
   },
-  {
-    path: "/ograja-za-polze",
-    name: "OgrajaPolzi",
-    component: OgrajaPolzi,
-    meta: {
-      enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeOutRight",
-    },
-  },
 
   {
     path: "/smetarniki",
@@ -97,37 +80,48 @@ const routes = [
     },
   },
 
+  // VSE TO ZBRIŠI PREDEN ZAKLJUČIŠ PROJEKT
+
+  // {
+  //   path: "/okenske-police",
+  //   name: "OkenskePolice",
+  //   component: OkenskePolice,
+  //   meta: {
+  //     enterClass: "animate__animated animate__fadeInLeft",
+  //     leaveClass: "animate__animated animate__fadeOutRight",
+  //   },
+  // },
+  // {
+  //   path: "/pokrovi-toplotnih-crpalk",
+  //   name: "PokroviToplotnih",
+  //   component: PokroviToplotnih,
+  //   meta: {
+  //     enterClass: "animate__animated animate__fadeInLeft",
+  //     leaveClass: "animate__animated animate__fadeOutRight",
+  //   },
+  // },
+  // {
+  //   path: "/dimniske-kape",
+  //   name: "DimniskeKape",
+  //   component: DimniskeKape,
+  //   meta: {
+  //     enterClass: "animate__animated animate__fadeInLeft",
+  //     leaveClass: "animate__animated animate__fadeOutRight",
+  //   },
+  // },
+  // {
+  //   path: "/hisa-za-robotske-kosilnice",
+  //   name: "RobotskeKosilnice",
+  //   component: RobotskeKosilnice,
+  //   meta: {
+  //     enterClass: "animate__animated animate__fadeInLeft",
+  //     leaveClass: "animate__animated animate__fadeOutRight",
+  //   },
+  // },
   {
-    path: "/okenske-police",
-    name: "OkenskePolice",
-    component: OkenskePolice,
-    meta: {
-      enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeOutRight",
-    },
-  },
-  {
-    path: "/pokrovi-toplotnih-crpalk",
-    name: "PokroviToplotnih",
-    component: PokroviToplotnih,
-    meta: {
-      enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeOutRight",
-    },
-  },
-  {
-    path: "/dimniske-kape",
-    name: "DimniskeKape",
-    component: DimniskeKape,
-    meta: {
-      enterClass: "animate__animated animate__fadeInLeft",
-      leaveClass: "animate__animated animate__fadeOutRight",
-    },
-  },
-  {
-    path: "/hisa-za-robotske-kosilnice",
-    name: "RobotskeKosilnice",
-    component: RobotskeKosilnice,
+    path: "/ostalo",
+    name: "Ostalo",
+    component: Ostalo,
     meta: {
       enterClass: "animate__animated animate__fadeInLeft",
       leaveClass: "animate__animated animate__fadeOutRight",

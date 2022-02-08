@@ -25,16 +25,24 @@
         <div class="polepsaj">Polepšajte okolico hiše z našimi smetarniki!</div>
       </div>
 
-      <div id="gallery">
+      <div class="-fx-image-gal slika">
+        <!-- <div class="-fx-gal-item"> -->
+        <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+          <div v-for="slika in slikeSmetarnik" :key="slika">
+            <SmetarnikSlike :slika="slika" />
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <!-- <div id="gallery">
         <div class="-fx-image-gal">
           <div class="row g-4 row-cols-1 row-cols-sm-3 container-fluid">
-            <!-- lahko cols3 al pa 4 kukr hoce jani-->
-            <div v-for="slika in images" :key="slika">
-              <SlikaSmetarnik :slika="slika" />
+            <div v-for="slika in slikeSmetarnik" :key="slika">
+              <SmetarnikSlike :slika="slika" />
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <Footer />
   </div>
@@ -43,19 +51,23 @@
 <script>
 import { mapState } from "vuex";
 import Footer from "../components/Footer.vue";
-import SlikaSmetarnik from "../components/SlikaSmetarnik.vue";
+import SmetarnikSlike from "../components/SlikeStrani/SmetarnikSlike.vue";
 
 export default {
   name: "Smetarniki",
   computed: {
     ...mapState(["products"]),
     ...mapState(["images"]),
+    ...mapState(["slikeSmetarnik"]),
   },
-  components: { Footer, SlikaSmetarnik },
+  components: { Footer, SmetarnikSlike },
 };
 </script>
 
 <style scoped>
+.slika {
+  margin-top: 10rem;
+}
 * {
   font-family: "Roboto Condensed", sans-serif;
   /* font-weight: 400; */

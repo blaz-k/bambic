@@ -10,10 +10,10 @@
         </div>
       </div>
     </div>
-    <img :src="products[7].imgUrl" alt="" />
+    <!-- <img :src="products[7].imgUrl" alt="" /> -->
 
     <!-- <p class="cont">{{ products[1].text }}</p> -->
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -48,8 +48,8 @@ hr {
 
 h1 {
   text-transform: uppercase;
-  font-size: 3rem;
-  color: #ff1100;
+  font-size: 2rem;
+  color: #362c2b;
   margin: 40px 0 20px 0;
   text-align: center;
 }
@@ -63,7 +63,7 @@ li {
 }
 
 #robotske-kosilnice {
-  position: absolute;
+  /* position: absolute; */
   margin-left: auto;
 
   margin-right: auto;

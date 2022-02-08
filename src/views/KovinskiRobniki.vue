@@ -39,6 +39,16 @@
         </div>
       </div>
 
+      <div class="-fx-image-gal slike">
+        <!-- <div class="-fx-gal-item"> -->
+        <div class="row g-4 row-cols-1 row-cols-sm-3 container-fluid">
+          <div v-for="slika in slikeRobniki" :key="slika">
+            <SlikeKovinskiRobniki :slika="slika" />
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+
       <!-- <h2>{{ products[0].details[0] }}</h2> -->
     </div>
     <Footer />
@@ -49,6 +59,7 @@
 import { mapState } from "vuex";
 import Robniki from "../components/Robniki.vue";
 import Footer from "../components/Footer.vue";
+import SlikeKovinskiRobniki from "../components/SlikeStrani/SlikeKovinskiRobniki.vue";
 
 export default {
   name: "KovinskiRobniki",
@@ -57,12 +68,16 @@ export default {
     ...mapState(["products"]),
     ...mapState(["details"]),
     ...mapState(["ostaliRobniki"]),
+    ...mapState(["slikeRobniki"]),
   },
-  components: { Robniki, Footer },
+  components: { Robniki, Footer, SlikeKovinskiRobniki },
 };
 </script>
 
 <style scoped>
+.slike {
+  margin-top: 10rem;
+}
 /* hr {
   border-bottom: 6px solid #001aff4b;
   width: 40%;

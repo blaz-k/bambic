@@ -14,9 +14,9 @@
         </div> -->
       </div>
 
-      <img :src="products[5].imgUrl" alt="" />
+      <!-- <img :src="products[5].imgUrl" alt="" /> -->
     </div>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 <script>
@@ -50,7 +50,7 @@ img {
   margin-top: 7rem;
 }
 #pokrovi-crpalk {
-  position: absolute;
+  /* position: absolute; */
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -81,8 +81,8 @@ hr {
 
 h1 {
   text-transform: uppercase;
-  font-size: 3rem;
-  color: #ff1100;
+  font-size: 2rem;
+  color: #362c2b;
   margin: 40px 0 20px 0;
   text-align: center;
 }

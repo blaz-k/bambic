@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 #dimniske-kape {
-  position: absolute;
+  /* position: absolute; */
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -61,8 +61,8 @@ hr {
 
 h1 {
   text-transform: uppercase;
-  font-size: 3rem;
-  color: #ff1100;
+  font-size: 2rem;
+  color: #362c2b;
   margin: 40px 0 20px 0;
   text-align: center;
 }

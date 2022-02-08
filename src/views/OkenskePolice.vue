@@ -11,11 +11,11 @@
       </div>
     </div>
 
-    <img :src="products[4].imgUrl" alt="" />
+    <!-- <img :src="products[4].imgUrl" alt="" /> -->
 
     <!-- <p class="text">{{ products[3].text }}</p>
     <p class="cena">Cena: {{ products[3].cena }}</p> -->
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 
   <!-- <div id="kovinske-ograje">
@@ -62,15 +62,15 @@ hr {
 
 h1 {
   text-transform: uppercase;
-  font-size: 3rem;
-  color: #ff1100;
+  font-size: 2rem;
+  color: #362c2b;
   margin: 40px 0 20px 0;
   text-align: center;
 }
 
 #okenske-police {
-  position: absolute;
-  position: absolute;
+  /* position: absolute; */
+  /* position: absolute; */
   margin-left: auto;
   margin-right: auto;
   left: 0;
