@@ -99,9 +99,9 @@ export default {
 }
 
 hr {
-  background-color: rgba(255, 17, 0, 255);
+  background-color: rgb(255, 17, 0);
   height: 6px;
-  border: solid rgba(255, 17, 0, 255);
+  border: solid rgb(255, 17, 0);
   width: 55%;
   margin: 0 auto 3rem;
 }

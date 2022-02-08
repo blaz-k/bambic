@@ -11,6 +11,8 @@
     <div class="stran"><DimniskeKape /></div>
 
     <div class="stran"><RobotskeKosilnice /></div>
+
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +22,7 @@ import OkenskePolice from "./OkenskePolice.vue";
 import PokroviToplotnih from "./PokroviToplotnih.vue";
 import DimniskeKape from "./DimniskeKape.vue";
 import RobotskeKosilnice from "./RobotskeKosilnice.vue";
+import Footer from "../components/Footer.vue";
 export default {
   name: "Ostalo",
   components: {
@@ -28,6 +31,7 @@ export default {
     PokroviToplotnih,
     DimniskeKape,
     RobotskeKosilnice,
+    Footer,
   },
 };
 </script>

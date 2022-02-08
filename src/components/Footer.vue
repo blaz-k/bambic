@@ -15,23 +15,44 @@
               <router-link
                 class="nav-link px-2 text-muted"
                 :to="{ name: 'KovinskiRobniki' }"
-                >Kovniski Robniki</router-link
+                >Robniki</router-link
               >
             </li>
             <li class="nav-item">
               <router-link
                 class="nav-link px-2 text-muted"
                 :to="{ name: 'KovinskeOgraje' }"
-                >Kovinske Ograje</router-link
+                >Ograje</router-link
               >
             </li>
-          </ul>
-          <ul class="nav justify-content-center pb-3 mb-3">
             <li class="nav-item">
               <router-link
                 class="nav-link px-2 text-muted"
                 :to="{ name: 'Smetarniki' }"
                 >Smetarniki</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'Ostalo' }"
+                >Ostalo</router-link
+              >
+            </li>
+          </ul>
+          <ul class="nav justify-content-center pb-3 mb-3">
+            <!-- <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'About' }"
+                >Ostalo</router-link
+              >
+            </li> -->
+            <li class="nav-item">
+              <router-link
+                class="nav-link px-2 text-muted"
+                :to="{ name: 'About' }"
+                >O nas</router-link
               >
             </li>
 
