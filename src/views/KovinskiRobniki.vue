@@ -120,7 +120,7 @@ hr {
 h1 {
   text-transform: uppercase;
   font-size: 3rem;
-  color: #ff1100;
+  color: #272525;
   /* color: rgb(209, 14, 14); */
 
   margin: 40px 0 20px 0;

@@ -231,7 +231,7 @@ export default {
 @media (max-width: 40em) {
   #carousel h1 {
     color: #868686;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     font-weight: 700;
   }
   #home .carousel-caption p {
@@ -260,9 +260,10 @@ export default {
     z-index: 10;
   }
   #home .carousel-caption p {
-    margin-bottom: 0.25rem;
+    display: none;
+    /* margin-bottom: 0.25rem;
     font-size: 1.12rem;
-    line-height: 1.1;
+    line-height: 1.1; */
   }
 }
 </style>

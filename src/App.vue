@@ -191,16 +191,10 @@
   margin-top: 43rem;
 } */
 #app {
-  font-family: "PT Serif", serif;
+  font-family: "Roboto Condensed", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  /*
-  font-family: "PT Serif", serif;
-  font-family: "Roboto", sans-serif;
-  font-family: "Roboto Mono", monospace;*/
-
-  /* color: #2c3e50; */
 }
 #nav .nav {
   background-color: rgb(16, 201, 72);

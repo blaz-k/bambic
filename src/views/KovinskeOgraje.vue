@@ -86,7 +86,9 @@ li {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: "PT Serif", serif;
+  font-family: "Roboto Condensed", sans-serif;
+
+  /* font-family: "PT Serif", serif; */
 }
 
 /*#kovinske-ograje .text-content {

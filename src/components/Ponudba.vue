@@ -32,7 +32,7 @@
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/Smetarnik.jpg"
+        src="../assets/img/gallery/Smetarnik5.jpg"
         alt=""
         class="news-card__image"
       />
@@ -59,7 +59,7 @@
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/Smetarnik6.jpg"
+        src="../assets/img/gallery/kovinska-ograja5.jpg"
         alt=""
         class="news-card__image"
       />
@@ -84,7 +84,7 @@
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/Smetarnik5.jpg"
+        src="../assets/img/gallery/robnik15.jpg"
         alt=""
         class="news-card__image"
       />
@@ -109,7 +109,7 @@
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/Smetarnik3.jpg"
+        src="../assets/img/gallery/kovinska-ograja7.jpg"
         alt=""
         class="news-card__image"
       />
@@ -135,7 +135,7 @@
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/robnik2.png"
+        src="../assets/img/gallery/toplotna8.jpg"
         alt=""
         class="news-card__image"
       />
@@ -160,7 +160,7 @@
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/robnik1.png"
+        src="../assets/img/gallery/kapa.jpeg"
         alt=""
         class="news-card__image"
       />
@@ -185,7 +185,7 @@
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/robnik4.jpg"
+        src="../assets/img/gallery/robotska-kosilnica3.jpg"
         alt=""
         class="news-card__image"
       />
@@ -212,30 +212,30 @@ export default {
   data() {
     return {
       ponudba1: "Kovinski robniki",
+      url1: "../assets/img/gallery/robnik.jpg",
 
       ponudba2: "Smetarniki",
+      url2: "../assets/img/gallery/robnik.jpg",
+
       ponudba3: "Kovinske ograje",
+      url3: "../assets/img/gallery/robnik.jpg",
+
       ponudba4: "Ograje za polže",
+      url4: "../assets/img/gallery/robnik.jpg",
+
       ponudba5: "Okenske police",
+      url5: "../assets/img/gallery/robnik.jpg",
+
       ponudba6: "Pokrovi toplotnih črpalk",
+      url6: "../assets/img/gallery/robnik.jpg",
+
       ponudba7: "Dimniške kape",
+      url7: "../assets/img/gallery/robnik.jpg",
+
       ponudba8: "Hiša za robotske kosilnice",
+      url8: "../assets/img/gallery/robnik.jpg",
     };
   },
-  //   setup() {
-  //     ponudba1 = "Kovinski robniki";
-  //     // ponudba2: "";
-  //     // ponudba3: "";
-  //     // ponudba4: "";
-  //     // ponudba5: "";
-  //     // ponudba6: "";
-  //     // ponudba7: "";
-  //     // ponudba8: "";
-
-  //     return {
-  //       ponudba1,
-  //     };
-  //   },
 };
 </script>
 
@@ -299,7 +299,7 @@ body {
   overflow: hidden;
   border-radius: 0.5rem;
   flex: 1;
-  min-width: 290px;
+  min-width: 190px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

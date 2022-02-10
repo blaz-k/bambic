@@ -344,17 +344,7 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik17bis.jpg"),
       },
-      // {
-      //   id: 1,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik16.jpg"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik16bis.jpg"),
-      // },
 
-      // {
-      //   id: 2,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik17bis.jpg"),
-      // },
       {
         id: 3,
         imgUrl: require("@/assets/img/gallery/kovinska-ograja2.jpg"),
@@ -390,11 +380,7 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/kovinska-ograja6.jpg"),
         imgBis: require("@/assets/img/gallery/kovinska-ograja6bis.jpg"),
       },
-      {
-        id: 9,
-        imgUrl: require("@/assets/img/gallery/kovinska-ograja7.jpg"),
-        imgBis: require("@/assets/img/gallery/kovinska-ograja7bis.jpg"),
-      },
+
       {
         id: 10,
         imgUrl: require("@/assets/img/gallery/kovinska-ograja8.jpg"),
@@ -643,6 +629,12 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/toplotna12.jpg"),
         imgBis: require("@/assets/img/gallery/toplotna12bis.jpg"),
       },
+      //okenskapolica
+      {
+        id: 9,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja7.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja7bis.jpg"),
+      },
     ],
     kontakt: [
       {
@@ -667,7 +659,7 @@ export default createStore({
         id: 2,
         name: "Marija iz Celja",
         kraj: "Celje",
-        besedilo: `"Zelo zadovoljna z ograjo proti polžem v visokih gredah. Nič več strupov proti polžem."`,
+        besedilo: `"Zelo zadovoljna z ograjo proti polžem v visokih gredah. Nič več strupov proti gžem."`,
       },
       {
         id: 3,
