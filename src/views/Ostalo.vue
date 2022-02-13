@@ -2,15 +2,15 @@
   <div id="ostalo">
     <h1 class="heading">Ostala ponudba</h1>
 
-    <div class="stran"><OgrajaPolzi /></div>
+    <div class="stran"><PokroviToplotnih /></div>
+
+    <div class="stran"><RobotskeKosilnice /></div>
 
     <div class="stran"><OkenskePolice /></div>
 
-    <div class="stran"><PokroviToplotnih /></div>
-
     <div class="stran"><DimniskeKape /></div>
 
-    <div class="stran"><RobotskeKosilnice /></div>
+    <div class="stran"><OgrajaPolzi /></div>
 
     <Footer />
   </div>
