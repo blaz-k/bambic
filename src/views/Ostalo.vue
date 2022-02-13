@@ -4,11 +4,31 @@
 
     <div class="stran"><PokroviToplotnih /></div>
 
+    <div class="stran"><Kontejner /></div>
+
     <div class="stran"><RobotskeKosilnice /></div>
 
     <div class="stran"><OkenskePolice /></div>
 
     <div class="stran"><DimniskeKape /></div>
+
+    <div class="scroll-to-top">
+      <button @click="scrollToTop">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#4a5568"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-linejoin="arcs"
+        >
+          <path d="M18 15l-6-6-6 6" /></svg
+        >Na začetek
+      </button>
+    </div>
 
     <div class="stran"><OgrajaPolzi /></div>
 
@@ -23,6 +43,7 @@ import PokroviToplotnih from "./PokroviToplotnih.vue";
 import DimniskeKape from "./DimniskeKape.vue";
 import RobotskeKosilnice from "./RobotskeKosilnice.vue";
 import Footer from "../components/Footer.vue";
+import Kontejner from "../components/Kontejner.vue";
 export default {
   name: "Ostalo",
   components: {
@@ -32,6 +53,22 @@ export default {
     DimniskeKape,
     RobotskeKosilnice,
     Footer,
+    Kontejner,
+  },
+
+  methods: {
+    scrollToTop() {
+      let currentScroll = document.documentElement.scrollTop,
+        int = setInterval(frame, 1);
+
+      function frame() {
+        if (0 > currentScroll) clearInterval(int);
+        else {
+          currentScroll = currentScroll - 80;
+          document.documentElement.scrollTop = currentScroll;
+        }
+      }
+    },
   },
 };
 </script>

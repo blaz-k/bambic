@@ -138,7 +138,7 @@ export default createStore({
         cena: "že od 6€ na tekoči meter letvice/lamele širine 10cm",
         text: `Bi radi zamenjali staro dotrajano leseno ograjo z novo iz pločevine? Brez vzdrževanja, odporna proti vsem vremenskim razmeram,
          zelo dolga življenska doba, estetsko dovršeno, enostavna montaža. Horizontalna ali vertikalna postavitev letvic. Na voljo več različnih barv, 
-         materialov, dimenzij ter profilov. Tudi v imitaciji lesa (dolžine po naročilu)`,
+         materialov, dimenzij ter profilov. Tudi v imitaciji lesa (dolžine po naročilu).`,
         obnova: `Brez vzdrževanja, odporna proti vsem vremenskim razmeram,
          zelo dolga življenska doba, estetsko dovršeno, enostavna montaža. Horizontalna ali vertikalna postavitev letvic. Tudi v imitaciji lesa `,
       },
@@ -189,8 +189,8 @@ export default createStore({
           { profileLenght: "" },
         ],
         cena: "že od 5€/meter",
-        text: "Po naročilu izdelane okenske police",
-        obnova: `Po naročilu izdelane okenske police`,
+        text: "Po naročilu izdelane okenske police.",
+        obnova: `Po naročilu izdelane okenske police.`,
       },
 
       {
@@ -214,8 +214,8 @@ export default createStore({
           { profileLenght: "" },
         ],
         cena: "že od 40€/kos",
-        text: "Na voljo več različnih dimenzij",
-        obnova: `Na voljo tudi več različnih dimenzij dimniških kap`,
+        text: "Na voljo več različnih dimenzij.",
+        obnova: `Na voljo tudi več različnih dimenzij dimniških kap.`,
       },
       {
         id: 8,
@@ -227,8 +227,22 @@ export default createStore({
           { profileLenght: "" },
         ],
         cena: "že od 40€/kos",
-        text: "Na voljo tudi več različnih dimenzij hisk za kosilnice",
-        obnova: `Na voljo tudi več različnih dimenzij hisk za kosilnice`,
+        text: "Na voljo tudi več različnih dimenzij hisk za kosilnice.",
+        obnova: `Na voljo tudi več različnih dimenzij hisk za kosilnice.`,
+      },
+
+      {
+        id: 9,
+        name: "Skladiščni kontejnerji",
+        imgUrl: require("@/assets/img/gallery/11.jpeg"),
+        details: [
+          { material: "" },
+          { profileHeight: "" },
+          { profileLenght: "" },
+        ],
+        cena: "že od 40€/kos",
+        text: "Za več informacij, nas kontaktirajte.",
+        obnova: `Za več informacij, nas kontaktirajte`,
       },
     ],
     images: [
@@ -555,11 +569,6 @@ export default createStore({
         imgBis: require("@/assets/img/gallery/robnikbis.jpg"),
       },
 
-      // {
-      //   id: 62,
-      //   imgUrl: require("@/assets/img/gallery/Smetarnik18.jpg"),
-      //   imgBis: require("@/assets/img/gallery/Smetarnik18bis.jpg"),
-      // },
       {
         id: 63,
         imgUrl: require("@/assets/img/gallery/toplotna1.jpg"),
@@ -971,28 +980,7 @@ export default createStore({
       },
     ],
 
-    slikePolzi: [
-      {
-        id: 42,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnicabis.jpg"),
-      },
-      {
-        id: 75,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica1.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnica1bis.jpg"),
-      },
-      {
-        id: 76,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica2.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnica2bis.jpg"),
-      },
-      {
-        id: 77,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica3.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnica3bis.jpg"),
-      },
-    ],
+    slikePolzi: [],
 
     slikeToplotnih: [
       {
@@ -1064,24 +1052,9 @@ export default createStore({
 
     slikeDimniskih: [
       {
-        id: 42,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnicabis.jpg"),
-      },
-      {
-        id: 75,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica1.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnica1bis.jpg"),
-      },
-      {
-        id: 76,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica2.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnica2bis.jpg"),
-      },
-      {
-        id: 77,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica3.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnica3bis.jpg"),
+        id: 82,
+        imgUrl: require("@/assets/img/gallery/kapa.jpeg"),
+        imgBis: require("@/assets/img/gallery/kapabis.jpeg"),
       },
     ],
 
@@ -1110,24 +1083,9 @@ export default createStore({
 
     slikeOkenske: [
       {
-        id: 42,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnicabis.jpg"),
-      },
-      {
-        id: 75,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica1.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnica1bis.jpg"),
-      },
-      {
-        id: 76,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica2.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnica2bis.jpg"),
-      },
-      {
-        id: 77,
-        imgUrl: require("@/assets/img/gallery/robotska-kosilnica3.jpg"),
-        imgBis: require("@/assets/img/gallery/robotska-kosilnica3bis.jpg"),
+        id: 9,
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja7.jpg"),
+        imgBis: require("@/assets/img/gallery/kovinska-ograja7bis.jpg"),
       },
     ],
 
@@ -1286,6 +1244,14 @@ export default createStore({
         id: 28,
         imgUrl: require("@/assets/img/gallery/robnik2.png"),
         imgBis: require("@/assets/img/gallery/robnik2bis.png"),
+      },
+    ],
+
+    slikeKontejner: [
+      {
+        id: 43,
+        imgUrl: require("@/assets/img/gallery/skladiscni-kontejner.jpeg"),
+        imgBis: require("@/assets/img/gallery/skladiscni-kontejnerbis.jpeg"),
       },
     ],
   },

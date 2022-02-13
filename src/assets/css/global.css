@@ -1,12 +1,19 @@
 .osnovni-del {
-  background: linear-gradient(to right, #8b8686, #242424) center no-repeat;
-  /* background: #242424; */
+  /* background: linear-gradient(to right, #8b8686, #242424) center no-repeat; */
+  background-image: url("../img/front-background.jpeg");
+
   background-size: cover;
   border-radius: 16px;
   align-items: center;
   align-content: center;
   color: #ededed;
   font-family: "Roboto Condensed", sans-serif;
+
+  /* background-color: #333;
+  z-index: 0;
+  padding-top: 10px;
+  background-image: url("../img/front-background.jpeg");
+  font-family: "Roboto Condensed", sans-serif; */
 
   /* background: #ff0; */
   /* height: auto !important;
@@ -42,6 +49,15 @@
   margin-top: 3rem;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #272525;
+
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
 /* hr {
   background-color: rgba(255, 17, 0, 255);
   height: 6px;
@@ -57,3 +73,24 @@ h1 {
   margin: 40px 0 20px 0;
   text-align: center;
 } */
+
+@media only screen and (max-width: 419px) {
+  .text-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 0.7rem;
+    color: #ededed;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #272525;
+
+    margin: 40px 0 20px 0;
+    text-align: center;
+  }
+}

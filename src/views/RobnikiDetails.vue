@@ -14,7 +14,69 @@
         </div>
       </div>
 
-      <img :src="robnikImages" alt="" />
+      <div v-if="robnikiId == 1">
+        <img :src="robnikImages" alt="" />
+        <div class="container">
+          <div class="-fx-image-gal slika">
+            <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+              <div v-for="slika in slikeOkenske" :key="slika">
+                <Z :slika="slika" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-else-if="robnikiId == 2">
+        <img :src="robnikImages" alt="" />
+        <div class="container">
+          <div class="-fx-image-gal slika">
+            <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+              <div v-for="slika in slikeZRobniki" :key="slika">
+                <Z :slika="slika" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-else-if="robnikiId == 3">
+        <img :src="robnikImages" alt="" />
+        <div class="container">
+          <div class="-fx-image-gal slika">
+            <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+              <div v-for="slika in slikeZRobniki" :key="slika">
+                <Z :slika="slika" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-else-if="robnikiId == 4">
+        <img :src="robnikImages" alt="" />
+        <div class="container">
+          <div class="-fx-image-gal slika">
+            <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+              <div v-for="slika in slikeZRobniki" :key="slika">
+                <Z :slika="slika" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-else-if="robnikiId == 5">
+        <img :src="robnikImages" alt="" />
+        <div class="container">
+          <div class="-fx-image-gal slika">
+            <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
+              <div v-for="slika in slikeZRobniki" :key="slika">
+                <Z :slika="slika" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- <p class="text">{{ products[3].text }}</p>
     <p class="cena">Cena: {{ products[3].cena }}</p> -->
@@ -29,10 +91,18 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 import Footer from "../components/Footer.vue";
+import Z from "../components/SlikeStrani/robniki/Z.vue";
 export default {
   name: "RobnikiDetails",
   props: ["robnikiId", "robnikName", "robnikText", "robnikImages", "imgRobnik"],
+  components: { Footer, Z },
+  computed: {
+    ...mapState(["slikeOkenske"]),
+    ...mapState(["slikeZRobniki"]),
+  },
   setup(props) {
     console.log(props.robnikiId.id);
   },
@@ -49,7 +119,6 @@ export default {
     //   });
     // },
   },
-  components: { Footer },
 };
 </script>
 

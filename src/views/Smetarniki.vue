@@ -34,15 +34,24 @@
           <!-- </div> -->
         </div>
       </div>
-      <!-- <div id="gallery">
-        <div class="-fx-image-gal">
-          <div class="row g-4 row-cols-1 row-cols-sm-3 container-fluid">
-            <div v-for="slika in slikeSmetarnik" :key="slika">
-              <SmetarnikSlike :slika="slika" />
-            </div>
-          </div>
-        </div>
-      </div> -->
+
+      <div class="scroll-to-top">
+        <button @click="scrollToTop">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#4a5568"
+            stroke-width="1"
+            stroke-linecap="square"
+            stroke-linejoin="arcs"
+          >
+            <path d="M18 15l-6-6-6 6" /></svg
+          >Na začetek
+        </button>
+      </div>
     </div>
     <Footer />
   </div>
@@ -61,6 +70,20 @@ export default {
     ...mapState(["slikeSmetarnik"]),
   },
   components: { Footer, SmetarnikSlike },
+  methods: {
+    scrollToTop() {
+      let currentScroll = document.documentElement.scrollTop,
+        int = setInterval(frame, 1);
+
+      function frame() {
+        if (0 > currentScroll) clearInterval(int);
+        else {
+          currentScroll = currentScroll - 80;
+          document.documentElement.scrollTop = currentScroll;
+        }
+      }
+    },
+  },
 };
 </script>
 
@@ -97,6 +120,15 @@ export default {
   font-size: 1.5rem;
   margin-top: 6rem;
 }
+.prvi-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1.5rem;
+  margin-top: 6rem;
+}
 
 hr {
   background-color: rgb(255, 17, 0);
@@ -109,25 +141,10 @@ hr {
 h1 {
   text-transform: uppercase;
   font-size: 3rem;
-  color: #ff1100;
+  color: #272525;
   margin: 40px 0 20px 0;
   text-align: center;
 }
-
-/* hr {
-  background-color: rgba(255, 17, 0, 255);
-  height: 6px;
-  border: solid rgba(255, 17, 0, 255);
-  width: 40%;
-  margin: 0 auto 3rem;
-}
-h1 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  color: #242424;
-  margin: 40px 0 20px 0;
-  text-align: center;
-} */
 
 li {
   font-weight: 400;
@@ -147,16 +164,171 @@ li {
   text-align: center;
   margin: 0;
   padding: 0;
-  /* font-family: "PT Serif", serif; */
 }
 
-/*#smetarnik .text-content {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: start;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}*/
+/* MEDIA */
+
+@media only screen and (max-width: 419px) {
+  #smetarnik .polepsaj {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: rgb(252, 23, 23);
+  }
+  #smetarnik li {
+    font-weight: 100;
+    font-size: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #smetarnik .text-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 0.5rem;
+    color: #ededed;
+  }
+
+  #smetarnik .drugi-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 6rem;
+    margin-top: 1rem;
+  }
+
+  #smetarnik .bottom-list {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  #smetarnik .polepsaj {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: rgb(252, 23, 23);
+  }
+  #smetarnik li {
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #smetarnik .text-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 1rem;
+    color: #ededed;
+  }
+
+  #smetarnik .drugi-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  #smetarnik .bottom-list {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 574px) {
+  #smetarnik .polepsaj {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(252, 23, 23);
+  }
+  #smetarnik li {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #smetarnik .drugi-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 1.5rem;
+    margin-top: 6rem;
+  }
+}
+
+/* @media only screen and (min-width: 768px) {
+  #smetarnik .polepsaj {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(155, 13, 190);
+  }
+  #smetarnik li {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #smetarnik .polepsaj {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(172, 190, 13);
+  }
+  #smetarnik .bottom-list {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .polepsaj {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(68, 145, 87);
+  }
+}
+
+@media only screen and (min-width: 1620px) {
+  .polepsaj {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(158, 190, 13);
+  }
+} */
 </style>

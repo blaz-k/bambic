@@ -22,6 +22,24 @@
     </div>
 
     <!-- <p class="cont">{{ products[1].text }}</p> -->
+
+    <div class="scroll-to-top">
+      <button @click="scrollToTop">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#4a5568"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-linejoin="arcs"
+        >
+          <path d="M18 15l-6-6-6 6" /></svg
+        >Na začetek
+      </button>
+    </div>
     <Footer />
   </div>
 </template>
@@ -38,6 +56,20 @@ export default {
     ...mapState(["slikeKovinska"]),
   },
   components: { Footer, SlikeKovinska },
+  methods: {
+    scrollToTop() {
+      let currentScroll = document.documentElement.scrollTop,
+        int = setInterval(frame, 1);
+
+      function frame() {
+        if (0 > currentScroll) clearInterval(int);
+        else {
+          currentScroll = currentScroll - 80;
+          document.documentElement.scrollTop = currentScroll;
+        }
+      }
+    },
+  },
 };
 </script>
 
@@ -63,7 +95,7 @@ hr {
 h1 {
   text-transform: uppercase;
   font-size: 3rem;
-  color: #ff1100;
+  color: #272525;
   margin: 40px 0 20px 0;
   text-align: center;
 }
@@ -100,4 +132,15 @@ li {
   font-size: 1.5rem;
   margin-top: 3rem;
 }*/
+
+@media only screen and (max-width: 419px) {
+  h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #272525;
+
+    margin: 40px 0 20px 0;
+    text-align: center;
+  }
+}
 </style>

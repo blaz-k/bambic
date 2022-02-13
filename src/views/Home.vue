@@ -1,5 +1,14 @@
 <template>
   <div id="home">
+    <!-- <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+      @click="scrollFunction"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button> -->
+
     <main>
       <!-- CAROUSEL -->
       <div id="carousel">
@@ -72,9 +81,49 @@
           </div>
         </div>
       </div>
+      <!-- <transition name="fade">
+
+        
+        <div
+          id="pagetop"
+          class="fixed right-0 bottom-0"
+          v-show="scY > 300"
+          @click="toTop"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#4a5568"
+            stroke-width="1"
+            stroke-linecap="square"
+            stroke-linejoin="arcs"
+          >
+            <path d="M18 15l-6-6-6 6" />
+          </svg>
+        </div>
+      </transition> -->
 
       <!-- FOOTER -->
-
+      <div class="scroll-to-top">
+        <button @click="scrollToTop">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#4a5568"
+            stroke-width="1"
+            stroke-linecap="square"
+            stroke-linejoin="arcs"
+          >
+            <path d="M18 15l-6-6-6 6" /></svg
+          >Na začetek
+        </button>
+      </div>
       <div id="dol">
         <Footer />
       </div>
@@ -94,6 +143,7 @@ import Testimonials from "../components/Testimonials.vue";
 import Nekaj from "../components/Nekaj.vue";
 import Ponudba from "../components/Ponudba.vue";
 import Mnenja from "../components/Mnenja.vue";
+import { onMounted } from "@vue/runtime-core";
 // CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
 // @ is an alias to /src
 
@@ -118,10 +168,43 @@ export default {
     ...mapState(["photos"]),
     ...mapState(["mnenja"]),
   },
+  methods: {
+    scrollToTop() {
+      let currentScroll = document.documentElement.scrollTop,
+        int = setInterval(frame, 1);
+
+      function frame() {
+        if (0 > currentScroll) clearInterval(int);
+        else {
+          currentScroll = currentScroll - 80;
+          document.documentElement.scrollTop = currentScroll;
+        }
+      }
+    },
+  },
 };
 </script>
 
 <style>
+.scroll-to-top {
+  padding: 30px 0;
+  position: absolute;
+  right: 3rem;
+}
+
+.scroll-to-top button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
 #testimonials {
   display: flex;
   align-items: center;

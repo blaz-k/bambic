@@ -187,7 +187,7 @@
       <div class="cot">
         <div class="front side">
           <div class="content">
-            <h1>Kontaktirajte nas</h1>
+            <h2>Kontaktirajte nas</h2>
 
             <div v-for="lastnik in kontakt" :key="lastnik">
               <div class="call">
@@ -520,118 +520,6 @@ export default {
 </script>
 
 <style scoped>
-/* .col-span-1 {
-  display: flex;
-  position: relative;
-}
-
-.col-span-2 {
-}
-#contact-us {
-  margin-top: 7rem;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-a {
-  transition: all 0.15s ease;
-}
-
-a:hover {
-  color: #f59e0b;
-  text-decoration: none;
-}
-
-.text-orange {
-  color: #f59e0b !important;
-  fill: #f59e0b !important;
-}
-
-.player-scrub,
-.player-song-info {
-  width: calc(100% - 250px);
-}
-
-.top-neg-8 {
-  top: -8px;
-}
-
-.player-song-info {
-  margin-top: -24px;
-}
-
-.card-header .fa.text-orange,
-.card .card-header .fas.text-orange {
-  color: #ff5e3a;
-  fill: #ff5e3a;
-}
-
-.introduction-bg {
-  animation: slide 50s linear infinite;
-  will-change: background-position;
-  z-index: -1;
-}
-
-#playlist li:first-child {
-  padding-top: 25px;
-}
-
-.upload-dropbox.upload-dropbox-drag {
-  color: #fff;
-  background-color: #20d862;
-  border-color: #20d862;
-  border-style: solid;
-}
-
-input[type="file"] {
-  margin-top: 20px;
-}
-
-.progress-bar {
-  background-size: 1rem 1rem;
-  background-image: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
-  animation: progress-bar-stripes 1s linear infinite;
-}
-
-.music-bg {
-  animation: slide 50s linear infinite;
-  will-change: background-position;
-  background-image: url(/assets/theme/img/song-header.png);
-}
-
-@keyframes progress-bar-stripes {
-  0% {
-    background-position: 1rem 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes slide {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -4000px 0;
-  }
-} */
-
 hr {
   background-color: rgb(255, 17, 0);
   height: 2px;
@@ -643,7 +531,7 @@ hr {
 .title {
   text-transform: uppercase;
   font-size: 3rem;
-  color: #ff1100;
+  color: #272525;
   margin: 40px 0 20px 0;
   text-align: center;
 }
@@ -658,12 +546,6 @@ hr {
 .mr {
   margin-right: 2vh;
 }
-/* .title {
-  font-size: 2.8rem;
-  color: rgb(209, 14, 14);
-  margin: 40px 0 20px 0;
-  text-align: center;
-} */
 
 .call {
   margin-top: 50px;
@@ -748,7 +630,7 @@ hr {
   transform: translatez(70px) scale(0.8);
   line-height: 1.5em;
 }
-.content h1 {
+.content h2 {
   position: relative;
 }
 .content p {
@@ -761,12 +643,12 @@ hr {
   line-height: 8em;
   font-size: 28px;
 }
-.content h1:before {
+.content h2:before {
   content: "";
   position: absolute;
   bottom: -20px;
   height: 3px;
-  background-color: rgb(156, 156, 150);
+  background-color: rgb(156, 151, 150);
 
   width: 40%;
   left: 50%;
@@ -793,7 +675,7 @@ hr {
 form {
   text-align: left;
 }
-.back h1 {
+.back h2 {
   margin: 0;
 }
 form label,
@@ -843,7 +725,23 @@ form input[type="submit"] {
 
 @media (max-width: 575px) {
   .nas {
-    display: none;
+    /* display: none; */
+  }
+  .call {
+    margin-top: 25px;
+    line-height: 1.5em;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 432px) {
+  .nas {
+    /* display: none; */
+  }
+  .call {
+    margin-top: 25px;
+    line-height: 1.7em;
+    font-size: 18px;
   }
 }
 </style>

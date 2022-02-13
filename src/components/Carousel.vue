@@ -51,7 +51,7 @@
             </p>
             <p>
               <router-link
-                class="btn btn-primary"
+                class="btn btn-secondary"
                 :to="{ name: 'KovinskiRobniki' }"
                 >{{ more }}</router-link
               >
@@ -82,7 +82,7 @@
             </p>
             <p>
               <router-link
-                class="btn btn-primary"
+                class="btn btn-secondary"
                 :to="{ name: 'KovinskeOgraje' }"
                 >{{ more }}</router-link
               >
@@ -113,7 +113,7 @@
             </p>
             <p>
               <router-link
-                class="btn btn-primary"
+                class="btn btn-secondary"
                 :to="{ name: 'Smetarniki' }"
                 >{{ more }}</router-link
               >
@@ -173,11 +173,15 @@ export default {
   size: auto;
 } */
 
+img {
+  opacity: 0.7;
+}
+
 @media (min-width: 62em) {
   #carousel h1 {
     font-size: 3.2rem;
 
-    color: #868686;
+    color: #474646;
     font-weight: 700;
   }
 
@@ -187,7 +191,7 @@ export default {
     line-height: 1.6;
     color: white;
   }
-  .btn-primary {
+  .btn-secondary {
     background-color: #272626;
     border-radius: 0px 36px 0px 36px;
     font-size: 1.3rem;
@@ -201,17 +205,46 @@ export default {
 
 @media (max-width: 62em) {
   #carousel h1 {
-    color: #868686;
-    font-size: 3.3rem;
+    color: #474646;
+    font-size: 2.7rem;
     font-weight: 700;
   }
   #home .carousel-caption p {
     margin-bottom: 0.25rem;
-    font-size: 1.65rem;
+    font-size: 1.3rem;
     line-height: 1.2;
     color: white;
   }
-  .btn-primary {
+  .btn-secondary {
+    background-color: #272626;
+    border-radius: 0px 36px 0px 36px;
+    /* width: 120px !important; */
+
+    font-size: 1.2rem;
+  }
+
+  #home .featurette-heading {
+    font-size: 50px;
+    margin-top: 7rem;
+  }
+  #home .carousel-item {
+    height: 24rem;
+  }
+}
+
+@media (max-width: 50em) {
+  #carousel h1 {
+    color: #474646;
+    font-size: 2.7rem;
+    font-weight: 700;
+  }
+  #home .carousel-caption p {
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: white;
+  }
+  .btn-secondary {
     background-color: #272626;
     border-radius: 0px 36px 0px 36px;
     /* width: 120px !important; */
@@ -230,16 +263,75 @@ export default {
 
 @media (max-width: 40em) {
   #carousel h1 {
-    color: #868686;
-    font-size: 1.4rem;
+    color: #474646;
+    font-size: 2.5rem;
     font-weight: 700;
+  }
+  #home .carousel-caption p {
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: white;
+  }
+  .btn-secondary {
+    background-color: #272626;
+    border-radius: 0px 36px 0px 36px;
+    /* width: 120px !important; */
+
+    font-size: 0.7rem;
+  }
+
+  #home .featurette-heading {
+    font-size: 50px;
+    margin-top: 7rem;
+  }
+  #home .carousel-item {
+    height: 24rem;
+  }
+}
+
+@media (max-width: 30em) {
+  #carousel h1 {
+    color: #474646;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  #home .carousel-caption p {
+    margin-bottom: 0rem;
+    font-size: 0.9rem;
+    line-height: 1;
+    color: white;
+  }
+  .btn-secondary {
+    background-color: #272626;
+    border-radius: 0px 36px 0px 36px;
+    /* width: 120px !important; */
+
+    font-size: 0.7rem;
+  }
+
+  #home .featurette-heading {
+    font-size: 50px;
+    margin-top: 7rem;
+  }
+  #home .carousel-item {
+    height: 24rem;
+  }
+}
+
+@media (max-width: 20em) {
+  #carousel h1 {
+    color: #474646;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 4.25rem;
   }
   #home .carousel-caption p {
     margin-bottom: 0.25rem;
 
     color: white;
   }
-  .btn-primary {
+  .btn-secondary {
     background-color: #272626;
     border-radius: 0px 36px 0px 36px;
     /* padding-bottom: ; */

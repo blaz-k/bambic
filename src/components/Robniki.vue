@@ -47,25 +47,10 @@ export default {
 </script>
 
 <style scoped>
-/* * {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #34495e;
-} */
-
 .btn-outline-secondary {
   border-radius: 15px;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+
   color: red;
   margin-left: auto;
   margin-right: auto;
@@ -82,7 +67,7 @@ body {
 .card {
   margin: 20px;
   position: relative;
-  max-width: 250px;
+  max-width: 450px;
   max-height: 350px;
   box-shadow: 0 40px 60px -6px black;
 }
