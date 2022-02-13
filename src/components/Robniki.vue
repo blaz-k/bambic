@@ -51,7 +51,7 @@ export default {
   border-radius: 15px;
   display: flex;
 
-  color: red;
+  color: rgb(252, 246, 246);
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;

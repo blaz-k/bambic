@@ -59,7 +59,7 @@
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/kovinska-ograja5.jpg"
+        src="../assets/img/gallery/kovinska-ograja8.jpg"
         alt=""
         class="news-card__image"
       />

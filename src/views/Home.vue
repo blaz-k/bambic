@@ -309,14 +309,13 @@ export default {
 ------------------------- */
 
 #home .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0;
 }
 
 /* Thin out the marketing headings */
 #home .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  /* rtl:remove */
   letter-spacing: -0.05rem;
 }
 

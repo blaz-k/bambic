@@ -19,7 +19,7 @@
         <div class="container">
           <div class="-fx-image-gal slika">
             <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
-              <div v-for="slika in slikeOkenske" :key="slika">
+              <div v-for="slika in slikeOsnovniRobniki" :key="slika">
                 <Z :slika="slika" />
               </div>
             </div>
@@ -32,7 +32,7 @@
         <div class="container">
           <div class="-fx-image-gal slika">
             <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
-              <div v-for="slika in slikeZRobniki" :key="slika">
+              <div v-for="slika in slikeLRobniki" :key="slika">
                 <Z :slika="slika" />
               </div>
             </div>
@@ -45,7 +45,7 @@
         <div class="container">
           <div class="-fx-image-gal slika">
             <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
-              <div v-for="slika in slikeZRobniki" :key="slika">
+              <div v-for="slika in slikeZarezeRobniki" :key="slika">
                 <Z :slika="slika" />
               </div>
             </div>
@@ -58,7 +58,7 @@
         <div class="container">
           <div class="-fx-image-gal slika">
             <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
-              <div v-for="slika in slikeZRobniki" :key="slika">
+              <div v-for="slika in slikeTRobniki" :key="slika">
                 <Z :slika="slika" />
               </div>
             </div>
@@ -100,8 +100,11 @@ export default {
   props: ["robnikiId", "robnikName", "robnikText", "robnikImages", "imgRobnik"],
   components: { Footer, Z },
   computed: {
-    ...mapState(["slikeOkenske"]),
+    ...mapState(["slikeOsnovniRobniki"]),
     ...mapState(["slikeZRobniki"]),
+    ...mapState(["slikeTRobniki"]),
+    ...mapState(["slikeZarezeRobniki"]),
+    ...mapState(["slikeLRobniki"]),
   },
   setup(props) {
     console.log(props.robnikiId.id);

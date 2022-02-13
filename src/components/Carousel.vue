@@ -173,6 +173,17 @@ export default {
   size: auto;
 } */
 
+#home .carousel-item {
+  height: 35rem;
+}
+#home .carousel-item > img {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  min-width: 100%;
+  height: 35rem;
+}
+
 img {
   opacity: 0.7;
 }
@@ -356,6 +367,16 @@ img {
     /* margin-bottom: 0.25rem;
     font-size: 1.12rem;
     line-height: 1.1; */
+  }
+  #home .carousel-item {
+    height: 15rem;
+  }
+  #home .carousel-item > img {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    min-width: 100%;
+    height: 15rem;
   }
 }
 </style>

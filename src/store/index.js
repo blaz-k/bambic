@@ -29,7 +29,7 @@ export default createStore({
       {
         id: 1,
         name: "Kovinski robniki",
-        imgUrl: require("@/assets/img/gallery/11.jpeg"),
+        imgUrl: require("@/assets/img/gallery/robnik.jpg"),
         text: `Kovinski robniki so ena najbolj elegantnih rešitev za oblikovanje vašega vrta ali okolice. Največkrat jih uporabljamo za razmejitev okrasnega 
         lubja in trate. Uporabljajo pa se lahko tudi za številne druge namene. Odlikujejo jih lastnosti kot so: `,
         obnova: `So ena najbolj elegantnih rešitev za oblikovanje vašega vrta ali okolice. Največkrat jih uporabljamo za razmejitev okrasnega 
@@ -133,7 +133,7 @@ export default createStore({
       {
         id: 2,
         name: "Kovinske ograje",
-        imgUrl: require("@/assets/img/gallery/Smetarnik2bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/kovinska-ograja8.jpg"),
         details: [""],
         cena: "že od 6€ na tekoči meter letvice/lamele širine 10cm",
         text: `Bi radi zamenjali staro dotrajano leseno ograjo z novo iz pločevine? Brez vzdrževanja, odporna proti vsem vremenskim razmeram,
@@ -158,7 +158,7 @@ export default createStore({
       {
         id: 4,
         name: "Smetarniki",
-        imgUrl: require("@/assets/img/gallery/11.jpeg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik7.jpg"),
 
         details: [""],
         cena: "že od 350€/kos",
