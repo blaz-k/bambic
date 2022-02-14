@@ -309,16 +309,45 @@ img {
   }
   #home .carousel-caption p {
     margin-bottom: 0rem;
-    font-size: 0.9rem;
-    line-height: 1;
-    color: white;
+    font-size: 1.1rem;
+    line-height: 1.1;
+    color: rgb(255, 255, 255);
   }
   .btn-secondary {
     background-color: #272626;
     border-radius: 0px 36px 0px 36px;
     /* width: 120px !important; */
+    margin-bottom: -3rem;
+    font-size: 0.6rem;
+  }
 
-    font-size: 0.7rem;
+  #home .featurette-heading {
+    font-size: 50px;
+    margin-top: 7rem;
+  }
+  #home .carousel-item {
+    height: 24rem;
+  }
+}
+
+@media (max-width: 25em) {
+  #carousel h1 {
+    color: #474646;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  #home .carousel-caption p {
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    line-height: 0.9;
+    color: rgb(255, 255, 255);
+  }
+  .btn-secondary {
+    background-color: #272626;
+    border-radius: 0px 36px 0px 36px;
+    /* width: 120px !important; */
+    margin-bottom: -3rem;
+    font-size: 0.6rem;
   }
 
   #home .featurette-heading {

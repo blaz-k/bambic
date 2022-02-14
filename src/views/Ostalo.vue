@@ -73,7 +73,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 hr {
   background-color: rgba(255, 17, 0, 255);
   height: 6px;
@@ -108,5 +108,11 @@ h1 {
   padding: 0;
   font-family: "Roboto", sans-serif;
   margin-top: 5rem;
+}
+
+.scroll-to-top {
+  padding: 250px 0;
+  position: absolute;
+  right: 1rem;
 }
 </style>

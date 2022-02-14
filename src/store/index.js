@@ -8,14 +8,14 @@ export default createStore({
         detailName: "Osnovni robniki",
         detailText:
           "Osnovni -robniki so tako rekoč univerzalni robniki. Uporabljajo se lahko tako za ravne linije kot tudi za krivulje-izdelavo krogov.",
-        imgRobnik: require("@/assets/img/gallery/11.jpeg"),
+        imgRobnik: require("@/assets/img/gallery/robnik12.jpg"),
       },
       {
         id: 2,
         detailName: "l robniki",
         detailText:
           "Osnovni I-robniki so tako rekoč univerzalni robniki. Uporabljajo se lahko tako za ravne linije kot tudi za krivulje-izdelavo krogov.",
-        imgRobnik: require("@/assets/img/gallery/11.jpeg"),
+        imgRobnik: require("@/assets/img/gallery/robnik13.jpg"),
       },
       {
         id: 3,
@@ -57,11 +57,11 @@ export default createStore({
             detailName: "Osnovni robniki",
             detailText:
               "Osnovni I-robniki so tako rekoč univerzalni robniki. Uporabljajo se lahko tako za ravne linije kot tudi za krivulje-izdelavo krogov.",
-            imgRobnik: require("@/assets/img/gallery/11.jpeg"),
+            imgRobnik: require("@/assets/img/gallery/robnik12bis.jpg"),
             images: [
               {
                 // id: 1,
-                imgUrl: require("@/assets/img/gallery/11.jpeg"),
+                imgUrl: require("@/assets/img/gallery/robnik12.jpg"),
                 imgBis: require("@/assets/img/gallery/11bis.jpeg"),
               },
             ],
@@ -72,7 +72,7 @@ export default createStore({
             detailName: "L-robniki",
             detailText:
               "L-robniki so primerni za izdelavo ravnih linij in vogalov.",
-            imgRobnik: require("@/assets/img/gallery/11bis.jpeg"),
+            imgRobnik: require("@/assets/img/gallery/robnik13bis.jpg"),
             images: [
               {
                 // id: 1,
@@ -87,11 +87,11 @@ export default createStore({
             detailName: "L-robniki z zarezami",
             detailText:
               "L-robniki z zarezami so primerni za izdelavo ravnih linij, kot tudi krivulj ali krogov.",
-            imgRobnik: require("@/assets/img/gallery/11bis.jpeg"),
+            imgRobnik: require("@/assets/img/gallery/robnik10bis.jpg"),
             images: [
               {
                 // id: 1,
-                imgUrl: require("@/assets/img/gallery/11.jpeg"),
+                imgUrl: require("@/assets/img/gallery/robnik10.jpg"),
                 imgBis: require("@/assets/img/gallery/11bis.jpeg"),
               },
             ],
@@ -105,7 +105,7 @@ export default createStore({
             cena: "MPC=7.5EUR/kom",
             material: "pocinkana pločevina ali aluminij",
             mere: "višina 10cm dolžina 150cm",
-            imgRobnik: require("@/assets/img/gallery/11bis.jpeg"),
+            imgRobnik: require("@/assets/img/gallery/robnik6bis.jpg"),
             images: [
               {
                 // id: 1,
@@ -119,7 +119,7 @@ export default createStore({
 
             detailName: "Z-robniki",
             detailText: "Z-robniki so primerni za ravne linije.",
-            imgRobnik: require("@/assets/img/gallery/11bis.jpeg"),
+            imgRobnik: require("@/assets/img/gallery/robnikbis.jpg"),
             images: [
               {
                 // id: 1,
@@ -158,7 +158,7 @@ export default createStore({
       {
         id: 4,
         name: "Smetarniki",
-        imgUrl: require("@/assets/img/gallery/Smetarnik7.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik5.jpg"),
 
         details: [""],
         cena: "že od 350€/kos",
@@ -275,28 +275,28 @@ export default createStore({
     photos: [
       {
         id: 44,
-        imgUrl: require("@/assets/img/gallery/Smetarnik.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnikbis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik30.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik30bis.jpeg"),
       },
       {
         id: 45,
-        imgUrl: require("@/assets/img/gallery/Smetarnik1.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik1bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik31.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik31bis.jpeg"),
       },
       {
         id: 46,
-        imgUrl: require("@/assets/img/gallery/Smetarnik2.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik2bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik32.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik32bis.jpeg"),
       },
       {
         id: 47,
-        imgUrl: require("@/assets/img/gallery/Smetarnik3.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik3bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik33.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik33bis.jpeg"),
       },
       {
         id: 48,
-        imgUrl: require("@/assets/img/gallery/Smetarnik4.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik4bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik34.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik34bis.jpeg"),
       },
       {
         id: 49,
@@ -305,13 +305,13 @@ export default createStore({
       },
       {
         id: 50,
-        imgUrl: require("@/assets/img/gallery/Smetarnik6.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik6bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik35.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik35bis.jpeg"),
       },
       {
         id: 51,
-        imgUrl: require("@/assets/img/gallery/Smetarnik7.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik7bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik36.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik36bis.jpeg"),
       },
       {
         id: 52,
@@ -323,36 +323,36 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/Smetarnik9.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik9bis.jpg"),
       },
-      {
-        id: 54,
-        imgUrl: require("@/assets/img/gallery/Smetarnik10.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik10bis.jpg"),
-      },
+      // {
+      //   id: 54,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik10.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik10bis.jpg"),
+      // },
       {
         id: 55,
         imgUrl: require("@/assets/img/gallery/Smetarnik11.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik11bis.jpg"),
       },
-      {
-        id: 57,
-        imgUrl: require("@/assets/img/gallery/Smetarnik13.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik13bis.jpg"),
-      },
-      {
-        id: 58,
-        imgUrl: require("@/assets/img/gallery/Smetarnik14.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik14bis.jpg"),
-      },
+      // {
+      //   id: 57,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik13.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik13bis.jpg"),
+      // },
+      // {
+      //   id: 58,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik14.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik14bis.jpg"),
+      // },
       {
         id: 59,
         imgUrl: require("@/assets/img/gallery/Smetarnik15.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik15bis.jpg"),
       },
-      {
-        id: 60,
-        imgUrl: require("@/assets/img/gallery/Smetarnik16.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik16bis.jpg"),
-      },
+      // {
+      //   id: 60,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik16.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik16bis.jpg"),
+      // },
       {
         id: 61,
         imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
@@ -616,19 +616,19 @@ export default createStore({
       },
       {
         id: 72,
-        imgUrl: require("@/assets/img/gallery/toplotna10.jpg"),
-        imgBis: require("@/assets/img/gallery/toplotna10bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/toplotna30.jpeg"),
+        imgBis: require("@/assets/img/gallery/toplotna30bis.jpeg"),
       },
       {
         id: 73,
-        imgUrl: require("@/assets/img/gallery/toplotna11.jpg"),
-        imgBis: require("@/assets/img/gallery/toplotna11bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/toplotna31.jpeg"),
+        imgBis: require("@/assets/img/gallery/toplotna31bis.jpeg"),
       },
-      {
-        id: 74,
-        imgUrl: require("@/assets/img/gallery/toplotna12.jpg"),
-        imgBis: require("@/assets/img/gallery/toplotna12bis.jpg"),
-      },
+      // {
+      //   id: 74,
+      //   imgUrl: require("@/assets/img/gallery/toplotna12.jpg"),
+      //   imgBis: require("@/assets/img/gallery/toplotna12bis.jpg"),
+      // },
       {
         id: 4,
         imgUrl: require("@/assets/img/gallery/toplotna13.jpg"),
@@ -895,28 +895,28 @@ export default createStore({
     slikeSmetarnik: [
       {
         id: 44,
-        imgUrl: require("@/assets/img/gallery/Smetarnik.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnikbis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik30.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik30bis.jpeg"),
       },
       {
         id: 45,
-        imgUrl: require("@/assets/img/gallery/Smetarnik1.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik1bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik31.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik31bis.jpeg"),
       },
       {
         id: 46,
-        imgUrl: require("@/assets/img/gallery/Smetarnik2.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik2bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik32.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik32bis.jpeg"),
       },
       {
         id: 47,
-        imgUrl: require("@/assets/img/gallery/Smetarnik3.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik3bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik33.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik33bis.jpeg"),
       },
       {
         id: 48,
-        imgUrl: require("@/assets/img/gallery/Smetarnik4.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik4bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik34.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik34bis.jpeg"),
       },
       {
         id: 49,
@@ -925,13 +925,13 @@ export default createStore({
       },
       {
         id: 50,
-        imgUrl: require("@/assets/img/gallery/Smetarnik6.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik6bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik35.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik35bis.jpeg"),
       },
       {
         id: 51,
-        imgUrl: require("@/assets/img/gallery/Smetarnik7.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik7bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/Smetarnik36.jpeg"),
+        imgBis: require("@/assets/img/gallery/Smetarnik36bis.jpeg"),
       },
       {
         id: 52,
@@ -943,36 +943,36 @@ export default createStore({
         imgUrl: require("@/assets/img/gallery/Smetarnik9.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik9bis.jpg"),
       },
-      {
-        id: 54,
-        imgUrl: require("@/assets/img/gallery/Smetarnik10.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik10bis.jpg"),
-      },
+      // {
+      //   id: 54,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik10.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik10bis.jpg"),
+      // },
       {
         id: 55,
         imgUrl: require("@/assets/img/gallery/Smetarnik11.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik11bis.jpg"),
       },
-      {
-        id: 57,
-        imgUrl: require("@/assets/img/gallery/Smetarnik13.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik13bis.jpg"),
-      },
-      {
-        id: 58,
-        imgUrl: require("@/assets/img/gallery/Smetarnik14.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik14bis.jpg"),
-      },
+      // {
+      //   id: 57,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik13.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik13bis.jpg"),
+      // },
+      // {
+      //   id: 58,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik14.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik14bis.jpg"),
+      // },
       {
         id: 59,
         imgUrl: require("@/assets/img/gallery/Smetarnik15.jpg"),
         imgBis: require("@/assets/img/gallery/Smetarnik15bis.jpg"),
       },
-      {
-        id: 60,
-        imgUrl: require("@/assets/img/gallery/Smetarnik16.jpg"),
-        imgBis: require("@/assets/img/gallery/Smetarnik16bis.jpg"),
-      },
+      // {
+      //   id: 60,
+      //   imgUrl: require("@/assets/img/gallery/Smetarnik16.jpg"),
+      //   imgBis: require("@/assets/img/gallery/Smetarnik16bis.jpg"),
+      // },
       {
         id: 61,
         imgUrl: require("@/assets/img/gallery/Smetarnik17.jpg"),
@@ -1035,19 +1035,19 @@ export default createStore({
       },
       {
         id: 72,
-        imgUrl: require("@/assets/img/gallery/toplotna10.jpg"),
-        imgBis: require("@/assets/img/gallery/toplotna10bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/toplotna30.jpeg"),
+        imgBis: require("@/assets/img/gallery/toplotna30bis.jpeg"),
       },
       {
         id: 73,
-        imgUrl: require("@/assets/img/gallery/toplotna11.jpg"),
-        imgBis: require("@/assets/img/gallery/toplotna11bis.jpg"),
+        imgUrl: require("@/assets/img/gallery/toplotna31.jpeg"),
+        imgBis: require("@/assets/img/gallery/toplotna31bis.jpeg"),
       },
-      {
-        id: 74,
-        imgUrl: require("@/assets/img/gallery/toplotna12.jpg"),
-        imgBis: require("@/assets/img/gallery/toplotna12bis.jpg"),
-      },
+      // {
+      //   id: 74,
+      //   imgUrl: require("@/assets/img/gallery/toplotna12.jpg"),
+      //   imgBis: require("@/assets/img/gallery/toplotna12bis.jpg"),
+      // },
     ],
 
     slikeDimniskih: [
