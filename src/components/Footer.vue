@@ -60,7 +60,7 @@
         </div>
 
         <p class="text-center text-muted mt-2">
-          &copy; 2021 Bambic.si, Jani Bambič s.p.,
+          &copy; 2022 Bambic.si, Jani Bambič s.p.,
           <span id="kmeto">
             <a class="kmet" href="https://github.com/blaz-k" target="_blank"
               >Izdelava: Kmt</a
