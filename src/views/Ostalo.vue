@@ -2,15 +2,15 @@
   <div id="ostalo">
     <h1 class="heading">Ostala ponudba</h1>
 
-    <div class="stran"><PokroviToplotnih /></div>
+    <div class="stran" id="ena"><PokroviToplotnih /></div>
 
-    <div class="stran"><Kontejner /></div>
+    <div class="stran" id="dva"><Kontejner /></div>
 
-    <div class="stran"><RobotskeKosilnice /></div>
+    <div class="stran" id="tri"><RobotskeKosilnice /></div>
 
-    <div class="stran"><OkenskePolice /></div>
+    <div class="stran" id="stiri"><OkenskePolice /></div>
 
-    <div class="stran"><DimniskeKape /></div>
+    <div class="stran" id="pet"><DimniskeKape /></div>
 
     <div class="scroll-to-top">
       <button @click="scrollToTop">
@@ -30,7 +30,7 @@
       </button>
     </div>
 
-    <div class="stran"><OgrajaPolzi /></div>
+    <div class="stran" id="sest"><OgrajaPolzi /></div>
 
     <Footer />
   </div>

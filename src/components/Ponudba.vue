@@ -80,21 +80,21 @@
 
     <div class="news-card">
       <router-link
-        :to="{ name: 'Ostalo' }"
+        :to="{ name: 'Ostalo', path: '/ostalo', hash: '#ena' }"
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/robnik15.jpg"
+        src="../assets/img/gallery/toplotna8bis.jpg"
         alt=""
         class="news-card__image"
       />
       <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">{{ this.ponudba4 }}</h2>
+        <h2 class="news-card__title">{{ this.ponudba6 }}</h2>
         <div class="news-card__post-date"></div>
         <div class="news-card__details-wrapper">
           <p class="news-card__excerpt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            beataeLorem ipsum dolor sit amet!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            pariatur nemo tempore repellat? Ullam sed officia.
           </p>
           <a href="#" class="news-card__read-more"
             >Read more <i class="fas fa-long-arrow-alt-right"></i
@@ -105,7 +105,57 @@
 
     <div class="news-card">
       <router-link
-        :to="{ name: 'Ostalo' }"
+        :to="{ name: 'Ostalo', path: '/ostalo', hash: '#dva' }"
+        class="news-card__card-link"
+      ></router-link>
+      <img
+        src="../assets/img/gallery/skladiscni-kontejnerbis.jpeg"
+        alt=""
+        class="news-card__image"
+      />
+      <div class="news-card__text-wrapper">
+        <h2 class="news-card__title">{{ this.ponudba9 }}</h2>
+        <div class="news-card__post-date"></div>
+        <div class="news-card__details-wrapper">
+          <p class="news-card__excerpt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            pariatur nemo tempore repellat? Ullam sed officia.
+          </p>
+          <a href="#" class="news-card__read-more"
+            >Read more <i class="fas fa-long-arrow-alt-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <router-link
+        :to="{ name: 'Ostalo', path: '/ostalo', hash: '#tri' }"
+        class="news-card__card-link"
+      ></router-link>
+      <img
+        src="../assets/img/gallery/robotska-kosilnica3.jpg"
+        alt=""
+        class="news-card__image"
+      />
+      <div class="news-card__text-wrapper">
+        <h2 class="news-card__title">{{ this.ponudba8 }}</h2>
+        <div class="news-card__post-date"></div>
+        <div class="news-card__details-wrapper">
+          <p class="news-card__excerpt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            pariatur nemo tempore repellat? Ullam sed officia.
+          </p>
+          <a href="#" class="news-card__read-more"
+            >Read more <i class="fas fa-long-arrow-alt-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <router-link
+        :to="{ name: 'Ostalo', path: '/ostalo', hash: '#stiri' }"
         class="news-card__card-link"
       ></router-link>
       <img
@@ -131,36 +181,11 @@
 
     <div class="news-card">
       <router-link
-        :to="{ name: 'Ostalo' }"
+        :to="{ name: 'Ostalo', path: '/ostalo', hash: '#pet' }"
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/toplotna8.jpg"
-        alt=""
-        class="news-card__image"
-      />
-      <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">{{ this.ponudba6 }}</h2>
-        <div class="news-card__post-date"></div>
-        <div class="news-card__details-wrapper">
-          <p class="news-card__excerpt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-            pariatur nemo tempore repellat? Ullam sed officia.
-          </p>
-          <a href="#" class="news-card__read-more"
-            >Read more <i class="fas fa-long-arrow-alt-right"></i
-          ></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="news-card">
-      <router-link
-        :to="{ name: 'Ostalo' }"
-        class="news-card__card-link"
-      ></router-link>
-      <img
-        src="../assets/img/gallery/kapa.jpeg"
+        src="../assets/img/gallery/kapabis.jpeg"
         alt=""
         class="news-card__image"
       />
@@ -181,21 +206,21 @@
 
     <div class="news-card">
       <router-link
-        :to="{ name: 'Ostalo' }"
+        :to="{ name: 'Ostalo', path: '/ostalo', hash: '#sest' }"
         class="news-card__card-link"
       ></router-link>
       <img
-        src="../assets/img/gallery/robotska-kosilnica3.jpg"
+        src="../assets/img/gallery/robnik15.jpg"
         alt=""
         class="news-card__image"
       />
       <div class="news-card__text-wrapper">
-        <h2 class="news-card__title">{{ this.ponudba8 }}</h2>
+        <h2 class="news-card__title">{{ this.ponudba4 }}</h2>
         <div class="news-card__post-date"></div>
         <div class="news-card__details-wrapper">
           <p class="news-card__excerpt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-            pariatur nemo tempore repellat? Ullam sed officia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            beataeLorem ipsum dolor sit amet!
           </p>
           <a href="#" class="news-card__read-more"
             >Read more <i class="fas fa-long-arrow-alt-right"></i
@@ -234,41 +259,15 @@ export default {
 
       ponudba8: "Hiša za robotske kosilnice",
       url8: "../assets/img/gallery/robnik.jpg",
+
+      ponudba9: "Skladiščni kontejnerji",
+      url9: "../assets/img/gallery/skladisnci-kontejnerji.jpeg",
     };
   },
 };
 </script>
 
 <style scoped>
-/* @use postcss-mixins;
-@use postcss-nested;
-@use postcss-simple-vars;
-
-@define-mixin atMedium {
-  @media (min-width: 600px) {
-    @mixin-content;
-  }
-}
-@define-mixin atLarge {
-  @media (min-width: 900px) {
-    @mixin-content;
-  }
-}
-
-$card-height-large-screen: 20rem;
-$card-height-mobile: 12rem; */
-
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans";
-}
-
-body {
-  background-color: #555;
-} */
-
 .content-wrapper {
   margin: 0 auto;
   max-width: 1200px;
@@ -350,22 +349,6 @@ body {
   opacity: 0;
   transition: max-height 1.5s ease, opacity 1s ease;
 }
-/* @mixin atLarge {
-  &:hover &__details-wrapper {
-    max-height: $card-height-large-screen;
-    opacity: 1;
-  }
-  &:hover &__text-wrapper {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  &:hover &__title {
-    color: yellow;
-  }
-  &:hover &__image {
-    transform: scale(1.2);
-    z-index: -1;
-  }
-} */
 .news-card__excerpt {
   font-weight: 300;
 }
@@ -386,15 +369,6 @@ body {
   position: relative;
   z-index: 5;
 }
-
-/* .news-card__read-more i {
-  position: relative;
-  left: 0.2rem;
-  color: #888;
-  transition: left 0.5s ease, color 0.6s ease;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-} */
 
 .news-card:hover {
   transform: scale(1.05);

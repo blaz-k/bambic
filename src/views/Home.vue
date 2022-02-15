@@ -1,14 +1,5 @@
 <template>
   <div id="home">
-    <!-- <button
-      type="button"
-      class="btn btn-danger btn-floating btn-lg"
-      id="btn-back-to-top"
-      @click="scrollFunction"
-    >
-      <i class="fas fa-arrow-up"></i>
-    </button> -->
-
     <main>
       <!-- CAROUSEL -->
       <div id="carousel">
@@ -19,23 +10,14 @@
         <div>
           <h1>Naša ponudba:</h1>
         </div>
-        <!-- <div class="row g-4 row-cols-1 row-cols-sm-3 izdelek"> -->
-        <!-- <div v-for="product in products" :key="product">
-            <Izdelki :izdelek="product" />
-          </div> -->
+
         <div class="mt-4">
           <Ponudba />
         </div>
         <!-- </div> -->
       </div>
-      <!-- 
-      <div class="row g-4 row-cols-1 row-cols-sm-3">
-        <div v-for="mnenje in mnenja" :key="mnenje">
-          <Nekaj :mnenje="mnenje" />
-        </div>
-      </div> -->
 
-      <!---- SEVICES  zaenkrat ne ----->
+      <!---- SEVICES   ----->
 
       <!-- <div id="services">
         <h1>Storitve</h1>
@@ -46,29 +28,12 @@
           </div>
         </div>
       </div> -->
-      <!-- <div>
-        <Mnenja />
-      </div> -->
 
-      <!-- <div id="testimonials"> -->
-      <!-- <h1>Kaj pravijo naše stranke</h1> -->
-      <!-- <div class="row g-4 row-cols-1 row-cols-sm-3 container-fluid">
-          <div v-for="mnenje in mnenja" :key="mnenje">
-            <Testimonials :mnenje="mnenje" />
-          </div>
-        </div> -->
-      <!-- </div> -->
       <!-- GALLERY -->
 
       <div id="gallery">
         <header>
           <h1>Galerija Slik</h1>
-          <!--
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, porro
-            tempore ut est dignissimos, ea placeat dicta in et neque quisquam
-            ducimus fugit. Omnis, veniam.
-          </p>-->
         </header>
 
         <div class="-fx-image-gal">
@@ -81,30 +46,6 @@
           </div>
         </div>
       </div>
-      <!-- <transition name="fade">
-
-        
-        <div
-          id="pagetop"
-          class="fixed right-0 bottom-0"
-          v-show="scY > 300"
-          @click="toTop"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#4a5568"
-            stroke-width="1"
-            stroke-linecap="square"
-            stroke-linejoin="arcs"
-          >
-            <path d="M18 15l-6-6-6 6" />
-          </svg>
-        </div>
-      </transition> -->
 
       <!-- FOOTER -->
       <div class="scroll-to-top">
@@ -144,8 +85,6 @@ import Nekaj from "../components/Nekaj.vue";
 import Ponudba from "../components/Ponudba.vue";
 import Mnenja from "../components/Mnenja.vue";
 import { onMounted } from "@vue/runtime-core";
-// CARDS TO USE IN TEMPLATE FOR IMAGES CAN BE FOUND IN FEATURES INEXAMPLES IN BOOTSTRAP
-// @ is an alias to /src
 
 export default {
   name: "Home",
@@ -186,6 +125,19 @@ export default {
 </script>
 
 <style>
+.-fx-image-gal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 85%; /* arbitrary valye */
+  margin: 0px auto;
+}
+.-fx-gal-item {
+  width: 30%; /* for 3 columns */
+  margin: 5px;
+  overflow: hidden;
+  border-radius: 15px;
+}
 .scroll-to-top {
   padding: 30px 0;
   position: absolute;
@@ -287,27 +239,6 @@ export default {
   height: 35rem;
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-/* .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-/* rtl:begin:ignore */
-/* .marketing .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-}  */
-/* rtl:end:ignore */
-
-/* Featurettes
-------------------------- */
-
 #home .featurette-divider {
   margin: 5rem 0;
 }
@@ -318,77 +249,4 @@ export default {
   line-height: 1;
   letter-spacing: -0.05rem;
 }
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-/* @media (min-width: 40em) {
-  #home .carousel-caption p {
-    margin-bottom: 0.25rem;
-    font-size: 1.85rem;
-    line-height: 1.6;
-    color: yellow;
-  }
-
-  #home .featurette-heading {
-    font-size: 50px;
-  }
-} */
-
-/* @media (min-width: 62em) {
-  #home .carousel-caption p {
-    margin-bottom: 0.25rem;
-    font-size: 1.85rem;
-    line-height: 1.6;
-    color: white;
-  }
-
-  #home .featurette-heading {
-    font-size: 50px;
-    margin-top: 7rem;
-  }
-}
-
-@media (max-width: 62em) {
-  #home .carousel-caption p {
-    margin-bottom: 0.25rem;
-    font-size: 1.65rem;
-    line-height: 1.2;
-    color: white;
-  }
-
-  #home .featurette-heading {
-    font-size: 50px;
-    margin-top: 7rem;
-  }
-  #home .carousel-item {
-    height: 24rem;
-  }
-}
-
-@media (max-width: 40em) {
-  #home .carousel-caption p {
-    margin-bottom: 0.25rem;
-
-    color: white;
-  }
-
-  #home .featurette-heading {
-    font-size: 50px;
-    margin-top: 7rem;
-  }
-
-  #home .carousel-item {
-    height: 22rem;
-  }
-  #home .carousel-caption {
-    bottom: 0.8rem;
-    z-index: 10;
-  }
-  #home .carousel-caption p {
-    margin-bottom: 0.25rem;
-    font-size: 1.15rem;
-    line-height: 1.1;
-  }
-} */
 </style>

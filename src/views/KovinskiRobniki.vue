@@ -18,19 +18,6 @@
         </div>
       </div>
 
-      <!--------- list of lastnosti from products ---------->
-
-      <!-- 
-    <div class="container">
-      <ul>
-        <li>hitra in enostavna montaža</li>
-        <li>obstojen in nerjaveč material</li>
-        <li>možnost oblikovanja po želji (ravne linije, krivulje)</li>
-        <li>cenovno ugodno</li>
-        <li>pestra izbira oblik robnikov</li>
-      </ul>
-    </div> -->
-
       <!------ cards from Robniki ------>
       <div class="row g-4 row-cols-1 row-cols-md-3">
         <div v-for="detail in products[0].details" :key="detail.id">

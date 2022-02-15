@@ -1,18 +1,12 @@
 <template>
   <div id="robotske-kosilnice">
     <h2>{{ products[7].name }}</h2>
-    <div class="">
+    <div>
       <div class="container mb-4 text">{{ products[7].text }}</div>
     </div>
     <hr />
 
     <div class="container">
-      <!-- <div class="osnovni-del bg-light p-4">
-        <div class="text-content">
-          <div class="">{{ products[7].text }}</div>
-        </div>
-      </div> -->
-
       <div class="-fx-image-gal slika">
         <!-- <div class="-fx-gal-item"> -->
         <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
@@ -23,10 +17,6 @@
         </div>
       </div>
     </div>
-    <!-- <img :src="products[7].imgUrl" alt="" /> -->
-
-    <!-- <p class="cont">{{ products[1].text }}</p> -->
-    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -88,16 +78,6 @@ li {
   padding: 0;
   font-family: "PT Serif", serif;
 }
-
-/*#kovinske-ograje .text-content {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: start;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}*/
 
 .text {
   font-size: 17px;

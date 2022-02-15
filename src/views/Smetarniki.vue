@@ -88,6 +88,15 @@ export default {
 </script>
 
 <style scoped>
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 0.2rem;
+  color: #bd0b0b;
+}
 .slika {
   margin-top: 10rem;
 }
@@ -166,9 +175,27 @@ li {
   padding: 0;
 }
 
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 1rem;
+  color: #8b2b2b;
+}
+
 /* MEDIA */
 
 @media only screen and (max-width: 419px) {
+  h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #272525;
+
+    margin: 40px 0 20px 0;
+    text-align: center;
+  }
   #smetarnik .polepsaj {
     margin-top: 1rem;
     display: flex;
@@ -184,7 +211,7 @@ li {
     display: flex;
     justify-content: flex-start;
   }
-  #smetarnik .text-content {
+  .text-content {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -226,13 +253,13 @@ li {
     display: flex;
     justify-content: flex-start;
   }
-  #smetarnik .text-content {
+  .text-content {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     text-align: start;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: #ededed;
   }
 
@@ -242,7 +269,7 @@ li {
     align-content: center;
     align-items: center;
     text-align: start;
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin-top: 1rem;
   }
 
@@ -253,6 +280,15 @@ li {
 }
 
 @media only screen and (min-width: 574px) {
+  .text-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
   #smetarnik .polepsaj {
     margin-top: 5rem;
     display: flex;

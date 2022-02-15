@@ -123,16 +123,6 @@ li {
   /* font-family: "PT Serif", serif; */
 }
 
-/*#kovinske-ograje .text-content {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: start;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}*/
-
 @media only screen and (max-width: 419px) {
   h1 {
     text-transform: uppercase;

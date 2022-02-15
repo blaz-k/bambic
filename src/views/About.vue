@@ -28,25 +28,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="col-md-6">
-        <div class="container">
-          <div class="osnovni-del bg-light p-4">
-            <div class="text-content">
-              <div class="">
-                Podatki:
-                <ul class="list">
-                  <li>Jani Bambič, s.p.</li>
-                  <li>Pot na Pretovč 5</li>
-                  <li>4224 Gorenja vas</li>
-                  <li>Matična številka 8849838000</li>
-                  <li>Davčna številka SI 95850562</li>
-                  <li>IBAN SI56 1010 0005 9167 085(Intesa Sanpaolo)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
 
     <div class="dol">

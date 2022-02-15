@@ -4,18 +4,16 @@
     <div class="text-2xl text-gray-500 my-5 error-text">
       Oops. Prišlo je do napake. Strani ni bilo mogoče prikazati...
     </div>
-    <!-- <div class="flex flex-row justify-center space-x-4">
-      <button @click="router.go(-1)" class="btn btn-primary my-5">Nazaj</button>
-      <button @click="router.push('/')" class="btn btn-secondary my-5">
-        Domov
-      </button>
-    </div> -->
+
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from "../components/Footer.vue";
 export default {
   name: "Error404",
+  components: { Footer },
 };
 </script>
 
@@ -37,5 +35,15 @@ export default {
 
 .error-text {
   font-size: 4rem;
+}
+
+@media only screen and (max-width: 419px) {
+  .error-text {
+    font-size: 0.7rem;
+  }
+
+  .error {
+    font-size: 4rem;
+  }
 }
 </style>

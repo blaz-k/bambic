@@ -1,150 +1,142 @@
 <template>
-  <section id="testimonial" class="parallax-section">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="ts-testimonial-slide">
-        <div class="ts-testimonial-item">
-          <p>
-            "By having a bigger purpose, it just might be that Avira's building
-            a 21st century design studio: the crucible of big, world-changing
-            ideas."
-          </p>
-          <div class="infor-client">
-            <span class="icon-client"
-              ><img src="assets/images/icon-testimonial.png" alt=""
-            /></span>
-            <span class="client-name">ROBERT SMITH</span>
-            <span class="client-position"
-              >Ceo of <a href="#">Geckoos.com</a></span
-            >
+  <body>
+    <div class="testimonials">
+      <div class="inner">
+        <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <div class="name">{{ mnenja[0].name }}</div>
+
+              <p>
+                {{ mnenja[0].besedilo }}
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="ts-testimonial-item">
-          <p>
-            "By having a bigger purpose, it just might be that Avira's building
-            a 21st century design studio: the crucible of big, world-changing
-            ideas."
-          </p>
-          <div class="infor-client">
-            <span class="icon-client"
-              ><img src="assets/images/icon-testimonial.png" alt=""
-            /></span>
-            <span class="client-name">ROBERT SMITH</span>
-            <span class="client-position"
-              >Ceo of <a href="#">Geckoos.com</a></span
-            >
+
+          <div class="col">
+            <div class="testimonial">
+              <div class="name">{{ mnenja[1].name }}</div>
+
+              <p>
+                {{ mnenja[1].besedilo }}
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="ts-testimonial-item">
-          <p>
-            "By having a bigger purpose, it just might be that Avira's building
-            a 21st century design studio: the crucible of big, world-changing
-            ideas."
-          </p>
-          <div class="infor-client">
-            <span class="icon-client"
-              ><img src="assets/images/icon-testimonial.png" alt=""
-            /></span>
-            <span class="client-name">ROBERT SMITH</span>
-            <span class="client-position"
-              >Ceo of <a href="#">Geckoos.com</a></span
-            >
+
+          <div class="col">
+            <div class="testimonial">
+              <div class="name">{{ mnenja[2].name }}</div>
+
+              <p>
+                {{ mnenja[2].besedilo }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <div class="name">{{ mnenja[3].name }}</div>
+
+              <p>
+                {{ mnenja[3].besedilo }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <div class="name">{{ mnenja[4].name }}</div>
+
+              <p>
+                {{ mnenja[4].besedilo }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </body>
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   name: "Mnenja",
+
+  computed: {
+    ...mapState(["mnenja"]),
+  },
 };
 </script>
 
 <style scoped>
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
-/* ---------------------- */
-/*       TESTIMONIAL      */
-/* ---------------------- */
-.parallax-section {
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-#testimonial {
-  padding: 130px 0 95px;
-  background-image: url(../assets/img/gallery/robnik4.jpg);
-}
-#testimonial .overlay {
-  background: rgba(221, 87, 128, 0.8);
-}
-.ts-testimonial-slide {
+.testimonials {
+  background: #f1f1f1;
+  color: #434343;
   text-align: center;
-  color: #ffffff;
-  width: 85%;
-  margin: 0 auto;
+  padding-top: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.ts-testimonial-slide p {
-  font-size: 24px;
-  line-height: 36px;
-  font-style: italic;
-  font-family: "Droid Serif";
-  margin-bottom: 35px;
+
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
 }
-.ts-testimonial-slide .ts-testimonial-item {
-  margin-bottom: 15px;
+
+.border {
+  width: 160px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
 }
-.ts-testimonial-slide .ts-testimonial-item .icon-client {
-  background: #ffffff;
-  width: 29px;
-  height: 29px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col {
+  flex: 45.33%;
+  max-width: 45.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial {
+  background: #fff;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.testimonial img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  float: left;
-  text-align: center;
-  line-height: 29px;
-  margin-top: 2px;
 }
-.ts-testimonial-slide .ts-testimonial-item .infor-client {
-  display: inline-block;
-  margin: 0 auto;
-  width: auto;
-}
-.ts-testimonial-slide .ts-testimonial-item .client-name {
-  padding-left: 38px;
-  font-size: 12.8px;
-  letter-spacing: 2px;
+.name {
+  font-size: 20px;
   text-transform: uppercase;
-  font-family: "Montserrat";
-  display: block;
-  line-height: normal;
-  white-space: nowrap;
+  margin: 20px 0;
 }
-.ts-testimonial-slide .ts-testimonial-item .client-position {
-  font-size: 12px;
-  font-style: italic;
-  line-height: normal;
-  padding-left: 38px;
-  display: block;
-  text-align: left;
+.stars {
+  color: #6ab04c;
+  margin-bottom: 20px;
 }
-.ts-testimonial-slide .ts-testimonial-item .client-position a {
-  color: white;
+
+@media screen and (max-width: 960px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
 }
-.ts-testimonial-slide .ts-testimonial-item .client-position a:hover {
-  color: #5ed9e7;
+
+@media screen and (max-width: 600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 </style>

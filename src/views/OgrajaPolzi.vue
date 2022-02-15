@@ -5,12 +5,6 @@
     <div class="container mb-4 text">{{ products[2].text }}</div>
     <hr />
     <div class="container">
-      <!-- <div class="osnovni-del bg-light p-4">
-        <div class="text-content">
-          <div class="">{{ products[2].text }}</div>
-        </div>
-      </div> -->
-
       <div class="-fx-image-gal slika">
         <!-- <div class="-fx-gal-item"> -->
         <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
@@ -21,9 +15,6 @@
         </div>
       </div>
     </div>
-    <!-- <img :src="products[2].imgUrl" alt="" /> -->
-
-    <!-- <Footer /> -->
   </div>
 </template>
 

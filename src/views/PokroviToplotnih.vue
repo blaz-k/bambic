@@ -7,11 +7,6 @@
     <hr />
 
     <div class="container">
-      <!-- <div class="osnovni-del bg-light p-4">
-        <div class="text-content">
-          <div class="">{{ products[5].text }}</div>
-        </div>
-      </div> -->
       <div class="-fx-image-gal slika">
         <!-- <div class="-fx-gal-item"> -->
         <div class="row g-4 row-cols-1 row-cols-sm-4 container-fluid">
@@ -21,7 +16,6 @@
           <!-- </div> -->
         </div>
       </div>
-      <!-- <img :src="products[5].imgUrl" alt="" /> -->
     </div>
     <!-- <Footer /> -->
   </div>
@@ -74,16 +68,6 @@ img {
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-
-/*#pokrovi-crpalk .text-content {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: start;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}*/
 
 hr {
   background-color: rgba(255, 17, 0, 255);

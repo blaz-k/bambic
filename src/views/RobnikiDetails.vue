@@ -1,8 +1,7 @@
 <template>
   <div id="robniki-details">
     <button class="btn btn-outline-warning" @click="back">Nazaj</button>
-    <!-- <button @click="forward">Forward</button> -->
-    <!-- <button @click="redirect">Redirect</button> -->
+
     <div id="robniki-details">
       <h1>{{ robnikName }}</h1>
 
@@ -78,15 +77,8 @@
         </div>
       </div>
 
-      <!-- <p class="text">{{ products[3].text }}</p>
-    <p class="cena">Cena: {{ products[3].cena }}</p> -->
       <Footer />
     </div>
-    <!-- <h1>{{ robnikName }}</h1>
-    <p>{{ robnikText }}</p>
-    <div v-for="slika in robnikImages" :key="slika">
-      <img :src="slika" alt="" /> -->
-    <!-- </div> -->
   </div>
 </template>
 
@@ -113,14 +105,6 @@ export default {
     back() {
       this.$router.go(-1);
     },
-    // forward() {
-    //   this.$router.go(1);
-    // },
-    // redirect() {
-    //   this.$router.push({
-    //     name: "Home",
-    //   });
-    // },
   },
 };
 </script>
@@ -144,6 +128,6 @@ button {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: "PT Serif", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 </style>

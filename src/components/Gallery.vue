@@ -5,12 +5,6 @@
   <div class="-fx-gal-image-big">
     <img :src="galleryPhoto.imgUrl" />
   </div>
-
-  <!-- <img
-    :src="galleryPhoto.imgUrl"
-    alt="beach-bungalow-caribbean"
-    class="images"
-  /> -->
 </template>
 
 <script>
@@ -23,26 +17,6 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
 
-/* body {
-  background-color: #aeaeae;
-  font-family: Arial, Sans-serif;
-  font-size: 42px;
-}
-
-header {
-  padding: 50px;
-  text-align: center;
-} */
-
-/* h1 {
-  font-family: Mansalva, Arial;
-  font-size: 8rem;
-  line-height: 2rem;
-  color: tomato;
-  text-shadow: 0px 0px 10px white, 0px 0px 30px navajowhite;
-  margin-top: 13rem;
-  margin-bottom: 5rem;
-} */
 p {
   font-size: 1rem;
   padding: 0 20%;

@@ -46,7 +46,7 @@
             <h1>
               {{ products[0].name }}
             </h1>
-            <p>
+            <p class="para">
               {{ products[0].obnova }}
             </p>
             <p>
@@ -77,7 +77,7 @@
         <div class="container">
           <div class="carousel-caption">
             <h1>{{ products[1].name }}</h1>
-            <p>
+            <p class="para">
               {{ products[1].obnova }}
             </p>
             <p>
@@ -108,7 +108,7 @@
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>{{ products[3].name }}</h1>
-            <p>
+            <p class="para">
               {{ products[3].obnova }}
             </p>
             <p>
@@ -162,17 +162,6 @@ export default {
 </script>
 
 <style scoped>
-/* #carousel h1 {
-  font-size: 5rem;
-  color: #868686;
-  font-weight: 700;
-} */
-/* .btn-primary {
-  background-color: #272626;
-  border-radius: 0px 36px 0px 36px;
-  size: auto;
-} */
-
 #home .carousel-item {
   height: 35rem;
 }
@@ -192,7 +181,7 @@ img {
   #carousel h1 {
     font-size: 3.2rem;
 
-    color: #474646;
+    color: #c4c3c3;
     font-weight: 700;
   }
 
@@ -216,7 +205,7 @@ img {
 
 @media (max-width: 62em) {
   #carousel h1 {
-    color: #474646;
+    color: #c4c3c3;
     font-size: 2.7rem;
     font-weight: 700;
   }
@@ -245,7 +234,7 @@ img {
 
 @media (max-width: 50em) {
   #carousel h1 {
-    color: #474646;
+    color: #c4c3c3;
     font-size: 2.7rem;
     font-weight: 700;
   }
@@ -274,7 +263,7 @@ img {
 
 @media (max-width: 40em) {
   #carousel h1 {
-    color: #474646;
+    color: #c4c3c3;
     font-size: 2.5rem;
     font-weight: 700;
   }
@@ -303,7 +292,7 @@ img {
 
 @media (max-width: 30em) {
   #carousel h1 {
-    color: #474646;
+    color: #c4c3c3;
     font-size: 1.8rem;
     font-weight: 700;
   }
@@ -332,7 +321,7 @@ img {
 
 @media (max-width: 25em) {
   #carousel h1 {
-    color: #474646;
+    color: #c4c3c3;
     font-size: 1.8rem;
     font-weight: 700;
   }
@@ -361,22 +350,23 @@ img {
 
 @media (max-width: 20em) {
   #carousel h1 {
-    color: #474646;
+    color: #c4c3c3;
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 4.25rem;
+    margin-bottom: 1.25rem;
   }
   #home .carousel-caption p {
     margin-bottom: 0.25rem;
 
     color: white;
   }
+
   .btn-secondary {
     background-color: #272626;
     border-radius: 0px 36px 0px 36px;
-    /* padding-bottom: ; */
     /* width: 120px !important; */
-    font-size: 0.7rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.6rem;
   }
 
   #home .featurette-heading {
@@ -391,7 +381,7 @@ img {
     bottom: 0.8rem;
     z-index: 10;
   }
-  #home .carousel-caption p {
+  #home .para {
     display: none;
     /* margin-bottom: 0.25rem;
     font-size: 1.12rem;

@@ -7,11 +7,6 @@ import Smetarniki from "../views/Smetarniki.vue";
 import RobnikiDetails from "../views/RobnikiDetails.vue";
 import Ostalo from "../views/Ostalo.vue";
 
-// import DimniskeKape from "../views/DimniskeKape.vue";
-// import OkenskePolice from "../views/OkenskePolice.vue";
-// import PokroviToplotnih from "../views/PokroviToplotnih.vue";
-// import RobotskeKosilnice from "../views/RobotskeKosilnice.vue";
-
 const routes = [
   {
     path: "/",
@@ -80,44 +75,6 @@ const routes = [
     },
   },
 
-  // VSE TO ZBRIŠI PREDEN ZAKLJUČIŠ PROJEKT
-
-  // {
-  //   path: "/okenske-police",
-  //   name: "OkenskePolice",
-  //   component: OkenskePolice,
-  //   meta: {
-  //     enterClass: "animate__animated animate__fadeInLeft",
-  //     leaveClass: "animate__animated animate__fadeOutRight",
-  //   },
-  // },
-  // {
-  //   path: "/pokrovi-toplotnih-crpalk",
-  //   name: "PokroviToplotnih",
-  //   component: PokroviToplotnih,
-  //   meta: {
-  //     enterClass: "animate__animated animate__fadeInLeft",
-  //     leaveClass: "animate__animated animate__fadeOutRight",
-  //   },
-  // },
-  // {
-  //   path: "/dimniske-kape",
-  //   name: "DimniskeKape",
-  //   component: DimniskeKape,
-  //   meta: {
-  //     enterClass: "animate__animated animate__fadeInLeft",
-  //     leaveClass: "animate__animated animate__fadeOutRight",
-  //   },
-  // },
-  // {
-  //   path: "/hisa-za-robotske-kosilnice",
-  //   name: "RobotskeKosilnice",
-  //   component: RobotskeKosilnice,
-  //   meta: {
-  //     enterClass: "animate__animated animate__fadeInLeft",
-  //     leaveClass: "animate__animated animate__fadeOutRight",
-  //   },
-  // },
   {
     path: "/ostalo",
     name: "Ostalo",
@@ -141,12 +98,17 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-});
-router.beforeEach(function (to, from, next) {
-  setTimeout(() => {
-    window.scrollTo(0, 0);
-  }, 700);
-  next();
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return { el: to.hash };
+    } else {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve({ left: 0, top: 0 });
+        }, 600);
+      });
+    }
+  },
 });
 
 export default router;

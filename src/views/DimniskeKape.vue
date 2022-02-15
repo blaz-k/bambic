@@ -51,16 +51,6 @@ export default {
   font-family: "Roboto", sans-serif;
 }
 
-/*#dimniske-kape .text-content {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  text-align: start;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}*/
-
 hr {
   background-color: rgba(255, 17, 0, 255);
   height: 6px;

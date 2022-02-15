@@ -1,14 +1,4 @@
 <template>
-  <!-- <div class="container">
-    <div class="card card3">
-      <img class="food" src="../assets/img/gallery/11bis.jpeg" />
-      <div class="text">
-        <h4 class="cook">{{ izdelek.name }}</h4>
-        
-      </div>
-    </div>
-  </div> -->
-
   <link
     href="https://fonts.googleapis.com/css?family=Raleway:300"
     rel="stylesheet"
