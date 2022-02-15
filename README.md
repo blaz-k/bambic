@@ -1,23 +1,15 @@
-# bambic website
+# Bambic
 
-## Project setup
+## Website that sells metal products
 
-```
-npm install
-```
+Link to website: [https://bambič.si](https://bambič.si)
 
-### Compiles and hot-reloads for development
+Tech and concepts that I used:
 
-```
-npm run serve
-```
+- Bootstrap
+- Animate css
+- Vuex
+- Vue-router (scrollBehavior)
+- Media Queries
 
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![](src/assets/bambic-stran.png)
