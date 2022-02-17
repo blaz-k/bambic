@@ -227,7 +227,7 @@ li {
     align-content: center;
     align-items: center;
     text-align: start;
-    font-size: 6rem;
+    font-size: 17px;
     margin-top: 1rem;
   }
 
@@ -259,7 +259,7 @@ li {
     align-content: center;
     align-items: center;
     text-align: start;
-    font-size: 0.7rem;
+    font-size: 17px;
     color: #ededed;
   }
 
@@ -269,7 +269,7 @@ li {
     align-content: center;
     align-items: center;
     text-align: start;
-    font-size: 0.7rem;
+    font-size: 17px;
     margin-top: 1rem;
   }
 
